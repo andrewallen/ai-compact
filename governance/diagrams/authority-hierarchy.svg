@@ -1,0 +1,53 @@
+<svg viewBox="0 0 800 484" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#888780" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <rect width="800" height="484" fill="#fafaf8" rx="8"/>
+
+  <text x="400" y="32" text-anchor="middle" font-size="16" font-weight="600" fill="#2C2C2A">Authority Hierarchy</text>
+  <text x="400" y="50" text-anchor="middle" font-size="10" fill="#888780">Binding rules govern; the conditional overlay supplements when active</text>
+
+  <!-- Preferences (base, defers) -->
+  <rect x="40" y="72" width="720" height="56" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+  <text x="60" y="96" font-size="10" fill="#888780">BASE</text>
+  <text x="110" y="96" font-size="12" font-weight="500" fill="#444441">Global preferences</text>
+  <text x="110" y="114" font-size="10" fill="#888780">Always present. Defers to constitution files when they are loaded.</text>
+  <text x="710" y="104" text-anchor="end" font-size="10" fill="#888780">Chat + Cowork</text>
+
+  <!-- Arrow up -->
+  <text x="400" y="146" text-anchor="middle" font-size="9" fill="#534AB7">constitution files take precedence when loaded</text>
+
+  <!-- Level 1: Calibration -->
+  <rect x="40" y="158" width="720" height="56" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.75"/>
+  <text x="60" y="182" font-size="10" font-weight="600" fill="#0F6E56">LEVEL 1</text>
+  <text x="130" y="182" font-size="12" font-weight="500" fill="#085041">01-calibration — Calibration</text>
+  <text x="130" y="200" font-size="10" fill="#0F6E56">Who I am, how I think, what I am protecting. Informs interpretation. Does not override rules.</text>
+
+  <!-- Arrow up -->
+  <text x="400" y="232" text-anchor="middle" font-size="9" fill="#534AB7">binding rules override calibration on conflict</text>
+
+  <!-- Level 2: Binding rules -->
+  <rect x="40" y="244" width="720" height="56" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.75"/>
+  <text x="60" y="268" font-size="10" font-weight="600" fill="#534AB7">LEVEL 2</text>
+  <text x="130" y="268" font-size="12" font-weight="500" fill="#3C3489">02-operating-contract — Binding rules</text>
+  <text x="130" y="286" font-size="10" fill="#534AB7">Operating contract. Mode &amp; posture, challenge, partner register, voice principles. Mandatory.</text>
+
+  <!-- Arrow up -->
+  <text x="400" y="318" text-anchor="middle" font-size="9" fill="#993C1D">supplements, does not replace</text>
+
+  <!-- Level 3: Overlay -->
+  <rect x="40" y="330" width="720" height="56" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="0.75" stroke-dasharray="4 3"/>
+  <text x="60" y="354" font-size="10" font-weight="600" fill="#993C1D">LEVEL 3</text>
+  <text x="130" y="354" font-size="12" font-weight="500" fill="#712B13">03-professional-overlay — Conditional</text>
+  <text x="130" y="372" font-size="10" fill="#993C1D">Microsoft role, portfolio, tone registers. Dormant unless Microsoft-related. May not be loaded.</text>
+
+  <!-- Outside the hierarchy: my-voice skill -->
+  <text x="400" y="412" text-anchor="middle" font-size="9" fill="#888780">outside the hierarchy — summoned at execution, not always loaded</text>
+  <rect x="40" y="422" width="720" height="50" rx="8" fill="#E2F0F1" stroke="#1F6B66" stroke-width="0.75" stroke-dasharray="4 3"/>
+  <text x="60" y="446" font-size="10" font-weight="600" fill="#1F6B66">SKILL</text>
+  <text x="130" y="446" font-size="12" font-weight="500" fill="#14524E">my-voice — execution only</text>
+  <text x="130" y="464" font-size="10" fill="#1F6B66">Produces output in my voice. Not a constitution level; never overrides the operating contract.</text>
+</svg>

@@ -1,0 +1,68 @@
+<svg viewBox="0 0 800 620" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#888780" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <rect width="800" height="620" fill="#fafaf8" rx="8"/>
+  <text x="400" y="32" text-anchor="middle" font-size="16" font-weight="600" fill="#2C2C2A">Five-Layer Personal Kit</text>
+  <text x="400" y="50" text-anchor="middle" font-size="10" fill="#6F6E68">Authority decreases and rate of change increases from philosophy to memory</text>
+
+  <rect x="105" y="76" width="500" height="58" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.75"/>
+  <text x="128" y="99" font-size="10" font-weight="600" fill="#854F0B">LAYER 1</text>
+  <text x="205" y="99" font-size="13" font-weight="600" fill="#633806">Philosophy</text>
+  <text x="205" y="118" font-size="9.5" fill="#854F0B">kit/philosophy/axioms.md · background only · never loaded at runtime</text>
+
+  <line x1="355" y1="134" x2="355" y2="150" stroke="#888780" stroke-width="0.75" marker-end="url(#arrow)"/>
+  <rect x="85" y="154" width="540" height="68" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.85"/>
+  <text x="108" y="178" font-size="10" font-weight="600" fill="#0F6E56">LAYER 2</text>
+  <text x="185" y="178" font-size="13" font-weight="600" fill="#085041">Constitution</text>
+  <text x="185" y="197" font-size="9.5" fill="#0F6E56">bootstrap · calibration · operating contract · conditional professional overlay</text>
+  <text x="185" y="212" font-size="8.5" fill="#0F6E56">source of truth; load the core or a condensed derivation</text>
+
+  <line x1="355" y1="222" x2="355" y2="238" stroke="#888780" stroke-width="0.75" marker-end="url(#arrow)"/>
+  <rect x="105" y="242" width="500" height="58" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.75"/>
+  <text x="128" y="265" font-size="10" font-weight="600" fill="#534AB7">LAYER 3</text>
+  <text x="205" y="265" font-size="13" font-weight="600" fill="#3C3489">Role charters</text>
+  <text x="205" y="284" font-size="9.5" fill="#534AB7">kit/roles/ · conditional missions and decision policies; never override the constitution</text>
+
+  <line x1="355" y1="300" x2="355" y2="316" stroke="#888780" stroke-width="0.75" marker-end="url(#arrow)"/>
+  <rect x="65" y="320" width="580" height="94" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="0.85"/>
+  <text x="88" y="344" font-size="10" font-weight="600" fill="#993C1D">LAYER 4</text>
+  <text x="165" y="344" font-size="13" font-weight="600" fill="#712B13">Implementation</text>
+  <rect x="88" y="360" width="164" height="36" rx="5" fill="#fff" stroke="#993C1D" stroke-width="0.5"/>
+  <text x="170" y="375" text-anchor="middle" font-size="10" font-weight="500" fill="#712B13">platforms/</text>
+  <text x="170" y="389" text-anchor="middle" font-size="8.5" fill="#993C1D">deployment adapters</text>
+  <rect x="273" y="360" width="164" height="36" rx="5" fill="#fff" stroke="#1F6B66" stroke-width="0.5"/>
+  <text x="355" y="375" text-anchor="middle" font-size="10" font-weight="500" fill="#14524E">skills/</text>
+  <text x="355" y="389" text-anchor="middle" font-size="8.5" fill="#1F6B66">summoned capabilities</text>
+  <rect x="458" y="360" width="164" height="36" rx="5" fill="#fff" stroke="#5F5E5A" stroke-width="0.5"/>
+  <text x="540" y="375" text-anchor="middle" font-size="10" font-weight="500" fill="#444441">prompts/</text>
+  <text x="540" y="389" text-anchor="middle" font-size="8.5" fill="#6F6E68">reusable entry points</text>
+
+  <line x1="355" y1="414" x2="355" y2="430" stroke="#888780" stroke-width="0.75" stroke-dasharray="4 3" marker-end="url(#arrow)"/>
+  <rect x="105" y="434" width="500" height="58" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.75" stroke-dasharray="4 3"/>
+  <text x="128" y="457" font-size="10" font-weight="600" fill="#5F5E5A">LAYER 5</text>
+  <text x="205" y="457" font-size="13" font-weight="600" fill="#444441">Memory</text>
+  <text x="205" y="476" font-size="9.5" fill="#6F6E68">outside this repo · Obsidian Vault, platform memory and conversation history</text>
+
+  <rect x="665" y="76" width="110" height="338" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.75"/>
+  <text x="720" y="101" text-anchor="middle" font-size="11" font-weight="600" fill="#0C447C">Cross-cutting</text>
+  <rect x="680" y="124" width="80" height="52" rx="5" fill="#fff" stroke="#185FA5" stroke-width="0.5"/>
+  <text x="720" y="146" text-anchor="middle" font-size="10" font-weight="500" fill="#0C447C">Evals</text>
+  <text x="720" y="161" text-anchor="middle" font-size="8" fill="#185FA5">regression</text>
+  <rect x="680" y="192" width="80" height="52" rx="5" fill="#fff" stroke="#185FA5" stroke-width="0.5"/>
+  <text x="720" y="214" text-anchor="middle" font-size="10" font-weight="500" fill="#0C447C">Governance</text>
+  <text x="720" y="229" text-anchor="middle" font-size="8" fill="#185FA5">decisions</text>
+  <text x="720" y="270" text-anchor="middle" font-size="8.5" fill="#185FA5">These govern and</text>
+  <text x="720" y="284" text-anchor="middle" font-size="8.5" fill="#185FA5">test the stack;</text>
+  <text x="720" y="298" text-anchor="middle" font-size="8.5" fill="#185FA5">they are not</text>
+  <text x="720" y="312" text-anchor="middle" font-size="8.5" fill="#185FA5">runtime layers.</text>
+
+  <rect x="65" y="520" width="710" height="70" rx="8" fill="#fff" stroke="#D3D1C7" stroke-width="0.5"/>
+  <text x="88" y="545" font-size="10" font-weight="600" fill="#444441">Framework</text>
+  <text x="155" y="545" font-size="9.5" fill="#5F5E5A">framework/ is generic; kit/ contains the personal layers and active evals.</text>
+  <text x="88" y="568" font-size="10" font-weight="600" fill="#444441">Governance</text>
+  <text x="155" y="568" font-size="9.5" fill="#5F5E5A">governance/ describes the current topology and preserves decisions and evidence.</text>
+</svg>

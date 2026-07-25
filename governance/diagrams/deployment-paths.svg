@@ -1,0 +1,79 @@
+<svg viewBox="0 0 800 560" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#888780" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <rect width="800" height="560" fill="#fafaf8" rx="8"/>
+  <text x="400" y="32" text-anchor="middle" font-size="16" font-weight="600" fill="#2C2C2A">Deployment Paths</text>
+  <text x="400" y="50" text-anchor="middle" font-size="10" fill="#6F6E68">Current model: condensed chat settings, minimal agent references, no new CLAUDE.md or AGENTS.md deployment</text>
+
+  <text x="120" y="80" text-anchor="middle" font-size="12" font-weight="600" fill="#5F5E5A">Source files</text>
+
+  <rect x="40" y="100" width="160" height="34" rx="5" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="120" y="114" text-anchor="middle" font-size="8.5" fill="#0F6E56">kit/constitution/</text>
+  <text x="120" y="127" text-anchor="middle" font-size="9.5" font-weight="500" fill="#085041">00-bootstrap</text>
+  <rect x="40" y="142" width="160" height="34" rx="5" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="120" y="156" text-anchor="middle" font-size="8.5" fill="#0F6E56">kit/constitution/</text>
+  <text x="120" y="169" text-anchor="middle" font-size="9.5" font-weight="500" fill="#085041">01-calibration</text>
+  <rect x="40" y="184" width="160" height="34" rx="5" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="120" y="198" text-anchor="middle" font-size="8.5" fill="#0F6E56">kit/constitution/</text>
+  <text x="120" y="211" text-anchor="middle" font-size="9.5" font-weight="500" fill="#085041">02-operating-contract</text>
+  <rect x="40" y="226" width="160" height="34" rx="5" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5" stroke-dasharray="4 3"/>
+  <text x="120" y="240" text-anchor="middle" font-size="8.5" fill="#0F6E56">kit/constitution/</text>
+  <text x="120" y="253" text-anchor="middle" font-size="9.5" font-weight="500" fill="#085041">03-overlay (conditional)</text>
+
+  <rect x="40" y="286" width="160" height="34" rx="5" fill="#FAECE7" stroke="#993C1D" stroke-width="0.5"/>
+  <text x="120" y="307" text-anchor="middle" font-size="8.5" font-weight="500" fill="#712B13">kit/implementation/platforms</text>
+  <rect x="40" y="328" width="160" height="34" rx="5" fill="#E2F0F1" stroke="#1F6B66" stroke-width="0.5"/>
+  <text x="120" y="349" text-anchor="middle" font-size="10" font-weight="500" fill="#14524E">voice material</text>
+  <rect x="40" y="370" width="160" height="34" rx="5" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+  <text x="120" y="391" text-anchor="middle" font-size="10" font-weight="500" fill="#0C447C">configuration refs</text>
+
+  <rect x="260" y="88" width="210" height="342" rx="10" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.75"/>
+  <text x="365" y="112" text-anchor="middle" font-size="12" font-weight="600" fill="#085041">Configurable Chat</text>
+  <text x="365" y="128" text-anchor="middle" font-size="9" fill="#0F6E56">standing settings plus optional files</text>
+
+  <rect x="280" y="154" width="170" height="36" rx="5" fill="#fff" stroke="#993C1D" stroke-width="0.5"/>
+  <text x="365" y="176" text-anchor="middle" font-size="10" fill="#712B13">Claude preferences</text>
+  <rect x="280" y="198" width="170" height="36" rx="5" fill="#fff" stroke="#993C1D" stroke-width="0.5"/>
+  <text x="365" y="220" text-anchor="middle" font-size="10" fill="#712B13">ChatGPT instructions</text>
+  <rect x="280" y="242" width="170" height="36" rx="5" fill="#fff" stroke="#993C1D" stroke-width="0.5"/>
+  <text x="365" y="264" text-anchor="middle" font-size="10" fill="#712B13">Gemini saved instructions</text>
+  <rect x="280" y="286" width="170" height="36" rx="5" fill="#fff" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="365" y="308" text-anchor="middle" font-size="10" fill="#085041">Project / conversation files</text>
+  <rect x="280" y="330" width="170" height="36" rx="5" fill="#fff" stroke="#1F6B66" stroke-width="0.5" stroke-dasharray="4 3"/>
+  <text x="365" y="352" text-anchor="middle" font-size="10" fill="#14524E">voice supplied separately</text>
+
+  <rect x="530" y="88" width="230" height="342" rx="10" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.75"/>
+  <text x="645" y="112" text-anchor="middle" font-size="12" font-weight="600" fill="#0C447C">Agent and CLI Surfaces</text>
+  <text x="645" y="128" text-anchor="middle" font-size="9" fill="#185FA5">read from repo checkout or explicit paths</text>
+
+  <rect x="552" y="154" width="186" height="36" rx="5" fill="#fff" stroke="#185FA5" stroke-width="0.5"/>
+  <text x="645" y="176" text-anchor="middle" font-size="10" fill="#0C447C">Claude Code</text>
+  <rect x="552" y="198" width="186" height="36" rx="5" fill="#fff" stroke="#185FA5" stroke-width="0.5"/>
+  <text x="645" y="220" text-anchor="middle" font-size="10" fill="#0C447C">Codex</text>
+  <rect x="552" y="242" width="186" height="36" rx="5" fill="#fff" stroke="#185FA5" stroke-width="0.5"/>
+  <text x="645" y="264" text-anchor="middle" font-size="10" fill="#0C447C">Copilot CLI</text>
+  <rect x="552" y="286" width="186" height="36" rx="5" fill="#fff" stroke="#185FA5" stroke-width="0.5"/>
+  <text x="645" y="308" text-anchor="middle" font-size="10" fill="#0C447C">Hermes</text>
+  <rect x="552" y="346" width="186" height="36" rx="5" fill="#fff" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="645" y="368" text-anchor="middle" font-size="10" fill="#085041">read constitution directly</text>
+  <rect x="552" y="390" width="186" height="24" rx="5" fill="#fff" stroke="#1F6B66" stroke-width="0.5" stroke-dasharray="4 3"/>
+  <text x="645" y="406" text-anchor="middle" font-size="9" fill="#14524E">voice on demand</text>
+
+  <line x1="200" y1="201" x2="280" y2="304" stroke="#0F6E56" stroke-width="0.6" marker-end="url(#arrow)"/>
+  <line x1="200" y1="201" x2="552" y2="364" stroke="#0F6E56" stroke-width="0.6" marker-end="url(#arrow)"/>
+  <line x1="200" y1="303" x2="280" y2="216" stroke="#993C1D" stroke-width="0.6" marker-end="url(#arrow)"/>
+  <line x1="200" y1="345" x2="280" y2="348" stroke="#1F6B66" stroke-width="0.6" stroke-dasharray="4 3" marker-end="url(#arrow)"/>
+  <line x1="200" y1="345" x2="552" y2="402" stroke="#1F6B66" stroke-width="0.6" stroke-dasharray="4 3" marker-end="url(#arrow)"/>
+  <line x1="200" y1="387" x2="552" y2="220" stroke="#185FA5" stroke-width="0.6" marker-end="url(#arrow)"/>
+
+  <rect x="40" y="462" width="720" height="72" rx="8" fill="#fff" stroke="#D3D1C7" stroke-width="0.5"/>
+  <text x="60" y="486" font-size="10" font-weight="600" fill="#444441">Current constraints</text>
+  <text x="60" y="506" font-size="9.5" fill="#5F5E5A">Chat prompts must work alone and defer when the full constitution is present.</text>
+  <text x="60" y="522" font-size="9.5" fill="#5F5E5A">Agent surfaces use a minimal contract; read source files for deeper work.</text>
+  <text x="454" y="506" font-size="9.5" fill="#5F5E5A">Voice material remains separate from platform configuration.</text>
+  <text x="454" y="522" font-size="9.5" fill="#5F5E5A">Memory remains external; it is not a kit deployment target.</text>
+</svg>
