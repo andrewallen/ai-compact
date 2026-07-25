@@ -12,5 +12,3 @@ Visual projections of the current architecture. The diagrams aid navigation and 
 | [work-flow-between-modes.svg](work-flow-between-modes.svg) | Movement between exploratory, execution and refinement work. |
 
 Regenerate or amend diagrams whenever their source architecture changes. Verify each SVG parses and renders before committing it.
-
-Version: 2026.07.13 @ 1.0

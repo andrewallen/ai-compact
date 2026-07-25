@@ -13,5 +13,3 @@
 The constraint is the point. A taught map of a domain is a received frame, and receiving the frame before forming my own read is the erosion the kit protects against. Questions open doors; answers close them. If the model starts answering its own questions, stop it and re-scope.
 
 Pairs with `what-good-looks-like.md` when the unfamiliar domain also requires judging work in it.
-
-Version: 2026.07.06 @ 2311

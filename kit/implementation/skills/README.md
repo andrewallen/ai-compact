@@ -99,5 +99,3 @@ See the [_template/SKILL.md](_template/SKILL.md) for detailed comments. Verify e
 ## Relationship to the kit
 
 Skills encode methodology and working patterns that are part of the broader operating contract. They are version-controlled here alongside constitution files and platform configs, and deployed to projects as needed. They supplement the constitution and never override it.
-
-Version: 2026.07.13 @ 1.4

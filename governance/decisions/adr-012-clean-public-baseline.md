@@ -1,33 +1,34 @@
 ← [Home](../../README.md) · [Governance](../README.md) · [Decisions](README.md) · **ADR-012**
 
-# ADR-012 — Begin public history from a clean, self-contained baseline
+# ADR-012 — Keep the public repository self-contained
 
 **Status:** Accepted (2026-07-25)
 
 ## Context
 
-The private development repository contains superseded personal material, raw conversations, migration working documents, account audits and commit metadata that are not part of the adopted design. Deleting those files in a later commit would leave them in Git history. Rewriting the existing history would also retain operational complexity around branches, pull requests, cached references and old clones.
-
-The public project must expose Andrew's approved current kit while remaining understandable without the private development journey.
+AI Compact publishes a real personal kit as well as a reusable framework. Readers need enough architecture, rationale and evidence to understand the maintained system, while raw conversations, account audits and transient working material would add sensitivity and volume without becoming sources of truth.
 
 ## Decision
 
-Start `ai-compact` as a new Git repository from a reviewed snapshot of the stable system.
+Maintain a self-contained public repository containing:
 
-The public repository contains the reusable framework, Andrew's current personal kit, active eval fixtures, current architecture, adopted decisions, diagrams and concise evidence records. It omits raw source conversations, superseded personal files, migration plans, raw transcripts and account-level audit findings.
+- the reusable framework;
+- the current personal kit;
+- active eval fixtures;
+- current architecture, ADRs, diagrams and concise evidence records.
 
-The former repository remains private and frozen as historical evidence. It is never an active source, deployment target or dependency of the public project.
+Do not make maintained claims depend on conversational context, local files or unpublished working history. Keep raw conversations, account-level audits, credentials and raw eval transcripts outside the repository.
 
 ## Consequences
 
-- Public Git history begins with one stable baseline commit.
-- Every maintained public claim must be supported by current files; private Git history and conversational memory are not required.
-- Future changes use ordinary branches and commits in `ai-compact`.
-- Publication requires a current-tree privacy and secret scan, not an attempt to prove that old private history is safe.
-- Existing clones of the private repository must not push to the public remote.
+- Every current claim must be supported by a maintained file in this tree.
+- Evidence records summarise scope, results and limitations without carrying raw transcripts.
+- Privacy and secret scans are part of publication checks.
+- Ordinary Git branches and commits record future project changes.
+- Framework and kit continue to evolve together without duplicating their sources.
 
 ## Alternatives considered
 
-- **Make the private repository public:** rejected because removed personal material would become visible through history and other refs.
-- **Rewrite the private repository in place:** rejected because it creates avoidable recontamination and reference-management risk.
-- **Maintain separate active framework and kit repositories:** rejected because it would split changes that need to evolve together.
+- **Publish all working material:** rejected because volume and sensitivity would obscure rather than strengthen the maintained design.
+- **Publish only the framework:** rejected because the personal implementation is the reference that tests and demonstrates it.
+- **Split framework and kit into separate active repositories:** rejected because changes often need to be reviewed together.

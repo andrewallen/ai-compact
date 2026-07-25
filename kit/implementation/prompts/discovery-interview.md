@@ -21,5 +21,3 @@ The distinction between "what I want" and "what I think I should want" is the me
 Works best before any brief or scope document exists. Once structure is in place, the frame narrows and the interview becomes less generative.
 
 Pairs well with a follow-up once the interview is done: "Now tell me what I didn't say but you think is true."
-
-Version: 2026.07.06 @ 2311

@@ -74,5 +74,3 @@ Run F1–F3 with each standalone contract below in place of the constitution fil
 - the minimal contract in each agent-surface README: Claude Code, Codex, Copilot CLI and Hermes
 
 The same pass/fail criteria apply. This checks that derived contracts carry the deliberate-action boundary when the full constitution is absent, without overstating their authority over ambient product state.
-
-Version: 2026.07.13 @ 1.1

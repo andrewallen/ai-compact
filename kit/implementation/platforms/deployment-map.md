@@ -6,7 +6,7 @@ How AI Compact deploys to each product and surface. Update this when products ch
 
 ## Architecture Overview
 
-The kit is a versioned source of truth for identity, calibration, operating behaviour and output craft. It now maps across a broader AI estate than the original Claude-only design: Claude Chat, Claude Cowork, Claude Code, ChatGPT, Gemini, Codex, Copilot CLI and Hermes.
+The kit is a versioned source of truth for identity, calibration, operating behaviour and output craft across Claude Chat, Claude Cowork, Claude Code, ChatGPT, Gemini, Codex, Copilot CLI and Hermes.
 
 ## Kit Components
 
@@ -53,7 +53,7 @@ Current recommendation: do not create new project or global `CLAUDE.md` files as
 
 The root `CLAUDE.md` and `AGENTS.md` in this repo are working instructions for maintaining the kit itself. They are not the current deployment pattern for other projects.
 
-Previous project-level `CLAUDE.md` templates are not part of the public baseline. Revisit that deployment model only if current product behaviour creates a demonstrated need.
+Project-level `CLAUDE.md` templates are not part of this deployment model.
 
 ## ChatGPT
 
@@ -95,7 +95,7 @@ Configuration reference:
 
 - Run from a checkout that can read this repo, or provide explicit file paths.
 - Use the minimal derived contract in the platform README, or have the agent read the constitution files when deeper operating context is needed.
-- Do not create an `AGENTS.md` deployment file as part of this repo update.
+- Do not create an `AGENTS.md` deployment file for this configuration.
 
 ## Hermes
 
@@ -129,7 +129,7 @@ Configuration reference:
 - **Standard skill format only.** Skills remain SKILL.md folders. The repo does not create alternate formats.
 - **Deliberate persistent changes require approval.** This includes project instructions, saved instructions, global agent files, knowledge-store entries, explicit user-visible memory entries, SOUL.md-class files and equivalent standing context.
 - **Ambient product memory is settings-governed.** Platform adapters document whether it is enabled, how it is reviewed and how to start an isolated conversation. Standing prompts do not claim control over automatic retention or inference.
-- **CLAUDE.md/AGENTS.md deployment is paused.** These files may exist for this repo or historical reference, but new documentation should not recommend them as the current configuration pattern.
+- **Root maintenance files are not deployment files.** `CLAUDE.md` and `AGENTS.md` govern this repository only; platform guidance does not treat them as the general configuration pattern.
 - **Security settings are tool-side.** Credentials, trusted roots, redaction and dependency health belong in the products that hold them and must never be copied into this repository.
 
 Version: 2026.07.25 @ 3.0

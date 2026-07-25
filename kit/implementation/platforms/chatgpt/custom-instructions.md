@@ -2,7 +2,7 @@
 
 Paste the block below into ChatGPT under Settings > Personalization > Custom Instructions.
 
-Verified on 2026-07-19: the custom instructions field on the web now accepts 5,000 characters in total (previously 1,500). The paste-ready block below measures 4,844 characters. Re-measure after any edit before deploying, and re-verify the limit if the UI changes.
+Verified on 2026-07-19: the custom instructions field on the web accepts 5,000 characters in total. The paste-ready block below measures 4,844 characters. Re-measure after any edit before deploying, and re-verify the limit if the UI changes.
 
 ## Paste-ready instruction
 

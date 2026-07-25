@@ -23,5 +23,3 @@
 The power is in the counter-evidence requirement. Without it, the model will build a case rather than test a hypothesis. The interaction question at the end is where non-obvious insights surface — it forces the model to look across dimensions rather than treating them as independent.
 
 Pairs well with the expansion function — the model should bring dimensions you have not named if they are material.
-
-Version: 2026.04.02 @ 1800

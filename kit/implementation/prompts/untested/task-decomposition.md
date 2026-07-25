@@ -17,5 +17,3 @@
 This is the most meta prompt in the collection. It asks the model to design the prompt architecture before using it. Useful when you do not know the shape of the task well enough to decompose it yourself.
 
 May be redundant with exploratory mode in some cases — but exploratory mode is open-ended, while this prompt produces a concrete execution plan. Test both and see which produces better results for your task type.
-
-Version: 2026.04.02 @ 1800

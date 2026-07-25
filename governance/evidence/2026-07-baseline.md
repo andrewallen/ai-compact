@@ -1,14 +1,14 @@
-← [Home](../../README.md) · [Governance](../README.md) · **July 2026 baseline**
+← [Home](../../README.md) · [Governance](../README.md) · **July 2026 evaluation baseline**
 
-# July 2026 Public Baseline
+# July 2026 Evaluation Baseline
 
-The evidence boundary for AI Compact's initial public state. It records the conclusions needed to evaluate the repository without publishing private source conversations, superseded personal files, raw transcripts or account-level security audits.
+The dated evidence supporting the current behavioural guidance in AI Compact. It records what was evaluated, the outcomes adopted into the maintained files and the limits of the resulting claims.
 
 ## Status
 
-**Stable repository baseline.** The five-layer architecture, three-domain repository structure, operating-contract amendments, platform cascade and active eval harness were completed before publication. There is no active migration.
+**Current reference.** The five-layer architecture, three-domain repository structure, operating contract, platform adapters and active eval harness form one coherent system.
 
-The knowledge-steward charter is adopted. A live autonomous steward deployment is a future use case to begin only when a real workflow justifies it; it is not unfinished repository work.
+The knowledge-steward charter is an available role definition. Its presence does not assert that an autonomous steward is currently deployed.
 
 ## What was evaluated
 
@@ -48,10 +48,8 @@ The harness is diagnostic, not a certification:
 - ambient memory remains product-managed state outside the prompt layer's control;
 - multi-turn fixtures simulated conversations inside fresh non-interactive runs.
 
-These are retained as evidence boundaries and active regression targets. They are not a standing migration backlog; changes begin when observed behaviour or new evidence justifies them.
+These are claim boundaries and regression targets. They trigger changes only when observed behaviour or new evidence justifies a specific amendment.
 
-## Publication boundary
+## Evidence scope
 
-This public repository starts from the resulting stable snapshot. Its current architecture, ADRs, design-decision register and active fixtures are the maintained evidence. Private development history is neither published nor required to interpret the adopted system.
-
-Version: 2026.07.25 @ 1.0
+The results above support the current operating contract and adapters; they do not certify every model, product version or future agent configuration. The active fixtures in `kit/evals/` are the reproducible source for subsequent comparisons.

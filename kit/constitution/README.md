@@ -46,5 +46,3 @@ The numbered prefixes improve load-order odds but do not guarantee it. The self-
 ## Relationship to the kit
 
 The constitution is the runtime foundation. Everything else either derives from it, supplements it, or governs its evolution. The implementation layer defines how the contract deploys and executes without becoming a second source of truth.
-
-Version: 2026.07.13 @ 1.4

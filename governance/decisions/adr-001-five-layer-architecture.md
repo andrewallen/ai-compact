@@ -6,28 +6,28 @@
 
 ## Context
 
-The kit grew from a set of constitution files into an estate-wide system: constitution-grade constitution files, a skill, prompts, platform deployments, evals and governance records. Its organising model remained "constitution files plus derived artefacts," which left the purpose layer undeclared and gave new components (the knowledge steward) no natural home. The July 2026 review (ChatGPT conversation `644717ec` reconciled against the repo) surfaced a layered model that matches how the system already behaves.
+AI Compact contains enduring principles, binding operating rules, conditional roles, product-specific components and changing knowledge. Without an explicit hierarchy, those materials can be mistaken for peers even though they carry different authority and change at different rates.
 
 ## Decision
 
-Adopt five layers, ordered by authority and by inverse rate of change:
+Organise a personal AI system as five layers, ordered by authority and inverse rate of change:
 
-1. **Philosophy** — why intelligence is in the system; changes rarely.
-2. **Constitution** — enduring behavioural principles (the constitution files); changes occasionally.
+1. **Philosophy** — why AI is in the system; changes rarely.
+2. **Constitution** — enduring behavioural principles; changes occasionally.
 3. **Role charters** — mission and decision policy per role; change with the roles.
-4. **Implementation** — platforms, skills, prompts; changes constantly.
-5. **Memory** — Vault, platform memory, conversation history; changes daily and lives outside the repo.
+4. **Implementation** — platform adapters, skills and prompts; changes frequently.
+5. **Memory** — knowledge stores, product memory and conversation history; changes continuously and remains outside the repository.
 
-Evals and governance records are cross-cutting. `framework/` sits alongside as the generic pattern the layers instantiate (ADR-003). Adoption is logical first: layers are declared in documentation and new folders are added; existing folders are not renamed or moved until Phase 5, if at all (ADR-009).
+Evals and governance are cross-cutting rather than additional runtime layers. The generic model lives in `framework/`; the personal instance lives in `kit/`.
 
 ## Consequences
 
-- New artefacts: `kit/philosophy/`, `kit/roles/`, `framework/`, this decisions folder.
-- The existing authority hierarchy (calibration / binding rules / overlay) becomes the constitution's internal structure, unchanged.
-- The rate-of-change ordering generalises an instinct the kit already had (the disposable tuning block versus the stable constitution files) into a system-wide principle.
-- Runtime load for ordinary conversations is unchanged; charters load only when their role is active.
+- Authority flows downward; a lower layer may adapt but never override a higher one.
+- Runtime loading is selective: constitution files provide the core, role charters load only when active, and implementation components load or execute when needed.
+- Philosophy governs maintenance but is not ordinary runtime context.
+- Memory can change products or stores without changing the portable system.
 
 ## Alternatives considered
 
-- **Stay with the two-part model** (context + derived): rejected — it has no home for roles or philosophy, and the steward was about to be bolted on ad hoc.
-- **Adopt the conversation's four layers** (principles, working memory, durable knowledge, reflection): rejected — it is a memory-system model, not a governance model; reflection enters here as steward cadence, not as a layer.
+- **Constitution plus derived artefacts:** rejected because it gives philosophy and role-specific judgement no explicit place.
+- **Treat memory and reflection as the architecture:** rejected because that models knowledge management rather than authority across the AI system.

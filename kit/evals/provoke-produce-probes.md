@@ -100,5 +100,3 @@ The variations boundary also lives in the condensed platform prompts. Run C4 and
 - `kit/implementation/platforms/gemini/saved-instructions.md` (the paste-ready instruction)
 
 Same pass/fail criteria. This checks the standalone surfaces carry the behaviour, not just the wording.
-
-Version: 2026.07.13 @ 1.3

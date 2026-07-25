@@ -57,9 +57,7 @@ The kit governs deliberate actions at this boundary through the constitution and
 - High-authority changes receive a cold critique and behavioural evaluation.
 - Constitution changes trigger a derived-platform cascade check.
 - Structural changes receive an ADR.
-- A completed change cycle may produce a concise public record in [evidence](evidence/2026-07-baseline.md).
-- Raw working material and superseded personal content remain outside the public baseline.
+- A material evaluation may produce a concise dated record in [evidence](evidence/2026-07-baseline.md).
+- Raw working material remains outside maintained governance.
 
-The [architecture decisions](decisions/README.md) explain binding structural choices. The [July 2026 baseline](evidence/2026-07-baseline.md) records the evidence boundary for the initial public state.
-
-Version: 2026.07.25 @ 2.0
+The [architecture decisions](decisions/README.md) explain binding structural choices. The [July 2026 evaluation baseline](evidence/2026-07-baseline.md) records the current dated evidence and its limits.

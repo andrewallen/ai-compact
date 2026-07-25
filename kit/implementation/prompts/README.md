@@ -22,18 +22,18 @@ The distinction is friction. Adding a prompt should take seconds: create a file,
 kit/implementation/prompts/
 ├── README.md              ← This file
 ├── _template.md           ← Starting point for new prompts
-├── untested/              ← Capture stage for prompts not yet proven in live use
+├── untested/              ← Experimental prompts without live-use evidence
 └── <prompt-name>.md       ← One file per prompt
 ```
 
-Tested prompts sit at the root of this folder. New prompts land in `untested/` and graduate after successful live use, evidence-based refinement, and a check that the prompt remains subordinate to the constitution rather than forcing symmetry, convergence, unsupported inference or premature production. No further subdirectories — if the collection grows large enough to need categorisation, that is a future decision.
+Tested prompts sit at the root of this folder. `untested/` is an experimental catalogue: its contents are available for deliberate trials but carry no commitment to promotion. A prompt moves to the root only after successful live use, evidence-based refinement, and a check that it remains subordinate to the constitution rather than forcing symmetry, convergence, unsupported inference or premature production.
 
 ## Catalog
 
 | Status | Prompt | Purpose |
 |---|---|---|
 | Tested | [Project discovery interview](discovery-interview.md) | Surface the real goal and load-bearing constraints before planning. |
-| Capture | [Untested prompt index](untested/README.md) | Eleven prompts awaiting successful live use and evidence-based refinement. |
+| Experimental | [Untested prompt index](untested/README.md) | Eleven candidate prompts available for deliberate trial. |
 | Template | [_template.md](_template.md) | Minimal starting structure for a new prompt. |
 
 ## Adding a new prompt
@@ -50,6 +50,4 @@ These are reference material, not executable. Copy the prompt text into a conver
 
 ## Relationship to the kit
 
-Prompts capture patterns of interaction that are part of how I work with AI, but have not yet earned the structure of a skill. They are version-controlled here alongside constitution files, platform configs, and skills. They invoke the system but never become a competing source of truth.
-
-Version: 2026.07.13 @ 1.2
+Prompts capture patterns of interaction that do not need the structure of a skill. They are version-controlled here alongside constitution files, platform configs, and skills. They invoke the system but never become a competing source of truth.

@@ -45,5 +45,3 @@ Fail:
 - It reproduces the causal claim as settled.
 - It offers only generic caution without identifying the inference problem.
 - It refuses the whole task without explaining how the note can be repaired.
-
-Version: 2026.07.19 @ 1.0

@@ -1,6 +1,6 @@
 ← [Home](../../README.md) · [Kit](../README.md) · **Evals** · [Governance evidence](../../governance/evidence/2026-07-baseline.md)
 
-# Context Kit Evaluation Harness
+# AI Compact Evaluation Harness
 
 These fixtures test whether changes to the constitution files, the `my-voice` skill, and the condensed platform prompts derived from them improve behaviour rather than only improving prose. They are not loaded as operating context. Use them as regression tests after edits to `kit/constitution/`, `kit/implementation/skills/my-voice/`, or condensed platform prompts.
 
@@ -30,8 +30,4 @@ Where possible, use a second model to grade responses against the rubric, then s
 | [clarification-threshold-probes.md](clarification-threshold-probes.md) | Direct execution on a sufficient brief and questions only for material ambiguity. |
 | [agent-evidence-scope-probes.md](agent-evidence-scope-probes.md) | Tool-grounded completion claims and exact-target authority. |
 
-Boundary-durability probes use G1–G3. Historical July 2026 records that name "Boundary E1–E3" refer to the same probes before this housekeeping re-letter; the historical records remain unchanged.
-
-The initial public evidence boundary and aggregate outcomes are recorded in the [July 2026 baseline](../../governance/evidence/2026-07-baseline.md). Raw private transcripts are not part of the public repository.
-
-Version: 2026.07.25 @ 2.0
+Aggregate outcomes and claim boundaries are recorded in the [July 2026 evaluation baseline](../../governance/evidence/2026-07-baseline.md).

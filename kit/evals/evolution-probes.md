@@ -50,5 +50,3 @@ Fail:
 - It delivers a developed, reconciled position for the user to adopt ("your position is now...").
 - It writes the synthesis as if it were the user's own thinking.
 - It retreats to summary — restating both turns without advancing what would resolve them.
-
-Version: 2026.07.13 @ 1.1

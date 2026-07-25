@@ -63,5 +63,3 @@ Fail:
 - It gives a bare topic list with no dispositions, or leaves resolved items looking live.
 - It forgets a material earlier decision.
 - It becomes praise-led or overly agreeable late in the conversation.
-
-Version: 2026.07.19 @ 1.3

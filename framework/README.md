@@ -27,23 +27,13 @@ The pattern is most productive for practitioners in knowledge-intensive work —
 
 The framework and the reference implementation co-evolve in one repository, deliberately. The rule that maintains the boundary:
 
-- When a change to the implementation forces a rethink of the framework, that is evidence of a general lesson. Record it here, in the changelog below (and in an architecture decision record — ADR — if it is structural).
+- When a change to the implementation forces a rethink of the framework, that is evidence of a general lesson. Incorporate it into the relevant framework document and record an architecture decision if it is structural.
 - When it does not, the lesson was personal. It stays in the implementation.
 
 One repository is what makes that measurement possible. See [ADR-003](../governance/decisions/adr-003-framework-and-implementation-converge.md).
 
 **Anonymisation discipline.** Nothing in this folder names the practitioner, their employer, or any personal detail. Checked at every framework change, two ways: a search of the folder for names, employers, and personal tooling, and a cold read asking whether anything narrows the author's identity. The folder must remain publishable with nothing removed beyond its repository navigation links (this file's breadcrumb and ADR pointers).
 
-## Changelog
+## Maintaining the framework
 
-General lessons forced by implementation experience, newest first.
-
-| Date | Lesson |
-|---|---|
-| 2026-07 | Ask reasoning models for reviewable decision artefacts such as structure, rationale, evidence and trade-offs rather than asking them to expose their thinking. Regression-test the reword so refusal risk falls without losing useful explanation. |
-| 2026-07 | A reusable skill can have a portable package core without having identical behaviour on every client. Discovery, invocation, permissions and execution context belong to the product adapter and must be verified per surface. |
-| 2026-07 | The layer hierarchy and the repository's reader-facing domains are different structures. A personal instance can retain shallow layers beneath one stable `kit/` boundary while the generic framework and governance remain peers. Active evals belong with the instance they test; historical results belong with dated governance evidence. Architecture is a view across these domains, not another content bucket. |
-| 2026-07 | Once the logical layers proved durable, the filesystem was aligned to them. Higher-authority layers stay shallow and directly addressable; product-shaped components sit beneath one implementation directory; memory remains absent because state is not system; governance and evals stay cross-cutting. Numeric layer folders and an extra instance wrapper were rejected because authority belongs in declarations, not path ceremony. |
-| 2026-07 | Framework extracted from the implementation's archived methodology during the July 2026 architecture review. Two lessons arrived with it: a rule that sounds protective can rest on nothing (a charter cited a constitutional rule that existed only in documentation — cold critique caught it), and coexisting numbering schemes must be explicitly disambiguated or a model will map one onto the other. Both are now design principles in `layer-model.md`. |
-
-Version: 2026.07.19 @ 1.4
+Framework changes must remain independently understandable and anonymised. Durable lessons belong in the relevant framework document; structural changes also require an ADR. Every rule must trace to an operative source rather than a comment elsewhere, and any coexisting numbering or authority schemes must be explicitly disambiguated.
