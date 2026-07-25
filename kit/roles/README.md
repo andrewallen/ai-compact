@@ -26,5 +26,3 @@ The **thinking partner** is the default role, active in every conversation. Its 
 ## Writing a new charter
 
 One page. Mission, decision policy, boundaries and cadence are the required sections; add whatever role-specific policy sections the role needs (the steward adds knowledge maturity and independence rules). Do not restate constitutional content — declare subordination to it and add only what is role-specific. A charter that needs supporting files or workflow steps is drifting toward being a skill; keep the judgement here and the mechanics in [skills](../implementation/skills/README.md).
-
-Version: 2026.07.13 @ 1.2

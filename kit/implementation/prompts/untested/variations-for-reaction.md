@@ -15,5 +15,3 @@ The variations must differ in frame, not polish. Three versions of the same idea
 This is elicitation, not production. The reaction is the work: what I reject and why tells me what I actually want. Developing the one that lands is a separate, explicit request.
 
 The operating contract (`kit/constitution/02-operating-contract.md`) treats disposable variations offered for reaction as contribution, not output — the model should not withhold them in exploratory mode.
-
-Version: 2026.07.13 @ 0953

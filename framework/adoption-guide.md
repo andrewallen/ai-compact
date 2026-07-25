@@ -75,5 +75,3 @@ Qualitative questions, honestly answered, beat metrics here.
 - **Explicitness.** Can you state your own core positions more precisely after six months of use than before?
 - **Cross-model consistency.** Loaded into a different model, do the binding rules still hold? Variation in depth and style is expected; variation in whether the rules are followed at all means the authority hierarchy is not explicit enough.
 - **Maintenance load.** Still a small fraction of thinking time? If maintenance grows faster than insight, cut structure.
-
-Version: 2026.07.19 @ 1.3

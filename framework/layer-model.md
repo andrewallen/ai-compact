@@ -23,7 +23,7 @@ A personal AI operating system organised as five layers, ordered by two properti
 │                       store, platform memory, history      │
 └────────────────────────────────────────────────────────────┘
      cross-cutting: evals (behavioural regression probes)
-     and governance (ADRs, design decisions, reviews)
+     and governance (ADRs, design decisions, evidence)
 ```
 
 For a software practitioner, the mapping that motivated the model (the implementation layer appears as its three components, and the cross-cutting concerns get rows of their own):
@@ -79,5 +79,3 @@ These are not aspirations; each earned its place by failing when absent or catch
 **Disambiguate coexisting numbering schemes.** If the architecture numbers its layers and a file inside one layer numbers its own internal hierarchy, name them as distinct schemes wherever both could load. A model given "level 3" twice will eventually apply one scheme's rules to the other's content.
 
 **Lifecycles run capture-and-graduate.** Prompts graduate into skills when they need structure; observations graduate into principles through repeated application, not at the moment of capture. Nothing enters the system at its final maturity.
-
-Version: 2026.07.13 @ 1.3

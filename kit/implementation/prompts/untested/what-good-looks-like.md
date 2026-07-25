@@ -13,5 +13,3 @@
 The quality bar in the operating contract assumes I can recognise good. In unfamiliar domains that assumption fails silently: the failure mode is accepting competent-looking work I had no basis to assess. This prompt closes that gap by acquiring the standard first.
 
 Order matters. Standard first, then judgement — running this after seeing the work anchors the standard to what was produced.
-
-Version: 2026.07.06 @ 2311

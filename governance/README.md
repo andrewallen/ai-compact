@@ -12,7 +12,7 @@ The current architecture, adopted decisions and evidence that explain and evolve
 | Binding structural decisions | [decisions/](decisions/README.md) |
 | File-level design reasoning | [design-decisions.md](design-decisions.md) |
 | Current visual projections | [diagrams/](diagrams/README.md) |
-| Initial public evidence boundary | [evidence/2026-07-baseline.md](evidence/2026-07-baseline.md) |
+| Current dated evaluation evidence | [evidence/2026-07-baseline.md](evidence/2026-07-baseline.md) |
 
 The live product deployment source sits with the artefacts it maps at [kit/implementation/platforms/deployment-map.md](../kit/implementation/platforms/deployment-map.md).
 
@@ -24,12 +24,10 @@ The live product deployment source sits with the artefacts it maps at [kit/imple
 | [design-decisions.md](design-decisions.md) | Narrative reasoning behind file-level and behavioural design choices. |
 | [decisions/](decisions/README.md) | Numbered ADRs for structural, layer-level, boundary and naming decisions. |
 | [diagrams/](diagrams/README.md) | Generated views of the active architecture and deployment model. |
-| [evidence/](evidence/2026-07-baseline.md) | Concise evidence records supporting stable public baselines. |
+| [evidence/](evidence/2026-07-baseline.md) | Concise, dated records of material evaluations and their claim boundaries. |
 
-## Evidence boundary
+## Evidence policy
 
-Current paths and responsibilities are defined by the root README, [current architecture](current-architecture.md), the ADRs and the live deployment map. The repository begins from a clean public baseline and does not depend on private development history to explain the adopted system.
+Current paths and responsibilities are defined by the root README, [current architecture](current-architecture.md), the ADRs and the live deployment map. Those maintained sources must be sufficient to understand the system.
 
-Raw source conversations, superseded personal files, migration working documents, account audits and raw eval transcripts are deliberately absent. Evidence records state what was tested, what was adopted and where claims remain limited.
-
-Version: 2026.07.25 @ 2.0
+Evidence records state what was tested, what the results support and where claims remain limited. Raw conversations, account audits and raw eval transcripts are working material rather than maintained governance.

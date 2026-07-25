@@ -1,8 +1,8 @@
 ← [Home](../../../../README.md) · [Kit](../../../README.md) · [Implementation](../../README.md) · [Prompts](../README.md) · **Untested**
 
-# Untested Prompts
+# Experimental Prompts
 
-The capture stage for prompts that have not yet completed a successful live use. “Untested” is a lifecycle status, not a quality judgement. A prompt graduates to the parent folder after it works in practice and its wording has been adjusted from evidence rather than expectation.
+Candidate prompts available for deliberate trials. The folder name records their evidence status, not a backlog: inclusion creates no commitment to test or promote a prompt. A prompt moves to the parent folder only after it works in practice and its wording has been adjusted from evidence rather than expectation.
 
 | Prompt | Intended use |
 |---|---|
@@ -18,6 +18,4 @@ The capture stage for prompts that have not yet completed a successful live use.
 | [Variations for reaction](variations-for-reaction.md) | Use disposable alternatives to elicit a direction. |
 | [What good looks like](what-good-looks-like.md) | Learn an unfamiliar domain's evaluative standard before judging work. |
 
-The lifecycle and graduation rules are defined in the [prompts index](../README.md).
-
-Version: 2026.07.13 @ 1.0
+The lifecycle and promotion rules are defined in the [prompts index](../README.md).

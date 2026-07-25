@@ -86,5 +86,3 @@ What to carry forward:
 - **A credible personal vantage** carrying a universal point; honest, never boastful.
 - **Lands on something quietly earned** — reflective, not a portentous significance tail.
 - Educated but accessible; brings people on the journey **without assuming where they are**.
-
-Version: 2026.07.25 @ 2.0

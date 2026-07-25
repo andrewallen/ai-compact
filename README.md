@@ -8,7 +8,7 @@ The repository contains both a reusable framework and my real personal implement
 
 ## Status
 
-**Stable baseline.** The architecture and initial model-guidance migration were completed in July 2026. There is no active repository migration. Future changes are driven by observed behaviour, new products and deliberately adopted capabilities.
+**Active and stable.** The architecture is established and the repository is ready to use. Changes are evidence-led: observed behaviour, product changes and deliberately adopted capabilities.
 
 ## How it works
 
@@ -23,7 +23,7 @@ In an exploratory conversation, the operating contract asks the model to widen t
 | Deploy the kit to an AI product | [Platform deployment map](kit/implementation/platforms/deployment-map.md) |
 | See how the whole system fits together | [Current architecture](governance/current-architecture.md) |
 | Understand why the structure exists | [Architecture decisions](governance/decisions/README.md) |
-| See what established the public baseline | [Baseline evidence](governance/evidence/2026-07-baseline.md) |
+| Review the current evaluation evidence | [Evaluation baseline](governance/evidence/2026-07-baseline.md) |
 | Test a behavioural change | [Evaluation harness](kit/evals/README.md) |
 | Maintain this repository | [AGENTS.md](AGENTS.md) and its [CLAUDE.md bridge](CLAUDE.md) |
 | Contribute or report a problem | [Contributing](CONTRIBUTING.md) and [security reporting](SECURITY.md) |
@@ -34,7 +34,7 @@ In an exploratory conversation, the operating contract asks the model to widen t
 |---|---|---|
 | [Framework](framework/README.md) | The generic, reusable specification: layer model, principles and adoption guide. | No. It must remain anonymised and independently publishable. |
 | [Kit](kit/README.md) | The personal instance: philosophy, constitution, roles, implementation components and active evals. | Yes. This is the deployable working system. |
-| [Governance](governance/README.md) | Current architecture, adopted decisions, diagrams and baseline evidence. | Where required to explain this implementation and its evolution. |
+| [Governance](governance/README.md) | Current architecture, adopted decisions, diagrams and evaluation evidence. | Where required to explain this implementation and its evolution. |
 
 Repository-maintenance files remain at the root because they govern work across all three domains. Memory remains outside the repository because it is state, not system.
 
@@ -106,7 +106,8 @@ For full depth, load the core constitution files from [`kit/constitution/`](kit/
 - **Gate high-authority changes.** Use the eval harness and a cold critique pass for changes above the implementation layer.
 - **Keep personal material out of the framework.** Every framework change receives an anonymisation check.
 - **Preserve the memory boundary.** The repository governs deliberate actions at persistent stores but does not contain the knowledge store or control ambient product memory.
-- **Keep the public baseline self-contained.** Current files must explain the adopted system without depending on private development history.
+- **Keep the repository self-contained.** Current files must explain the system without depending on external working history.
+- **Version only independently deployed files.** Embedded version markers belong in constitution and platform implementation files, where readers may encounter a detached copy. Git provides the history for every other file.
 - **Keep navigation rename-safe.** Use relative links and `Home` as the root breadcrumb label. Do not embed the repository slug or an absolute checkout path.
 - **Require explicit approval for deliberate persistent changes.** Tools and agents never change user-visible instruction surfaces, files, store entries or explicit memory entries autonomously. Product-managed ambient memory is configured and audited through product settings.
 
@@ -115,5 +116,3 @@ For full depth, load the core constitution files from [`kit/constitution/`](kit/
 Original content in this repository is licensed under the [Creative Commons Attribution 4.0 International Licence](LICENSE). You may share and adapt it, including commercially, provided you give appropriate credit and indicate changes.
 
 Except for attribution required by the licence, no permission is granted to use Andrew Allen's name, identity or personal information, or to imply endorsement. Third-party material, where identified, remains subject to its own terms.
-
-Version: 2026.07.25 @ 3.1

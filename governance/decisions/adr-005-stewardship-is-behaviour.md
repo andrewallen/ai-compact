@@ -1,28 +1,27 @@
 ← [Home](../../README.md) · [Governance](../README.md) · [Decisions](README.md) · **ADR-005**
 
-# ADR-005 — Knowledge stewardship enters the kit as behaviour; structure stays with the Vault
+# ADR-005 — Keep stewardship behaviour in the kit and store structure outside it
 
 **Status:** Accepted (2026-07-08)
 
 ## Context
 
-Two recorded decisions already govern this territory: the Obsidian Vault is not referenced in the portable files (most surfaces cannot reach it), and cognitive-architecture structure was removed because vault structure is Vault territory, not kit territory. The knowledge-steward operating policy could, read carelessly, reverse those decisions by bringing the knowledge system back into the kit.
-
-The reconciliation: what was removed was **structure** (folders, schema, lifecycle stages tied to one tool chain). What the charter supplies is **behaviour** (a decision policy any agent applies to anything Andrew brings, against any store). Behaviour is portable; structure is not.
+A knowledge steward needs a portable decision policy: what is worth retaining, how maturity and contradictions are handled, and what it may change. Folder structures, schemas and lifecycle mechanics belong to whichever knowledge store is in use. Combining the two would bind the kit to one tool.
 
 ## Decision
 
-The knowledge steward enters the kit as a role charter, `kit/roles/knowledge-steward.md`: mission, decision policy (worth remembering; new/strengthens/contradicts; throwaway or candidate principle; where else it applies), knowledge maturity (observation → principle through repeated application), independence rules (never normalise, competing hypotheses, provenance), reflection cadence, and boundaries (proposes, never disposes; no autonomous writes to persistent stores).
+Define knowledge-steward behaviour in `kit/roles/knowledge-steward.md`: mission, decision policy, provenance, independence, reflection cadence and persistent-write boundaries.
 
-The charter names no vault paths, no schema, no folder structure. Vault-side structure remains outside the kit. Tool wiring (how Hermes loads the charter and reaches the vault) lives in `kit/implementation/platforms/hermes/README.md`, per the existing platform pattern.
+Do not encode vault paths, schemas or folder structures in the charter. Product wiring belongs in the appropriate platform adapter.
 
 ## Consequences
 
-- Both prior decisions stand unmodified; this ADR extends them rather than reversing them.
-- The charter must survive a store migration (Obsidian to anything else) without edits — that is the test of whether structure has leaked in.
-- A live steward deployment and role-specific probes begin together only when a real workflow justifies activating the role. They are not unfinished repository work.
+- The charter remains usable with different knowledge stores.
+- Store-specific configuration stays outside the portable kit.
+- The charter proposes and challenges but never writes to persistent stores without explicit approval.
+- The charter is an available role definition; it does not imply a live autonomous deployment.
 
 ## Alternatives considered
 
-- **Reinstate the cognitive architecture in the kit:** rejected — re-couples the portable layer to one tool chain and re-creates the instructions-the-model-cannot-act-on problem.
-- **Keep stewardship entirely in Hermes configuration:** rejected — the decision policy is model- and tool-agnostic judgement, exactly what the kit exists to version; leaving it tool-side forfeits portability and review.
+- **Put the knowledge-store schema in the kit:** rejected because it couples portable behaviour to one implementation.
+- **Keep the entire role in a platform configuration:** rejected because its judgement policy is model- and tool-agnostic.

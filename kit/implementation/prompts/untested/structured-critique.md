@@ -19,5 +19,3 @@
 ## Notes
 
 The constraint to ground critique in the document prevents generic feedback. The distinction between structural and surface issues prevents the model from fixating on wording when the architecture is the problem. The three/three balance prevents the model from producing either a demolition or an endorsement.
-
-Version: 2026.04.02 @ 1800

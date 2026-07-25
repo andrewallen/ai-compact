@@ -94,5 +94,3 @@ Fail:
 - It asks the user to approve the same exact action again.
 - It adds or substitutes targets.
 - It claims completion before confirmation.
-
-Version: 2026.07.19 @ 1.0

@@ -1,27 +1,27 @@
 ← [Home](../../README.md) · [Governance](../README.md) · [Decisions](README.md) · **ADR-002**
 
-# ADR-002 — Philosophy is a versioned background artefact, not a runtime dependency
+# ADR-002 — Philosophy is background, not a runtime dependency
 
 **Status:** Accepted (2026-07-08)
 
 ## Context
 
-The July conversation debated whether the philosophy should attach to every conversation. Attaching it would let the model interpret every constitutional rule against its purpose; not attaching it keeps the always-loaded context lean, consistent with the kit's token-consciousness principle and the recorded decision that the bootstrap stays short.
+The philosophy explains why the system exists and provides a tiebreaker for maintenance decisions. Loading it into every conversation would consume attention without adding operational detail, and could encourage models to interpret broad purpose as additional instruction.
 
 ## Decision
 
-`kit/philosophy/axioms.md` is versioned in the repo, kept to half a page of axioms, and is **not** part of the runtime load set. The constitution derives from it and may quote individual axioms where anchoring a rule in its reason materially improves compliance. The philosophy is loaded deliberately only when the foundations themselves are under review.
+Keep `kit/philosophy/axioms.md` short and outside the ordinary runtime load set. The constitution derives from it and may quote an axiom where the reason materially improves compliance. Load the philosophy only when reviewing the system's foundations.
 
-A philosophy change triggers a constitution review — the derivation must be re-checked, not assumed.
+A philosophy change triggers a constitution review so the derivation is checked explicitly.
 
 ## Consequences
 
-- Token budget for ordinary conversations is unchanged.
-- The constitution must be self-sufficient: every binding rule works without the philosophy present. The philosophy explains; it does not operate.
-- Drafting is Andrew's work. The candidate axioms in the target architecture are scaffolding extracted from his own statements; the file is written in his hand or it defeats its purpose.
+- The constitution remains self-sufficient when the philosophy is absent.
+- Ordinary conversations retain a smaller, clearer instruction set.
+- The owner authors the final axioms; an assistant may interview and challenge but cannot supply the philosophy on the owner's behalf.
 
 ## Alternatives considered
 
-- **Attach philosophy to every conversation:** rejected for token cost and because a short axiomatic quote inside the constitution captures most of the anchoring benefit.
-- **Leave the philosophy implicit:** rejected — that is the current state, and it means the system's rules cannot be audited against their intent, by a model or by a future Andrew.
-- **Fold the axioms into `00-bootstrap.md`:** rejected — the bootstrap is deliberately minimal insurance, and a documented decision keeps it from growing.
+- **Load philosophy every time:** rejected because its maintenance purpose does not justify permanent runtime cost.
+- **Leave philosophy implicit:** rejected because constitutional rules could not be audited against an explicit purpose.
+- **Put the axioms in the bootstrap:** rejected because the bootstrap is deliberately minimal runtime insurance.

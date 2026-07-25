@@ -23,5 +23,3 @@
 Choose perspectives that represent genuinely different analytical frames, not just different conclusions from the same frame. The value is in seeing the issue through lenses that would not naturally co-occur in one mind.
 
 The "what this perspective overlooks" requirement prevents the model from building three versions of the same argument.
-
-Version: 2026.04.02 @ 1800

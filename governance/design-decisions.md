@@ -2,7 +2,7 @@
 
 # Design Decisions
 
-Why AI Compact is shaped the way it is. Each decision here solved a specific problem. Understanding the reasoning prevents future changes from reintroducing problems that have already been resolved.
+Why AI Compact is shaped the way it is. Each decision addresses a specific problem. Understanding the reasoning prevents changes from recreating the same failure.
 
 ## Constitution files are model-agnostic
 
@@ -24,7 +24,7 @@ Kept deliberately short. It should not grow. A new cross-cutting instruction ear
 
 ## Preferences and the operating contract cover the same ground
 
-The preferences file carries mode detection, expansion function, voice principles, and sensitivity flagging. `kit/constitution/02-operating-contract.md` carries the same functions at full depth. When both are loaded, the model processes the same instructions twice. (The fuller voice craft — register mechanics, tone registers, output formats, examples — and the model-specific tuning now live in the `my-voice` skill, not in either file; see "Voice craft lives in a skill" below.)
+The preferences file carries mode detection, expansion function, voice principles, and sensitivity flagging. `kit/constitution/02-operating-contract.md` carries the same functions at full depth. When both are loaded, the model processes the same instructions twice. (The fuller voice craft — register mechanics, tone registers, output formats, examples — and the model-specific tuning live in the `my-voice` skill, not in either file; see "Voice craft lives in a skill" below.)
 
 This is deliberate. Preferences must be sufficient on their own for ad hoc conversations where no constitution files are loaded — the minimum viable operating contract. When constitution files are loaded, the operating contract provides the full depth. Both files explicitly declare the precedence relationship: preferences defer to the constitution when loaded, and the operating contract declares that it takes precedence over preferences. The redundancy is the cost of a system that works at two levels of depth. Approximately 600 words of overlap. Acceptable because the preferences are short and the deferral is unambiguous.
 
@@ -39,17 +39,13 @@ Binding rules must take precedence over calibration. If calibration implies one 
 
 ## Specific theses are not part of the kit
 
-An earlier thesis on technology adoption and identity threat was originally embedded in the file now named `kit/constitution/01-calibration.md`, then separated with a distinct classification. It has since been removed from the active kit and is not part of the public baseline.
+Specific intellectual positions are content, not identity. Loading a thesis with the constitution would prime analysis even when the position is irrelevant to the current work.
 
-The separation was the right first step but did not go far enough. Even as a separate file, the thesis was referenced in the bootstrap table, summarised in calibration, and visible to the model in every conversation where the kit was loaded. The specific position still primed the model's analysis whether or not the file was explicitly loaded.
-
-The deeper issue: specific intellectual positions are content, not identity. Nobody works around a single thesis. The valuable calibration is that the user builds strong, evidence-based positions and holds them as working hypotheses — that is a thinking style characteristic captured in `kit/constitution/01-calibration.md` under "How I Build Positions." Any individual thesis is ephemeral content that can be brought into a conversation when relevant, not part of the portable operating contract.
+The valuable calibration is that the user builds strong, evidence-based positions and holds them as working hypotheses — a thinking-style characteristic captured in `kit/constitution/01-calibration.md` under "How I Build Positions." Any individual thesis is brought into a conversation when relevant rather than carried in the portable operating contract.
 
 The kit captures the pattern of building positions, not the positions themselves.
 
 ## Obsidian Vault is not referenced in the portable files
-
-> **Updated on 2026-07-05.** The current reference is Andrew's Obsidian Vault, his personal knowledge management system. It remains outside the portable constitution files.
 
 Personal knowledge, active thinking and longer-lived notes live in Andrew's Obsidian Vault. None of the portable constitution files mention it.
 
@@ -77,7 +73,7 @@ Chat is conversational. Exploratory is the safe default because closing down thi
 
 The Cowork global instructions include explicit prohibitions on file deletion, overwriting, and unsanctioned external actions via connectors. Stronger than what the platform enforces by default.
 
-Community experience documented cases where Cowork interpreted "clean up" as authorisation to delete files, resulting in significant data loss. The global instructions now explicitly state that "clean up," "organise," and "tidy" never authorise deletion. The same principle extends to connectors — sending an email or scheduling a meeting is irreversible and requires explicit approval, regardless of what the platform permits by default.
+Community experience documents cases where an agent interprets "clean up" as authorisation to delete files. The global instructions explicitly state that "clean up," "organise," and "tidy" never authorise deletion. The same principle extends to connectors — sending an email or scheduling a meeting is irreversible and requires explicit approval, regardless of what the platform permits by default.
 
 ## Folder instructions require approval to modify
 
@@ -93,11 +89,9 @@ When a new product is added, it gets its own folder under `kit/implementation/pl
 
 ## Conductor is not a separate mode
 
-> **Superseded in part on 2026-07-05.** Conductor remains a Claude Code parallelism mechanism, but the kit no longer recommends creating new project-level CLAUDE.md files as the general configuration pattern.
-
 Conductor is a Mac app that runs multiple Claude Code CLI sessions in parallel, each in an isolated git worktree. It is documented in the platform mapping under Code, not as a fourth mode.
 
-Historically, each Conductor workspace was a standard Code session that read project `CLAUDE.md` files and loaded constitution files via imports. That remains historical context, not the current deployment recommendation. What changes in Conductor is that multiple sessions run concurrently on independent tasks instead of sequentially; the current kit pattern is still the minimal derived contract or direct constitution-file reference when deeper work requires it.
+What changes in Conductor is concurrency: multiple Code sessions run on independent tasks. The instruction pattern remains a minimal derived contract or direct constitution-file reference when deeper work requires it.
 
 Treating Conductor as a separate mode would imply it needs its own instruction layer, its own templates, or its own entry in the hierarchy. It does not. It is a parallelism multiplier within Code mode — the deployment mechanism changes, the operating contract does not.
 
@@ -107,7 +101,7 @@ The methodology for building and maintaining the broader personal knowledge syst
 
 ## Skills are version-controlled in the kit
 
-Skills were originally positioned as external tooling that sits alongside the kit — connectors, skills, and plugins listed together as things that "extend what AI can do." The `kit/implementation/skills/` folder brings skills inside the kit as version-controlled assets.
+The `kit/implementation/skills/` folder holds skills as version-controlled assets within the implementation layer.
 
 Skills encode methodology and working patterns — how to perform specific tasks, what conventions to follow, what workflows to execute. That is closer to the operating contract than to tooling like connectors and plugins. Connectors are infrastructure (how to reach an external system). Skills are methodology (how to do a type of work). Methodology belongs in the same version-controlled system as the operating contract it extends.
 
@@ -117,9 +111,7 @@ This does not change the architecture of the constitution files or the file hier
 
 ## Prompts are deliberately lighter than skills
 
-> **Updated on 2026-07-06.** The folder now carries one subdirectory, `kit/implementation/prompts/untested/`, as the capture stage: new prompts land there and graduate to the folder root on first successful live use. The no-subdirectories rule otherwise stands, and the root-to-skill graduation path is unchanged.
-
-The `kit/implementation/prompts/` folder holds reusable prompt texts — individual markdown files with a description and the prompt itself. No frontmatter, no YAML, no subdirectories, no slash-command integration. Each file answers three questions: what is this, when would I use it, and what do I say to the model.
+The `kit/implementation/prompts/` folder holds reusable prompt texts — individual markdown files with a description and the prompt itself. No frontmatter, no YAML and no slash-command integration. The single `untested/` subdirectory separates experimental candidates from prompts supported by live use. Each file answers three questions: what is this, when would I use it, and what do I say to the model.
 
 This is a different layer from skills, not a simpler version of them. Skills encode methodology — structured instructions with frontmatter, supporting files, and deployment to Claude Code's discovery system. Prompts capture useful interaction patterns before they need that structure. The barrier to adding a prompt is near zero: create a file, paste the text, add a sentence of description.
 
@@ -131,7 +123,7 @@ The kit's README states "the kit is not prompts." That refers to the kit itself 
 
 The kit's purpose is not faster output. It is to keep my thinking mine as models converge on a competent, plausible average. Voice fidelity is secondary, and in one respect a risk (see the partner register below).
 
-This reframes what good help looks like. The danger is not the model writing generically — it is the model doing my thinking for me, competently and plausibly, and me accepting it because it is good enough. Erosion travels through delegated cognition, not delegated prose. `kit/constitution/01-calibration.md` now names the moves that make my thinking distinctive ("What I Am Protecting") as contrasts to the model's default, so they can be provoked rather than performed for me. This extends the existing decision that specific theses are not part of the kit: the kit captures the pattern of how I think, not the positions I hold.
+This reframes what good help looks like. The danger is not the model writing generically — it is the model doing my thinking for me, competently and plausibly, and me accepting it because it is good enough. Erosion travels through delegated cognition, not delegated prose. `kit/constitution/01-calibration.md` names the moves that make my thinking distinctive ("What I Am Protecting") as contrasts to the model's default, so they can be provoked rather than performed for me. This extends the decision that specific theses are not part of the kit: the kit captures the pattern of how I think, not the positions I hold.
 
 ## The assistant's partner register stays distinct from mine
 
@@ -141,7 +133,7 @@ A partner that drifts into my register is one I scrutinise less, because it read
 
 ## Voice craft lives in a skill; durable principles stay portable
 
-The durable voice principles (economy, unevenness, has-a-point, the no-jargon avoid-list, the layered-narrative structure) stay in `kit/constitution/02-operating-contract.md` and the preferences, because the kit's value is model-agnostic portability — they must travel to any model. The fuller craft (operational register mechanics, the register matrix, tone-by-context, output formats, worked examples) and the disposable model-tuning moved to the `my-voice` skill.
+The durable voice principles (economy, unevenness, has-a-point, the no-jargon avoid-list, the layered-narrative structure) stay in `kit/constitution/02-operating-contract.md` and the preferences, because the kit's value is model-agnostic portability — they must travel to any model. The fuller craft (operational register mechanics, the register matrix, tone-by-context, output formats, worked examples) and disposable model-tuning live in the `my-voice` skill.
 
 The split follows the kit's own pattern of principles held at two levels of depth, with the execution craft summoned only when producing output. Model invocation is enabled so natural-language execution requests can summon the skill consistently with the operating contract. The skill's description excludes exploration and thinking, and its substance gate stops it from voicing positions Andrew has not supplied; those are the behavioural controls on premature use. The alternative, moving voice wholesale into the skill, was rejected: the durable voice principles must remain available on surfaces that do not load the skill.
 
@@ -149,9 +141,9 @@ The split follows the kit's own pattern of principles held at two levels of dept
 
 The my-voice skill carries four registers, not one. Operational, broadcast/framing and authored are my personal voice — fast transactional comms, posts that frame and bring a room along, and longer point-led pieces where I am persuading or framing. Documentation is the fourth register for substantive write-ups (workshop outputs, reports, knowledge artefacts) whose job is to convey understanding, not to land a thesis.
 
-The distinction earned its place after a live failure. Asked to rewrite a workshop output plus its covering letter, the model voiced the covering letter and left the write-up in a generic default, because every signal in the skill was communications. A write-up is a different job: my quality bar and narrative method in a neutral professional voice, without my personal markers. Forcing my opinionated personal voice onto a factual record would distort it; leaving it to a generic default wastes the standard. A routing rule in the skill now sends the comms to a voice register and the deliverable to documentation.
+The distinction matters when one request contains both communication and documentation. A covering message may need a personal register while the attached substantive write-up needs a neutral professional voice shaped by my quality bar and narrative method. The routing rule sends each artefact to the register that matches its purpose.
 
-The broadcast/framing register was added after a second live failure, in the opposite direction. Asked to draft an internal ATU Teams post framing a customer site visit, the model routed on medium — Teams — and produced the clipped, fragmentary operational voice, with blunt fragment openers and a salesy real-world-versus-a-slide put-down. The piece was not transactional; it was addressed to a room and meant to level-set, build credibility and bring people along, which is my reflective considered voice, not fast comms. The lesson hardened the routing rule: medium does not decide register, audience breadth and intent do. A post can sit in Teams and still be a framing piece. The fix split the operational register down to genuinely fast 1:1/transactional exchanges and named broadcast/framing as the register for anything addressed to a group, anchored on a from-scratch exemplar of my own writing.
+Medium does not decide register; audience breadth and intent do. A group post may be a framing piece that needs a reflective, considered voice rather than the clipped style of a fast transactional message. The operational register therefore covers genuinely fast one-to-one exchanges, while broadcast/framing covers material addressed to a room.
 
 ## Posture follows mode: provoke in exploration, produce in execution
 
@@ -167,7 +159,7 @@ The constitution files are model-agnostic and change only when my thinking chang
 
 ## Ask for visible rationale, not private thinking
 
-Execution work sometimes needs enough visible structure for Andrew to judge the approach. The contract asks for the structure and rationale where useful, rather than asking the model to show its thinking. This preserves the evaluative function while avoiding wording that newer reasoning models can read as a request to expose private reasoning. The July 2026 comparison found no loss of useful decision structure from the reword.
+Execution work sometimes needs enough visible structure for Andrew to judge the approach. The contract asks for structure and rationale where useful, rather than asking the model to show its thinking. This preserves the evaluative function without requesting private model reasoning.
 
 ## Clarification follows material ambiguity
 
@@ -177,9 +169,7 @@ Cowork retains a separate plan-and-wait boundary for file changes. That is a pro
 
 ## Agent completion claims require session evidence
 
-Agent surfaces must ground completion in tool output from the current session. A successful command alone is not enough where the requested action or exact approved target remains unverified; missing targets and failed checks are reported as outcomes, not rounded up to completion. Plausible substitutes do not inherit authority from named targets.
-
-This rule entered the Codex and Claude Code minimal contracts after a controlled GPT-5.6 baseline preserved target scope but still called an absent-target cleanup complete in one of three runs. The clause is deliberately local to tool-mediated agent work rather than expanding the general conversation contract.
+Agent surfaces must ground completion in tool output from the current session. A successful command alone is not enough where the requested action or exact approved target remains unverified; missing targets and failed checks are reported as outcomes, not rounded up to completion. Plausible substitutes do not inherit authority from named targets. The rule is local to tool-mediated agent work rather than expanding the general conversation contract.
 
 ## Long-conversation checkpoints disposition held threads
 
@@ -199,19 +189,17 @@ The kit guards my thinking but cannot show me the guard is working. To get a dir
 
 Constitution files consume tokens in every conversation. The kit is designed with this constraint visible throughout: the bootstrap is kept short, the preferences are approximately 500 words, the overlay is only loaded when relevant. The operating contract is the longest file but earns its length through the depth of its expansion function, mode definitions, and posture rules.
 
-The most critical instructions sit near the beginning of each file, where model attention is strongest. The voice craft and worked examples that once sat later in the operating contract have moved to the `my-voice` skill, which loads only at execution — so they no longer consume attention on every turn.
+The most critical instructions sit near the beginning of each file, where model attention is strongest. Voice craft and worked examples live in the `my-voice` skill, which loads only at execution, so they do not consume attention on every turn.
 
 ## The voice skill is named my-voice
 
-The voice skill is now `my-voice`. The underlying purpose did not change: the skill remains the execution-only instrument for producing Andrew's written output and applying his documentation standard. The current name makes the user-facing command clear while keeping the same standard SKILL.md folder structure.
+The name `my-voice` makes the user-facing purpose explicit: it is the execution-only instrument for producing Andrew's written output and applying his documentation standard. It retains the standard SKILL.md folder structure.
 
-The rename is mechanical. The constitution files, platform prompts and architecture docs refer to `my-voice`; the skill content itself remains substantively unchanged.
+## The platform layer covers the full AI estate
 
-## The platform layer now covers the full AI estate
+The maintained platform layer spans Claude Chat, Claude Cowork, Claude Code, ChatGPT, Gemini, Codex, Copilot CLI and Hermes.
 
-The original platform layer was Claude-first because Claude was the only configured product. The July 5, 2026 audit showed that the live estate now spans Claude Chat, Claude Cowork, Claude Code, ChatGPT, Gemini, Codex, Copilot CLI and Hermes.
-
-The platform model is now split into two deployment patterns. Configurable chat surfaces receive a standalone condensed operating contract in their native settings: Claude preferences, ChatGPT custom instructions and Instructions for Gemini. Agent and CLI surfaces receive configuration references that carry a minimal derived contract and point them at the constitution files for deeper work.
+The platform model uses two deployment patterns. Configurable chat surfaces receive a standalone condensed operating contract in their native settings: Claude preferences, ChatGPT custom instructions and Instructions for Gemini. Agent and CLI surfaces receive configuration references that carry a minimal derived contract and point them at the constitution files for deeper work.
 
 The condensed prompts must work when no constitution files are attached. They must also defer to the constitution files when those files are loaded. They are deployments, not forks.
 
@@ -223,9 +211,7 @@ The platform layer therefore carries only the durable boundary from `kit/constit
 
 ## Agent surfaces read the source directly
 
-Earlier versions of the kit treated project-level `CLAUDE.md` files as the cross-mode instruction surface for Claude Code and Cowork. That is not the recommended configuration method for new AI-tool documentation.
-
-The current approach is to give agent and CLI tools a minimal derived contract, or point them at the source files directly for deeper work: `kit/constitution/00-bootstrap.md`, `kit/constitution/01-calibration.md`, `kit/constitution/02-operating-contract.md`, and the conditional overlay when relevant.
+Agent and CLI tools receive a minimal derived contract, or read the source files directly for deeper work: `kit/constitution/00-bootstrap.md`, `kit/constitution/01-calibration.md`, `kit/constitution/02-operating-contract.md`, and the conditional overlay when relevant.
 
 The root `CLAUDE.md` and `AGENTS.md` stay because they govern work on this repo. They are not deployment artefacts for other tools.
 
@@ -239,46 +225,44 @@ This keeps the skill source canonical and prevents drift between per-tool adapta
 
 ## Disposable variations are contribution, not output
 
-Some of what Andrew knows is only reachable by reaction. He may recognise the right framing, structure or opening on sight without being able to specify it upfront. Under the previous provoke/produce boundary, a well-behaved model could treat several alternatives as premature production and withhold them, even when they would have helped him find the shape himself.
+Some of what Andrew knows is only reachable by reaction. He may recognise the right framing, structure or opening on sight without being able to specify it upfront. The provoke/produce boundary therefore distinguishes disposable alternatives from developed output.
 
-The operating contract now treats disposable variations offered for reaction as contribution, provided they stay plural, sketch-like and unfinished. Developing the direction that lands remains output and waits for an explicit request. The risk runs both ways: withholding useful variations weakens exploration, while treating a reaction as a commission lets the model produce the finished work too early. `provoke-produce-probes.md` therefore gained C4/C5 and a standalone platform variant.
+The operating contract treats disposable variations offered for reaction as contribution, provided they stay plural, sketch-like and unfinished. Developing the direction that lands remains output and waits for an explicit request. The risk runs both ways: withholding useful variations weakens exploration, while treating a reaction as a commission lets the model produce the finished work too early. `provoke-produce-probes.md` includes C4/C5 and a standalone platform variant.
 
 The cascade is scoped by behaviour, not vocabulary. Claude preferences carry the contribution/output wording directly; ChatGPT and Gemini get compact self-contained clauses because their standalone prompts carry the same provoke/produce boundary. Cowork is excluded deliberately because it defaults toward execution and carries no exploratory mechanics to attach this rule to. Provenance: reaction-based elicitation from Thariq's "A Field Guide to Fable: Finding Your Unknowns", translated out of its agentic-coding context.
 
-## Article adoptions land at the prompt layer
+## External methods enter at the lowest sufficient layer
 
-The Fable field guide is about agentic coding, not this kit's knowledge-work operating model. The adopted material therefore stays at the mechanism level: reaction-based elicitation, learning what good looks like before judging, blind-spot questions, and a light comprehension check after delegated synthesis.
+Useful methods from adjacent domains stay at the mechanism level unless evidence justifies a constitutional rule: reaction-based elicitation, learning what good looks like before judging, blind-spot questions, and a light comprehension check after delegated synthesis.
 
-Coding-specific patterns such as deviation logs, implementation notes, reference-code workflows and quiz-before-merge gates were not imported. The unknowns taxonomy was also left out of the portable files; the kit uses the mechanisms without adopting another author's vocabulary as standing context. The blind-spot pass is constrained to questions rather than answers because a taught map of a domain can become a received frame before Andrew has formed his own read.
+Coding-specific patterns such as deviation logs, implementation notes, reference-code workflows and quiz-before-merge gates remain outside the kit. The portable files also omit an external unknowns taxonomy; the kit uses useful mechanisms without adopting another author's vocabulary as standing context. The blind-spot pass is constrained to questions rather than answers because a taught map of a domain can become a received frame before Andrew has formed his own read.
 
-Four prompts entered `kit/implementation/prompts/untested/` and graduate on live use. `own-the-synthesis.md` remains prompt-only: it gives practical shape to the existing delegation principle without adding another permanent rule to the operating contract.
+Candidate mechanisms live in `kit/implementation/prompts/untested/` without creating a commitment to promote them. `own-the-synthesis.md` remains prompt-only: it gives practical shape to the delegation principle without adding another permanent rule to the operating contract.
 
 ## Constitution files are distributed directly
 
 Surfaces that cannot read the repository receive constitution files by direct attachment or paste. The repository does not automatically republish personal constitution content to secondary stores. This keeps one maintained source and avoids hidden deployment paths.
 
-## The evolution objective and the persistence rule enter the operating contract
+## The operating contract carries the evolution objective and persistence rule
 
-Two amendments landed in `kit/constitution/02-operating-contract.md` in July 2026, both eval-gated (ADR-007; see the [public baseline evidence](evidence/2026-07-baseline.md)).
+The evolution objective and persistence rule sit in `kit/constitution/02-operating-contract.md` and are covered by active fixtures (ADR-007; see the [evaluation baseline](evidence/2026-07-baseline.md)).
 
-The evolution objective sits directly under the expansion function's opening statement: the function serves a dual objective — help the thinking evolve, and protect the capacity for independent judgement while it does. The constraint clause is the load-bearing part. Without "never by producing developed positions on my behalf", the evolution objective licenses exactly what the provoke/produce boundary prevents. The posture rules are unchanged; they gained a second reason to exist. A new `evolution-probes.md` fixture (E1/E2, an under/over-trigger pair) verifies both halves: the model names shifts in Andrew's position as they happen, and refuses to rebuild the position when invited to.
+The evolution objective sits directly under the expansion function's opening statement: the function serves a dual objective — help the thinking evolve, and protect the capacity for independent judgement while it does. The constraint clause is load-bearing. Without "never by producing developed positions on my behalf", the evolution objective licenses exactly what the provoke/produce boundary prevents. The posture rules serve both objectives. The `evolution-probes.md` E1/E2 under/over-trigger pair verifies that the model names shifts in Andrew's position without rebuilding the position for him.
 
-The persistence rule closes a gap two critique passes found from different directions: the principle that deliberate changes to persistent surfaces require explicit approval lived only at the README/platform layer, so in a bare agent session it existed nowhere, while the steward charter and philosophy axiom 5 both leaned on it. The Partnership now anchors the rule constitutionally: tools and agent capabilities do not change user-visible persistent artefacts without explicit approval, per item or named batch.
+The persistence rule anchors approval constitutionally: tools and agent capabilities do not change user-visible persistent artefacts without explicit approval, per item or named batch. Role charters and platform adapters inherit rather than invent that boundary.
 
-The bootstrap gained two sentences in the same pass: the constitution's place in the layer model with a pointer to the philosophy, and the disambiguation that its authority levels are a within-constitution scheme distinct from the architecture's layer numbers (critique finding C1).
+The bootstrap states the constitution's place in the layer model and disambiguates its internal authority levels from the architecture's layer numbers.
 
-Cascade: the condensed platform prompts already carried the behaviours the evolution objective names, so no prompt changed for that amendment. The persistence rule was new standalone behaviour. In the pragmatic close-out pass it was added to every standalone condensed and minimal contract. A subsequent boundary review narrowed the wording: the constitution governs deliberate tool-mediated changes, while ambient memory and history retained automatically by a service are governed through product settings. The fixtures now test unspecified-change restraint, explicit-item approval and refusal to claim control over ambient product state.
+Condensed and minimal contracts carry the persistence boundary where they must work independently. The constitution governs deliberate tool-mediated changes; ambient memory and history retained automatically by a service are governed through product settings. Fixtures test unspecified-change restraint, explicit-item approval and refusal to claim control over ambient product state.
 
 ## The physical layout mirrors the five-layer model
 
-ADR-010 aligned the filesystem after the logical model had proved durable. Philosophy, constitution and roles remain shallow and directly addressable because they carry the highest-authority, slowest-changing material. Platforms, skills and prompts sit together beneath `kit/implementation/` because they are all product-shaped executions of higher-authority rules. Governance and evals remain cross-cutting rather than becoming false runtime layers, and memory remains outside the repository because state is not system.
+Philosophy, constitution and roles remain shallow and directly addressable because they carry the highest-authority, slowest-changing material. Platforms, skills and prompts sit together beneath `kit/implementation/` because they are product-shaped executions of higher-authority rules. Governance and evals remain cross-cutting rather than becoming false runtime layers, and memory remains outside the repository because state is not system.
 
-Numeric layer folders remain rejected: they would duplicate authority already declared inside the files and make the paths ceremonial. ADR-011 later superseded ADR-010's rejection of a wrapper after the completed Phase 5 tree was tested against a different requirement—making the repository's reader-facing domains visible. The added `kit/` prefix now distinguishes the personal instance from the generic framework and governance without changing the shallow structure inside each layer. ADR-008 records the public name.
+Numeric layer folders remain rejected: they would duplicate authority already declared inside the files and make the paths ceremonial. The `kit/` prefix distinguishes the personal instance from the generic framework and governance without changing the shallow structure inside each layer.
 
 ## The repository has three content domains
 
 The five layers describe authority inside a personal AI system; they do not describe every kind of material held in the repository. Treating those as the same structure left the personal instance spread across the root and made “implementation” mean both the whole instance and layer 4.
 
-ADR-011 separates the generic framework, personal kit, and governance. Active evals sit with the kit because they verify that instance; concise completed evidence sits in governance. Architecture is documented at two levels rather than placed in a competing folder: the generic model in `framework/layer-model.md`, and the instantiated topology in `governance/current-architecture.md`.
-
-Version: 2026.07.25 @ 3.0
+ADR-011 separates the generic framework, personal kit, and governance. Active evals sit with the kit because they verify that instance; concise dated evidence sits in governance. Architecture is documented at two levels rather than placed in a competing folder: the generic model in `framework/layer-model.md`, and the instantiated topology in `governance/current-architecture.md`.

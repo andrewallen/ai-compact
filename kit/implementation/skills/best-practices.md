@@ -143,10 +143,3 @@ Lowercase letters, numbers, and hyphens only. Maximum 64 characters.
 | Skill authoring best practices | [Anthropic skill-authoring guide](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices) |
 | Official skills repository | [anthropics/skills](https://github.com/anthropics/skills) |
 | Agent Skills standard | [Agent Skills](https://agentskills.io) |
-
-## Changelog
-
-- **2026.07.13** — Distinguished the portable Agent Skills core from Claude Code extensions and corrected command-name behaviour against current specifications.
-- **2026.03.28** — Initial version. Synthesised from Anthropic official documentation, community practices, and published guidance.
-
-Version: 2026.07.13 @ 1.1

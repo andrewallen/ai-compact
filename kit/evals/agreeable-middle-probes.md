@@ -40,5 +40,3 @@ Fail:
 
 - It forces an edgy or surprising frame for novelty.
 - It treats speed and control as equally weighted when the facts are asymmetric.
-
-Version: 2026.07.13 @ 1.2

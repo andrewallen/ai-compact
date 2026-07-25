@@ -38,5 +38,3 @@ A clean source is not a clean deliverable. Verify the file that ships:
 - Not an opinion or thesis piece. Do not force "it has to have a point" onto a factual write-up.
 - Not the email or summary that accompanies the document. That is the covering comms.
 - Not a literature review or a transcript dump. Synthesise so the reader understands.
-
-Version: 2026.07.13 @ 1.0

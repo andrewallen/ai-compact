@@ -54,5 +54,3 @@ Run I1 and I2 with each standalone contract below in place of the constitution f
 - `kit/implementation/platforms/chatgpt/custom-instructions.md` (paste-ready block only)
 
 The same pass/fail criteria apply.
-
-Version: 2026.07.19 @ 1.0

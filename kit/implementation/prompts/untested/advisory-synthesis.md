@@ -21,5 +21,3 @@
 The "what would change the recommendation" question at the end is the most important element. It makes the recommendation's assumptions visible and testable. Without it, the synthesis reads as definitive when it may be contingent.
 
 The audience specification matters — a synthesis for a Permanent Secretary uses different framing than one for a project team.
-
-Version: 2026.04.02 @ 1800

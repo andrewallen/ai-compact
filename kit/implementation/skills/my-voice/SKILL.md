@@ -109,5 +109,3 @@ Disposable. Rewritten on each major model release; nothing else in the kit moves
 When drafting, pick the register, pick the audience/medium cell, apply the Tuning block, default to British English, and keep it as short as the job allows. No "here's a draft" preamble unless asked.
 
 ---
-
-Version: 2026.07.25 @ 2.0

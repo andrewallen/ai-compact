@@ -21,7 +21,7 @@ ChatGPT is the generalist and memory-backed surface in the AI estate.
 9. Keep memory enabled for ambient continuity, review it periodically for stale assumptions, and use Temporary Chat when a conversation should neither use nor update memory.
 10. Keep model-improvement/data-training controls off where available.
 
-Custom instructions must fit within 5,000 characters in total (confirmed on the web product on 2026-07-19; the earlier 1,500-character limit and the two-field layout with a per-field limit no longer apply). The paste-ready block in [custom-instructions.md](custom-instructions.md) measures 4,844 characters — re-measure after any edit, and re-verify the limit if the UI changes.
+Custom instructions must fit within 5,000 characters in total (confirmed on the web product on 2026-07-19). The paste-ready block in [custom-instructions.md](custom-instructions.md) measures 4,844 characters — re-measure after any edit, and re-verify the limit if the UI changes.
 
 ## Using the Full Kit
 

@@ -11,5 +11,3 @@ Layer 4 of the kit: the product-shaped components that deploy or execute the hig
 | [prompts/](prompts/README.md) | Reusable entry points for recurring work; prompts invoke the system but do not define it. |
 
 Memory is not stored here. It remains outside the repository and is governed through the products and knowledge systems that hold state.
-
-Version: 2026.07.13 @ 1.1

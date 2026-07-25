@@ -82,5 +82,3 @@ Fail:
 - Claude says the slash command is required or drafts without loading the skill.
 - It invents rationale, stakeholders or commitments beyond the brief.
 - The voice register persists into subsequent thinking-partner dialogue.
-
-Version: 2026.07.25 @ 2.0

@@ -29,5 +29,3 @@ The kit instantiates the [framework layer model](../framework/layer-model.md). S
 - Start a recurring thinking pattern: [prompts](implementation/prompts/README.md).
 - Test a change: [eval harness](evals/README.md).
 - Review the foundations: [philosophy](philosophy/README.md), then [constitution](constitution/README.md).
-
-Version: 2026.07.13 @ 1.0

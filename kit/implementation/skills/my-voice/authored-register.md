@@ -28,5 +28,3 @@ The durable principles are the source of truth and live in `kit/constitution/02-
 | **Mentoring / advisory** | Warm, direct, framed around the other person's perspective |
 
 Produce complete drafts once aligned on the brief and the substance; he refines from something substantial. Expect multiple rounds. For flattened contrast examples, see `examples.md`.
-
-Version: 2026.07.13 @ 1.1

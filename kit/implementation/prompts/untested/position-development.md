@@ -21,5 +21,3 @@
 Maps directly to "How I Build Positions" in `kit/constitution/01-calibration.md` — working theses held with conviction, actively wanting them challenged. Question 5 invokes the expansion function explicitly.
 
 The "strongest version" request in question 1 often surfaces the real argument underneath a softer formulation. The revision conditions in question 4 make the position falsifiable.
-
-Version: 2026.07.13 @ 0953

@@ -21,5 +21,3 @@
 This prompt is designed to replace the "multi-page sprawl" pattern where someone tries to do everything in a single prompt. Each stage does one type of thinking. The fact check list at the end is critical — it makes the model's uncertainty explicit and actionable.
 
 For sensitive subjects, add: "Draw only from verifiable public sources. Flag clearly when something is inferred rather than established."
-
-Version: 2026.04.02 @ 1800

@@ -1,30 +1,28 @@
 ← [Home](../../README.md) · [Governance](../README.md) · [Decisions](README.md) · **ADR-008**
 
-# ADR-008 — Publish the project as AI Compact
+# ADR-008 — Use AI Compact as the project name
 
 **Status:** Accepted (2026-07-25)
 
 ## Context
 
-`personal-context-kit` described the project's origin but not its expanding purpose. The system now governs both conversational collaboration and agents that may operate under delegated authority. A long descriptive repository name would be accurate but difficult to type, reference in conversation and use in talks.
-
-The name needs to identify the governing relationship: the terms under which AI can think with Andrew and act for him.
+The project governs both conversational collaboration and agents operating under delegated authority. Its name needs to describe that governing relationship while remaining short enough for a URL, spoken reference and presentation.
 
 ## Decision
 
-Publish the project as **AI Compact**, with the repository slug `ai-compact`.
+Use **AI Compact** as the project name and `ai-compact` as the repository slug.
 
-A compact is a governing agreement. It stretches from the terms of a conversation to the purpose, authority and boundaries of an autonomous role. It is short enough to work as a URL and spoken reference while leaving the README to explain the architecture.
+A compact is a governing agreement. It covers the terms of a conversation and the purpose, authority and boundaries of an agentic role without tying the project to a particular model or product.
 
 ## Consequences
 
-- The public source is `andrewallen/ai-compact`.
-- Internal navigation remains repository-name-neutral.
-- The working checkout and any tool references move to the new repository.
-- The previous private repository remains a frozen development-history archive and is never a deployment source.
+- Reader-facing material uses AI Compact consistently.
+- Internal navigation remains repository-name-neutral through relative links.
+- The README explains the architecture rather than making the name carry every detail.
+- Product and model names remain implementation details rather than project identity.
 
 ## Alternatives considered
 
-- **Long descriptive names:** rejected because they optimise for completeness at the expense of everyday use.
-- **Metaphorical names:** rejected because they require explanation before communicating the project's relationship to AI.
-- **Keep `personal-context-kit`:** rejected because context is only one part of the system.
+- **A long descriptive name:** rejected because it would be harder to type, say and remember.
+- **A metaphorical name:** rejected because the governing relationship would need explanation before the project itself could be discussed.
+- **A context-focused name:** rejected because context is only one part of the system.

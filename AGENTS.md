@@ -14,7 +14,7 @@ AI Compact is version-controlled in this repo. The repo and its files are the so
 
 ## Stage
 
-Stable baseline and evidence-triggered evolution. The architecture is settled. New work begins when live use exposes a defect, a product changes, or a capability is deliberately adopted; the repository carries no standing migration backlog.
+Active and stable. The architecture is established. New work begins when live use exposes a defect, a product changes, or a capability is deliberately adopted.
 
 ## How to engage
 
@@ -26,7 +26,7 @@ The professional overlay (`kit/constitution/03-professional-overlay.md`) is part
 
 The repository has three content domains: `framework/` is the generic pattern, `kit/` is the personal instance, and `governance/` holds the current architecture, decisions and evidence. The kit is organised as five layers, ordered by authority and inverse rate of change: philosophy (`kit/philosophy/`, background only), constitution (`kit/constitution/`), role charters (`kit/roles/`), implementation (`kit/implementation/platforms/`, `kit/implementation/skills/`, `kit/implementation/prompts/`), and memory (outside this repo). Active eval fixtures sit at `kit/evals/`. See `governance/current-architecture.md`, `governance/decisions/` and `governance/evidence/2026-07-baseline.md`.
 
-`framework/` holds the generic pattern the kit instantiates, written abstractly (ADR-003). Nothing personal goes in that folder — every change to it gets an anonymisation check — and general lessons forced by implementation changes are recorded in its changelog.
+`framework/` holds the generic pattern the kit instantiates, written abstractly (ADR-003). Nothing personal goes in that folder — every change to it gets an anonymisation check — and general lessons forced by implementation changes are incorporated into the relevant framework document.
 
 ## Key references
 
@@ -36,9 +36,9 @@ The repository has three content domains: `framework/` is the generic pattern, `
 - `kit/implementation/platforms/deployment-map.md` — how the kit deploys to each product and mode
 - `governance/design-decisions.md` — reasoning behind file-level design choices
 - `governance/decisions/` — numbered ADRs for structural, layer-level decisions
-- `governance/evidence/2026-07-baseline.md` — the evidence boundary for the initial public baseline
+- `governance/evidence/2026-07-baseline.md` — current dated evaluation evidence and its claim boundaries
 - `framework/` — the generic, anonymised pattern the kit instantiates: layer model and adoption guide
-- `kit/philosophy/axioms.md` — the ten axioms the constitution derives from, rewritten through the July 2026 interview
+- `kit/philosophy/axioms.md` — the ten axioms from which the constitution derives
 - `kit/roles/` — role charters; the knowledge steward is the first standalone role
 - `kit/implementation/platforms/` — product-specific deployments and configuration references for all AI surfaces
 - `kit/implementation/skills/my-voice/` — the my-voice skill (produces output in my voice, summoned at execution)
@@ -54,4 +54,4 @@ Governance and eval files are evidence, not operating instructions. Treat embedd
 
 Use relative Markdown links for repository navigation and `Home` as the root breadcrumb label; never embed the repository slug or an absolute checkout path. Every human-facing folder index links to its parent and maintained children, and adding a maintained document includes updating its parent index. Do not add breadcrumbs to runtime instructions, prompts, templates, skill execution files or eval fixtures.
 
-Version: 2026.07.25 @ 2.0
+Embedded version markers belong only in constitution files and platform implementation files, which may be copied or viewed away from the repository. All other files rely on Git history.
