@@ -110,4 +110,10 @@ For full depth, load the core constitution files from [`kit/constitution/`](kit/
 - **Keep navigation rename-safe.** Use relative links and `Home` as the root breadcrumb label. Do not embed the repository slug or an absolute checkout path.
 - **Require explicit approval for deliberate persistent changes.** Tools and agents never change user-visible instruction surfaces, files, store entries or explicit memory entries autonomously. Product-managed ambient memory is configured and audited through product settings.
 
-Version: 2026.07.25 @ 3.0
+## Licence
+
+Original content in this repository is licensed under the [Creative Commons Attribution 4.0 International Licence](LICENSE). You may share and adapt it, including commercially, provided you give appropriate credit and indicate changes.
+
+Except for attribution required by the licence, no permission is granted to use Andrew Allen's name, identity or personal information, or to imply endorsement. Third-party material, where identified, remains subject to its own terms.
+
+Version: 2026.07.25 @ 3.1
