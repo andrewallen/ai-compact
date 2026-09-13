@@ -7,7 +7,7 @@
 
   <rect width="800" height="560" fill="#fafaf8" rx="8"/>
   <text x="400" y="32" text-anchor="middle" font-size="16" font-weight="600" fill="#2C2C2A">Deployment Paths</text>
-  <text x="400" y="50" text-anchor="middle" font-size="10" fill="#6F6E68">Current model: condensed chat settings, minimal agent references, no new CLAUDE.md or AGENTS.md deployment</text>
+  <text x="400" y="50" text-anchor="middle" font-size="10" fill="#6F6E68">Shared constitution; task derivations and dated model guidance; actual host controls deployment</text>
 
   <text x="120" y="80" text-anchor="middle" font-size="12" font-weight="600" fill="#5F5E5A">Source files</text>
 
@@ -57,7 +57,7 @@
   <rect x="552" y="242" width="186" height="36" rx="5" fill="#fff" stroke="#185FA5" stroke-width="0.5"/>
   <text x="645" y="264" text-anchor="middle" font-size="10" fill="#0C447C">Copilot CLI</text>
   <rect x="552" y="286" width="186" height="36" rx="5" fill="#fff" stroke="#185FA5" stroke-width="0.5"/>
-  <text x="645" y="308" text-anchor="middle" font-size="10" fill="#0C447C">Hermes</text>
+  <text x="645" y="308" text-anchor="middle" font-size="10" fill="#0C447C">Hermes / OpenCode</text>
   <rect x="552" y="346" width="186" height="36" rx="5" fill="#fff" stroke="#0F6E56" stroke-width="0.5"/>
   <text x="645" y="368" text-anchor="middle" font-size="10" fill="#085041">read constitution directly</text>
   <rect x="552" y="390" width="186" height="24" rx="5" fill="#fff" stroke="#1F6B66" stroke-width="0.5" stroke-dasharray="4 3"/>
@@ -75,5 +75,5 @@
   <text x="60" y="506" font-size="9.5" fill="#5F5E5A">Chat prompts must work alone and defer when the full constitution is present.</text>
   <text x="60" y="522" font-size="9.5" fill="#5F5E5A">Agent surfaces use a minimal contract; read source files for deeper work.</text>
   <text x="454" y="506" font-size="9.5" fill="#5F5E5A">Voice material remains separate from platform configuration.</text>
-  <text x="454" y="522" font-size="9.5" fill="#5F5E5A">Memory remains external; it is not a kit deployment target.</text>
+  <text x="454" y="522" font-size="9.5" fill="#5F5E5A">Grok: apply shared contract through its actual host.</text>
 </svg>

@@ -6,18 +6,16 @@
 
 ## Prompt
 
-> I'm about to start this project. Interview me until you have 95% confidence about what I actually want, not what I think I should want.
+> I'm about to start this project. Interview me to clarify my goals, constraints and the difference between what I want and what I feel expected to want. Ask where my answer would materially change the project; stop when the remaining uncertainties do not affect its shape, or when I ask you to proceed.
 >
 > Prioritise the questions where my answer would change the shape of the project.
 
 ## Notes
 
-The 95% confidence threshold is intentional — it keeps the interview going past the first plausible answer, past the rationalised version, until something more honest surfaces.
+This is an optional discovery interview selected for an unclear project, not a standing gate before a defined execution task. The prompt asks for observable unresolved questions rather than an uncalibrated numerical confidence claim.
 
-The prioritisation line partners the confidence threshold: the threshold keeps the interview going; prioritisation makes the early questions the load-bearing ones. Adapted from the implementation-interview pattern of prioritising questions whose answer would change the architecture.
+Probe obligation-driven framing and inherited assumptions without treating an inferred motive as fact. The owner can reject the interpretation or end the interview.
 
-The distinction between "what I want" and "what I think I should want" is the mechanism. It signals that stated objectives, conventional framing, and obligation-driven briefs are all fair game to probe. The AI should listen for performance, rationalisation, and inherited assumptions, not just accept what is offered.
+An optional follow-up: “What hypotheses do my answers suggest that I have not stated? Label them as hypotheses, explain their basis and invite correction.”
 
-Works best before any brief or scope document exists. Once structure is in place, the frame narrows and the interview becomes less generative.
-
-Pairs well with a follow-up once the interview is done: "Now tell me what I didn't say but you think is true."
+The interview pattern was previously used. This September wording has received static alignment review only; earlier use does not validate the revision.

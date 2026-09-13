@@ -16,7 +16,7 @@ It is not a prompt library. Prompts are the thinnest layer of the pattern — en
 
 | File | What it covers |
 |---|---|
-| [layer-model.md](layer-model.md) | The five layers, the authority and rate-of-change ordering, what loads at runtime, the subordination rules, and the design principles the reference implementation has proven in use. |
+| [layer-model.md](layer-model.md) | The five layers, the authority and rate-of-change ordering, what loads at runtime, the subordination rules, and design principles, task derivations and the separation of policy from model guidance. |
 | [adoption-guide.md](adoption-guide.md) | The minimum viable implementation — four files and a critique pass — and how to grow it: the interview principle, the two-model workflow, failure modes, and evaluation criteria. |
 
 ## Who it is for

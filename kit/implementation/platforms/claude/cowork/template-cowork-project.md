@@ -21,7 +21,7 @@ Remove this section if none apply.]
 
 ## Connectors in use
 [Which connectors are active for this project? e.g. Gmail, Google Calendar, Slack.
-Note any that should not be used without explicit per-task approval.
+Record any additional limits. All external actions retain the global preview-and-confirm safeguard; listing a connector does not authorise its use.
 Remove this section if no connectors are relevant.]
 
 ## Scheduled tasks
@@ -29,24 +29,30 @@ Remove this section if no connectors are relevant.]
 it produces. Validate manually before enabling automation.
 Remove this section if no scheduled tasks are configured.]
 
-## Context loaded
-[List which constitution files are available in this project. e.g.:
-- 00-bootstrap.md
-- 01-calibration.md
-- 02-operating-contract.md
-Or: "Core constitution files loaded. Professional overlay not active."]
+## Context supplied
+[Identify the base actually supplied: core constitution (bootstrap, calibration and
+operating contract), or the shared chat-contract body. Supply the Cowork global
+addendum alongside it. Do not infer that profile preferences are available here.
+List optional professional context only when relevant. Distinguish instructions
+from review material and sources; do not claim unread files or history are loaded.]
 
 ## Files in this folder
 [Brief inventory of what exists here and what each file is for.
-Update as the project develops.]
+Propose updates as the project develops; write them only with scoped approval.]
 
 ## Decisions made
-[Log of significant decisions taken in previous sessions. Date and brief description.
+[Log of significant decisions I adopted in previous sessions, with source, date and rationale.
+Keep assistant recommendations and unresolved choices distinct.
 Remove this section until there are decisions to record.]
 
 ## Open questions
 [Things that are unresolved and need input or a decision before they can move forward.
 Remove this section until there are open questions.]
+
+## Scope and authority
+[Record approved actions, exact targets, folder boundaries, exclusions and open decisions.
+The supplied Cowork addendum defines the additional safeguards; record task-specific
+confirmations and any explicit exceptions here without restating its rules.]
 
 ## Last updated
 [Date and brief note on what changed.]

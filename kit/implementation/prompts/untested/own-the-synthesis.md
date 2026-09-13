@@ -10,6 +10,6 @@
 
 ## Notes
 
-The operating contract says I carry interpretation, challenge, and accountability in delegated work; this is the mechanism. It is the output-side twin of the reframe-gap test in `kit/constitution/02-operating-contract.md` — that one checks my thinking stays distinct going in, this one checks my understanding is real coming out.
+The operating contract says I carry interpretation, challenge, and accountability in delegated work; this is the mechanism. This is an optional comprehension exercise, not an additional constitutional gate before using every synthesis. It complements the exploratory invitation to frame a problem before receiving a developed answer.
 
 The test is defending the weakest claim, not reciting the conclusion. If I can only repeat the summary, I do not own it yet.

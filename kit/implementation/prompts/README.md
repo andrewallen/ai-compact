@@ -2,13 +2,13 @@
 
 # Prompts
 
-Reusable starting points for specific types of thinking, analysis, or output. This folder holds prompts that have proven useful across conversations — captured here so they can be reused, refined, and shared.
+Reusable starting points for specific types of thinking, analysis, or output. This collection includes a previously used pattern and experimental candidates; the catalogue distinguishes their evidence status so they can be deliberately tried, refined and reused.
 
 ## What prompts are
 
 Prompts are atomic. Each one is a single markdown file containing a prompt that drives a conversation in a specific direction — a thinking frame, an analysis pattern, a drafting trigger, a way of approaching a particular type of problem. They carry minimal metadata: what the prompt is for, when to use it, and the prompt itself.
 
-Prompts are the lightest-weight layer in the kit. Constitution files define who I am and how the AI should work with me. Skills encode reusable methodology with structure, frontmatter, and optional supporting files. Prompts sit underneath both — they are useful ways of interacting with the model, captured before they need that structure.
+Prompts are lightweight components of implementation, alongside skills and platform adapters in layer 4. Constitution files define who I am and how the AI should work with me. Skills encode reusable methodology with structure, frontmatter, and optional supporting files. Prompts capture useful ways of interacting with the model before they need that structure; they remain subordinate to the constitution and active role charters.
 
 ## How prompts relate to skills
 
@@ -26,13 +26,13 @@ kit/implementation/prompts/
 └── <prompt-name>.md       ← One file per prompt
 ```
 
-Tested prompts sit at the root of this folder. `untested/` is an experimental catalogue: its contents are available for deliberate trials but carry no commitment to promotion. A prompt moves to the root only after successful live use, evidence-based refinement, and a check that it remains subordinate to the constitution rather than forcing symmetry, convergence, unsupported inference or premature production.
+Previously used prompt patterns sit at the root of this folder; substantive revisions state when their new wording lacks live-use evidence. `untested/` is an experimental catalogue: its contents are available for deliberate trials but carry no commitment to promotion. A prompt moves to the root only after successful live use, evidence-based refinement, and a check that it remains subordinate to the constitution rather than forcing symmetry, convergence, unsupported inference or premature production.
 
 ## Catalog
 
 | Status | Prompt | Purpose |
 |---|---|---|
-| Tested | [Project discovery interview](discovery-interview.md) | Surface the real goal and load-bearing constraints before planning. |
+| Previously used pattern; revised wording untested | [Project discovery interview](discovery-interview.md) | Surface the real goal and load-bearing constraints before planning. |
 | Experimental | [Untested prompt index](untested/README.md) | Eleven candidate prompts available for deliberate trial. |
 | Template | [_template.md](_template.md) | Minimal starting structure for a new prompt. |
 
@@ -41,6 +41,7 @@ Tested prompts sit at the root of this folder. `untested/` is an experimental ca
 1. Copy `_template.md` to a new file in `untested/` named for the prompt (lowercase, hyphens, `.md`)
 2. Fill in the name, description, and the prompt itself
 3. Add usage notes or variations if they are useful — leave them out if they are not
+4. Link the new prompt from `untested/README.md` and update this index's experimental count
 
 The template is minimal by design. A prompt file needs to answer three questions: what is this, when would I use it, and what do I say to the model.
 

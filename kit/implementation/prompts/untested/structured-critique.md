@@ -9,8 +9,8 @@
 > Provide a structured critique of this [DOCUMENT TYPE].
 >
 > 1. State its core argument or purpose in one sentence
-> 2. Identify its three strongest elements
-> 3. Identify its three most significant weaknesses or gaps
+> 2. Identify its strongest supported elements; weight them by importance
+> 3. Identify material weaknesses or gaps; do not invent them to balance strengths
 > 4. For each weakness, suggest a specific improvement
 > 5. Assess: does this achieve its stated purpose? What would make it substantially better?
 >
@@ -18,4 +18,4 @@
 
 ## Notes
 
-The constraint to ground critique in the document prevents generic feedback. The distinction between structural and surface issues prevents the model from fixating on wording when the architecture is the problem. The three/three balance prevents the model from producing either a demolition or an endorsement.
+The constraint to ground critique in the document prevents generic feedback. The distinction between structural and surface issues prevents the model from fixating on wording when the architecture is the problem. The evidence determines the balance; equal counts of strengths and weaknesses would impose symmetry rather than assess merit.

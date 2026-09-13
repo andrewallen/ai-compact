@@ -6,24 +6,55 @@ How AI Compact deploys to each product and surface. Update this when products ch
 
 ## Architecture Overview
 
-The kit is a versioned source of truth for identity, calibration, operating behaviour and output craft across Claude Chat, Claude Cowork, Claude Code, ChatGPT, Gemini, Codex, Copilot CLI and Hermes.
+The kit is a versioned source of truth for identity, calibration, operating behaviour and output craft across Claude Chat, Claude Cowork, Claude Code, ChatGPT, Gemini, Codex, Copilot CLI, Hermes, Grok and OpenCode/Go.
 
 ## Kit Components
 
 | Component | What it carries | Where it deploys |
 |---|---|---|
 | Constitution files | Identity, calibration, operating contract, professional overlay. Model-agnostic markdown. | Attached to conversations/projects, read from the filesystem by local agents, or attached and pasted directly where filesystem access is not available. |
-| Platform prompts | Condensed operating contracts tailored to a product's standing-instruction field. | Claude preferences, ChatGPT custom instructions, Instructions for Gemini. |
+| Platform prompts | Generated shared chat body with product-specific deployment wrappers. | Claude preferences, ChatGPT custom instructions, Instructions for Gemini. |
 | Mode configs | Safety and workflow rules for capability-specific modes. | Claude Cowork global instructions. |
-| Skills | Standard SKILL.md methodology and output craft. | Supplied separately when a task needs the skill; not embedded in platform configuration. |
-| Configuration references | Guidance for tools that should read the kit directly. | Claude Code, Codex, Copilot CLI, Hermes. |
+| Skills | Standard SKILL.md methodology and output craft. | Installed or supplied separately; enabled availability and on-demand loading depend on the client. Detailed craft is not embedded in standing platform prompts. |
+| Plugins and native capabilities | Vendor distribution packages can include skills, tools/apps, hooks, agents and supporting resources; native internals may be opaque. | Client-specific delivery. The package register links identity and selection to observed state; a listed source is not an installed capability. |
+| Configuration references | Guidance for tools that should receive a shared derivation or read the kit directly. | Claude Code, Codex, Copilot CLI, Hermes, Grok, OpenCode/Go. |
+
+## Shared contract and model references
+
+The [September constitution review](../../../governance/evidence/2026-09-constitution-alignment.md) records the source update, static review and explicit exclusion of behavioural runs. Model and host are separate: Fable 5.1 and GPT-6 Astra are primary thinking-partner targets; the execution derivation also supports bounded work on those models, Grok or Go-accessed models. This documents intended deployment, not installed state.
+
+| Reference | Purpose |
+|---|---|
+| [Chat contract](chat-contract.md) | Canonical chat body generated into Claude, ChatGPT and Gemini files. |
+| [Contract maintenance](contract-maintenance.md) | Source ownership, coverage, composition and distribution commands. |
+| [Execution contract](execution-contract.md) | Condensed task contract generated into Codex, Claude Code, Copilot CLI and Hermes guides. |
+| [Model guidance](model-guidance.md) | Separates model-specific observations from shared policy and host configuration. |
+| [Grok](grok/README.md) | Execution guidance for the actual Grok host. |
+| [OpenCode and Go](opencode/README.md) | Version-sensitive composition and provider-forwarding considerations. |
+
+These additions stay in implementation. They create no new authority layer or installed configuration.
+
+## Configuration records
+
+The [Claude configuration baseline](claude/configuration-baseline.md) records adopted settings and optional capability choices. The [initial configuration verification](../../../governance/evidence/2026-09-claude-configuration.md) records the earlier deployment gaps; the later [instruction deployment](../../../governance/evidence/2026-09-claude-deployment.md) verifies saved chat instructions, the Cowork addendum and the enabled my-voice v2 package against source. Source files define intended content; enabled switches describe availability; neither alone proves exact deployed content or runtime loading. Recommendations remain proposed until adopted and implemented.
+
+## Skills, plugins and native capabilities
+
+The [capability matrix](../skills/capability-matrix.md) owns acceptance requirements and provider summaries. The [package register](../skills/package-register.md) owns implementation IDs, revision/provenance, selection and composition records; dated platform baselines and governance evidence own observed deployment. These maintenance references are not loaded as standing skill instructions.
+
+For a selected capability, identify the exact client/mode and verify the supported distribution mechanism before installing or enabling anything. Record the native baseline and all plugin components, then distinguish cache, installation, enablement, exposure, loading and successful exercise. Use unknown for inaccessible native revisions or settings. Keep public and installed variants separate. Do not infer mode parity from one account setting or claim a portable SKILL.md reproduces hooks and tool integrations.
+
+Use one primary task workflow with necessary complementary stages. Existing contract loading combinations remain canonical; no additional always-on router is introduced. A material conflict is resolved in the lower implementation where possible and otherwise recorded as a host limitation. Package inclusion does not authorise memory, publication or connector writes.
+
+At deployment, name the exact revision, target scope, dependencies, permitted effects and rollback route. Verify saved state, source parity where accessible, fresh-session discovery, positive and negative invocation and a representative output. Retain prior settings/revisions through an approved private mechanism; state when a vendor-managed runtime cannot be restored. No installation commands are prescribed until the actual target and mechanism are verified. The [implementation plan](../skills/implementation-plan.md) defines trial and deployment boundaries.
 
 ## Surface Tiers
 
 | Tier | Surfaces | Configuration model |
 |---|---|---|
-| Configurable chat | Claude Chat, Claude Cowork, ChatGPT, Gemini | Always-on condensed contract plus optional full constitution files. |
-| Agent and CLI | Claude Code, Codex, Copilot CLI, Hermes | Carry a minimal derived contract and read the constitution files from this repo for deeper work. |
+| Configurable chat | Claude Chat, ChatGPT, Gemini | Generated chat contract plus optional full constitution files. |
+| Cowork | Claude Cowork | Supplied core or chat contract, plus the Cowork addendum. |
+| Agent and CLI | Claude Code, Codex, Copilot CLI, Hermes, OpenCode | Carry a minimal derived contract and read the constitution files from this repo for deeper work. |
 | Source of truth | This repo | Canonical files and documentation. |
 
 ## Claude
@@ -41,7 +72,7 @@ For sustained chat work, use the [chat project template](claude/chat/template-ch
 
 ### Cowork
 
-[Cowork global instructions](claude/cowork/global-instructions.md) is pasted into Cowork global instructions. It governs filesystem safety, connector caution, planning discipline and persistent instruction changes. Cowork defaults toward execution because it is an agentic workbench, but the expansion function still applies.
+Supply the core constitution or the [chat-contract body](chat-contract.md), plus the [Cowork addendum](claude/cowork/global-instructions.md) in the applicable instruction surface. Confirm that the base is actually available; do not assume profile preferences flow into Cowork. The addendum retains plan confirmation, no overwrites, exact-file deletion approval, folder boundaries and connector previews. Shared mode, voice and approval policy comes from the base.
 
 The [Cowork project template](claude/cowork/template-cowork-project.md) is the project-level starting point.
 
@@ -64,7 +95,7 @@ Configuration:
 - Paste [custom-instructions.md](chatgpt/custom-instructions.md) into ChatGPT custom instructions.
 - Use ChatGPT Projects for sustained work.
 - Upload the constitution files to projects or conversations when depth is needed.
-- Keep voice reference material separate from platform configuration; the platform prompt carries only the neutral-partner / Andrew-output boundary.
+- Keep voice reference material separate from platform configuration; the shared body carries the voice boundary and compact writing standards.
 
 ## Gemini
 
@@ -75,7 +106,7 @@ Configuration:
 - Enable Instructions for Gemini if available.
 - Paste [saved-instructions.md](gemini/saved-instructions.md).
 - Attach or paste constitution files when depth is needed.
-- Keep voice reference material separate from platform configuration; the standing instruction carries only the neutral-partner / Andrew-output boundary.
+- Keep voice reference material separate from platform configuration; the shared body carries the voice boundary and compact writing standards.
 
 ## Codex
 
@@ -107,29 +138,33 @@ Configuration reference:
 - Use the minimal derived contract in the platform README, or have it read the constitution files for deeper operating context.
 - Keep Hermes-specific memory, redaction, messaging and cron policy in Hermes configuration, not in this repo.
 
+## Grok and OpenCode Go
+
+[Grok guidance](grok/README.md) applies the shared contract through the actual app, API or agent host. [OpenCode guidance](opencode/README.md) covers version-sensitive instruction composition and Go model access. Supply a task handover with decisions, rationale, exact targets and authority. Neither route creates a new constitution, installs configuration, or establishes that native model controls pass through a gateway. Verify the actual host before deployment.
+
 ## Capability by Surface
 
 | Capability | Claude Chat/Cowork | ChatGPT | Gemini | Agent/CLI surfaces |
 |---|---|---|---|---|
-| Standing condensed contract | Claude preferences / Cowork global instructions | Custom instructions | Instructions for Gemini | Tool-specific where supported |
+| Standing condensed contract | Generated chat body; Cowork requires supplied base plus addendum | Custom instructions | Instructions for Gemini | Tool-specific where supported |
 | Full constitution files | Project knowledge, upload, filesystem | Project files or attachments | Attach or paste | Read from repo checkout |
 | Professional overlay | Load only when relevant | Attach only when relevant | Attach only when relevant | Read only when relevant |
 | Voice boundary | Neutral partner voice for thinking; Andrew's voice only for output on his behalf | Same | Same | Same |
 | Ambient memory and history | Product-managed through account settings | Enabled, periodically reviewed; Temporary Chat when isolation is needed | Memory and activity retained per product settings | Tool-specific |
-| Deliberate persistent changes | Explicit approval for tool-mediated changes | Explicit approval for user-visible artefacts | Explicit approval for user-visible artefacts | Explicit approval for files, instructions, store entries and equivalent artefacts |
+| Deliberate persistent changes | Explicit approval for tool-mediated changes | Explicit approval for persistent artefacts, including hidden records | Explicit approval for persistent artefacts, including hidden records | Explicit approval for files, instructions, store entries and equivalent artefacts |
 | External actions | Cowork connector controls apply | Product-specific | Product-specific | Tool-specific |
 
 ## Principles
 
 - **Constitution files are the source of truth.** Platform prompts are derived and condensed.
 - **Standalone prompts work without attachments.** Chat surfaces need enough instruction to behave well when no constitution files are loaded.
-- **Constitution files take precedence when present.** Platform prompts must state this clearly.
-- **Platform files do not depend on the constitution being loaded.** They work as minimal derived contracts, while deferring when the full constitution files are present.
-- **Voice material stays outside platform configuration.** Platform files carry only the neutral-partner / Andrew-output boundary; execution voice material is supplied separately.
+- **Constitution files declare internal precedence when present.** Platform prompts state this within the host’s instruction hierarchy; file labels cannot elevate message authority or override host controls.
+- **Shared derivations work without full constitution files.** Chat and execution bodies supply standalone baselines and defer when the full constitution is present. Addenda and project templates require the base context specified in their loading instructions; maintenance references are not runtime contracts.
+- **Voice material stays outside platform configuration.** Shared bodies carry voice boundaries and compact standards; execution craft is supplied separately.
 - **Standard skill format only.** Skills remain SKILL.md folders. The repo does not create alternate formats.
 - **Deliberate persistent changes require approval.** This includes project instructions, saved instructions, global agent files, knowledge-store entries, explicit user-visible memory entries, SOUL.md-class files and equivalent standing context.
 - **Ambient product memory is settings-governed.** Platform adapters document whether it is enabled, how it is reviewed and how to start an isolated conversation. Standing prompts do not claim control over automatic retention or inference.
 - **Root maintenance files are not deployment files.** `CLAUDE.md` and `AGENTS.md` govern this repository only; platform guidance does not treat them as the general configuration pattern.
-- **Security settings are tool-side.** Credentials, trusted roots, redaction and dependency health belong in the products that hold them and must never be copied into this repository.
+- **Security settings are tool-side.** Credentials, exact trusted roots and account-specific security state belong in the products that hold them and must never be copied into this repository. Platform baselines may record portable settings policy and verification limits without importing those private values.
 
-Version: 2026.07.25 @ 3.0
+Version: 2026.09.13 @ 3.6

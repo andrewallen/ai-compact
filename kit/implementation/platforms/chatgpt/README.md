@@ -21,7 +21,7 @@ ChatGPT is the generalist and memory-backed surface in the AI estate.
 9. Keep memory enabled for ambient continuity, review it periodically for stale assumptions, and use Temporary Chat when a conversation should neither use nor update memory.
 10. Keep model-improvement/data-training controls off where available.
 
-Custom instructions must fit within 5,000 characters in total (confirmed on the web product on 2026-07-19). The paste-ready block in [custom-instructions.md](custom-instructions.md) measures 4,844 characters — re-measure after any edit, and re-verify the limit if the UI changes.
+A 5,000-character field was observed on the web product on 19 July 2026. This is historical evidence; confirm the current UI limit before deployment. The paste-ready length is generated into [custom-instructions.md](custom-instructions.md). Edit [the shared chat source](../chat-contract.md), then use [contract maintenance](../contract-maintenance.md) to refresh or check the copy.
 
 ## Using the Full Kit
 
@@ -39,4 +39,4 @@ The custom instructions are deliberately standalone. They must work when no cons
 
 ChatGPT memory is product-managed state, separate from custom instructions. The persistence rule governs deliberate tool actions such as changing a project file, standing instruction or explicit user-visible memory entry. It does not claim to prevent ChatGPT from automatically retaining or inferring context. Manage that behaviour through **Settings → Personalization**, saved-memory review and Temporary Chat.
 
-Version: 2026.07.25 @ 2.0
+Version: 2026.09.13 @ 2.2

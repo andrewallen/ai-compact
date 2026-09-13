@@ -2,7 +2,9 @@
 
 # Skills
 
-Version-controlled Agent Skills. The instruction core follows the portable Agent Skills specification; product-specific discovery, invocation and execution controls are adapters and must be checked against the client that consumes them. The current skills are authored and tested primarily for Claude Code.
+Version-controlled personal Agent Skills and maintenance references for first-party vendor packages and native capabilities. A plugin can bundle skills, tools, apps, hooks or other components; an opaque native capability may have no inspectable skill file. The instruction core follows the portable Agent Skills specification; product-specific discovery, invocation and execution controls are adapters and must be checked against the client that consumes them. The current skills are authored and tested primarily for Claude Code.
+
+The current `my-voice` source is part of the [September source-alignment review](../../../governance/evidence/2026-09-constitution-alignment.md). The later [Claude deployment record](../../../governance/evidence/2026-09-claude-deployment.md) verifies the enabled v2 package against all four source files; it does not establish installation in other clients or runtime invocation. The [implementation consolidation](../../../governance/evidence/2026-09-implementation-consolidation.md) removes maintenance history from runtime skill text and aligns the documentation audience rule. Cross-model steering is documented in [model guidance](../platforms/model-guidance.md); detailed output craft remains with the skill.
 
 ## What skills are
 
@@ -10,7 +12,7 @@ Skills are SKILL.md files that give an agent reusable instructions — methodolo
 
 Skills fall into three types: **reference** (conventions, knowledge — shape ongoing work), **task** (step-by-step workflows — often manually invoked), and **hybrid** (reference material with embedded workflows). See [best-practices.md](best-practices.md) for detailed guidance on designing effective skills.
 
-Each skill lives in its own folder with a required `SKILL.md` and optional supporting files. Supporting files load on demand and consume zero context tokens until Claude reads them — so depth is free as long as it lives in supporting files rather than SKILL.md.
+Each personal skill lives in its own folder with a required `SKILL.md` and optional supporting files. Put detailed references behind focused entry points, then verify actual loading in the target host. Discovery metadata, tools, retrieved files and execution output can each consume context. Supporting-file size is not a token measurement, and on-demand organisation does not make depth free.
 
 ## Folder structure
 
@@ -32,7 +34,7 @@ kit/implementation/skills/
 
 The `_template/` folder is scaffolding, not a deployable skill. Copy it to create a new skill.
 
-**Current skills.** [my-voice](my-voice/SKILL.md) renders my communications in the operational, broadcast/framing and authored voice registers, applies my documentation standard to substantive write-ups, and checks drafts for flattening. Model invocation is enabled for natural-language execution requests; its description and substance gate keep it out of exploration and thinking.
+**Current skills.** [my-voice](my-voice/SKILL.md) renders my communications in the operational, broadcast/framing and authored voice registers, applies my documentation standard to substantive write-ups, and checks drafts for flattening. Model invocation is enabled for natural-language execution requests. Its declared scope covers owned personal-voice output and authorised factual documentation, excluding exploration and thinking; actual discovery and loading depend on the client.
 
 ## Catalog
 
@@ -45,6 +47,14 @@ The `_template/` folder is scaffolding, not a deployable skill. Copy it to creat
 | [_template/SKILL.md](_template/SKILL.md) | Scaffold for a new standard-format skill. |
 | [best-practices.md](best-practices.md) | Living skill-design reference and source links. |
 
+## Cross-client capability assessment
+
+The [package register](package-register.md) owns implementation IDs, reviewed-source/runtime identities, selection status and composition requirements. It links source evidence to capability IDs without acting as a runtime router. [Capability composition probes](../../evals/capability-composition-probes.md) provide the pilot fixtures; they have been authored, not run.
+
+The [first-party inventory](first-party-inventory.md) validates Anthropic/OpenAI package provenance, contained skills and public-versus-local availability, including plugins. The initial [capability matrix](capability-matrix.md) maps knowledge-work and design requirements across Claude and OpenAI surfaces, distinguishing recorded settings, session exposure and unknown coverage. The [source register](source-register.md) links candidate providers and their evidence limits. The [evaluation and re-review method](review-method.md) covers token efficiency, capable thinking partners, preliminary constitution intersections and model-upgrade reviews. These are maintenance references, not runtime skills or deployment decisions.
+
+The [implementation plan](implementation-plan.md) defines the proposed repository preparation, bounded capability trials and subsequent client deployment, including exact initial file scope, constitutional checks, efficiency measures and rollback. Batch 1 repository preparation is implemented. Client trials and deployment remain pending their defined execution scopes.
+
 ## Creating a new skill
 
 1. Copy `_template/` to a new folder named for the skill (lowercase, hyphens, max 64 chars)
@@ -52,6 +62,7 @@ The `_template/` folder is scaffolding, not a deployable skill. Copy it to creat
 3. Replace the template body with your actual instructions
 4. Add supporting files if the skill needs reference material, examples, or scripts
 5. Keep SKILL.md under 500 lines — move depth to supporting files
+6. Add the skill and its maintained supporting files to this index
 
 ## Best practices
 
@@ -60,6 +71,8 @@ See [`best-practices.md`](best-practices.md) for the full guide on designing eff
 The essentials: keep SKILL.md under 500 lines, write descriptions that include both what and when in third person, match instruction specificity to task fragility, and test with real usage before relying on a skill.
 
 ## Deploying skills
+
+The filesystem routes below describe Claude Code. For Claude Chat/Cowork client enablement and verified source alignment, see the [Claude configuration baseline](../platforms/claude/configuration-baseline.md). An enabled skill need not be an exact copy of this source; compare all packaged files when verifying deployment.
 
 Skills in this repo are the source of truth. To deploy:
 

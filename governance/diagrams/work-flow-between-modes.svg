@@ -39,13 +39,13 @@
 
   <rect x="570" y="82" width="190" height="270" rx="10" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.75"/>
   <text x="665" y="106" text-anchor="middle" font-size="13" font-weight="600" fill="#0C447C">Coding Agents</text>
-  <text x="665" y="122" text-anchor="middle" font-size="9" fill="#185FA5">Claude Code / Codex / Copilot</text>
+  <text x="665" y="122" text-anchor="middle" font-size="9" fill="#185FA5">Code / Codex / Copilot / OpenCode</text>
   <rect x="588" y="146" width="154" height="44" rx="6" fill="#fff" stroke="#185FA5" stroke-width="0.5"/>
   <text x="665" y="164" text-anchor="middle" font-size="10" font-weight="500" fill="#0C447C">Repo work</text>
   <text x="665" y="178" text-anchor="middle" font-size="8.5" fill="#185FA5">read kit from filesystem</text>
   <rect x="588" y="206" width="154" height="44" rx="6" fill="#fff" stroke="#185FA5" stroke-width="0.5"/>
   <text x="665" y="224" text-anchor="middle" font-size="10" font-weight="500" fill="#0C447C">Implementation</text>
-  <text x="665" y="238" text-anchor="middle" font-size="8.5" fill="#185FA5">edit, verify, commit</text>
+  <text x="665" y="238" text-anchor="middle" font-size="8.5" fill="#185FA5">edit and verify; commit if authorised</text>
   <rect x="588" y="266" width="154" height="44" rx="6" fill="#fff" stroke="#854F0B" stroke-width="0.5" stroke-dasharray="4 3"/>
   <text x="665" y="284" text-anchor="middle" font-size="10" font-weight="500" fill="#633806">Obsidian Vault</text>
   <text x="665" y="298" text-anchor="middle" font-size="8.5" fill="#854F0B">external PKM reference</text>

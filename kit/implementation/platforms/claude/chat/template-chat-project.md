@@ -30,7 +30,7 @@ note the distinction — e.g. a file being edited should not govern behaviour.]
 
 ### Using past conversations in this project
 When I ask you to find, build on, or cross-reference previous threads, search
-the project conversation history actively. Use it to:
+the project conversation history when accessible and in scope; say when it is unavailable. Use it to:
 - Avoid repeating analysis or conclusions already reached
 - Build on decisions or framings already agreed
 - Flag when something in the current discussion extends, contradicts,
@@ -39,5 +39,11 @@ the project conversation history actively. Use it to:
 Do not surface past context unprompted unless it is directly relevant to
 what I am working on now. When you do reference it, say where it came from
 and why it's relevant — briefly.
+
+### Decisions and authority
+[Distinguish decisions I adopted from source findings and assistant recommendations.
+Record approved actions and exact targets, exclusions and any additional safeguards.
+A project stance does not override the current request or constitution. Updating this
+project record is a persistent change requiring scoped approval.]
 
 Version: [date] @ [time]

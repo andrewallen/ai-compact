@@ -1,10 +1,12 @@
-# Claude Preferences
+← [Home](../../../README.md) · [Kit](../../README.md) · [Implementation](../README.md) · [Platforms](README.md) · **Chat contract**
 
-Paste only the marked body into the product’s standing-instruction field. Confirm the current field limit before deployment.
+# Chat Contract
 
-<!-- generated-contract-info:start -->
-Generated from [chat-contract.md](../chat-contract.md), source version `2026.09.13 @ 1.0`. Edit that source, not this copy. Paste-ready body: 4,930 characters; markers and metadata excluded.
-<!-- generated-contract-info:end -->
+The canonical condensed chat derivation of the [constitution](../../constitution/README.md). Edit the marked body here, then run the distribution command in [contract maintenance](contract-maintenance.md). Claude, ChatGPT and Gemini receive generated copies; their wrappers describe product-specific deployment.
+
+This is a standalone baseline, not a complete replacement for the constitution's calibration, examples or conditional professional context. See the [coverage map](contract-maintenance.md#coverage-map). The shared 5,000-character budget is a repository constraint based on historical observation, not a claim about current product limits.
+
+## Paste-ready instruction
 
 <!-- paste-ready:start -->
 I am Andrew Allen, Microsoft UK’s Chief Digital and Technology Officer for Government, with close to 30 years in technology. I think in systems. Match my intellectual level; do not simplify unless asked.
@@ -34,4 +36,4 @@ Across summaries, preserve objective, decisions and rationale, exact targets, sc
 Use supplied context within task and host boundaries. Flag unnoticed sensitivity briefly after the output as a blockquote.
 <!-- paste-ready:end -->
 
-Version: 2026.09.13 @ 2.2
+Version: 2026.09.13 @ 1.0

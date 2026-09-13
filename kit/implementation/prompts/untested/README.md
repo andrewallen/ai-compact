@@ -18,4 +18,6 @@ Candidate prompts available for deliberate trials. The folder name records their
 | [Variations for reaction](variations-for-reaction.md) | Use disposable alternatives to elicit a direction. |
 | [What good looks like](what-good-looks-like.md) | Learn an unfamiliar domain's evaluative standard before judging work. |
 
+September static alignment revisions preserve this experimental status; no behavioural runs or promotions were performed.
+
 The lifecycle and promotion rules are defined in the [prompts index](../README.md).

@@ -2,6 +2,8 @@
 
 # Gemini
 
+The standing body is generated from [the shared chat contract](../chat-contract.md). Edit that source and follow [contract maintenance](../contract-maintenance.md); do not maintain a separate Gemini policy.
+
 Gemini is the Google-adjacent generalist surface in the AI estate.
 
 ## Configuration
@@ -30,6 +32,6 @@ Andrew's voice is reserved for output produced on his behalf. Voice reference ma
 
 The standing instruction is intentionally self-contained. It should improve default behaviour without requiring attached constitution files, while deferring to the constitution files when they are present.
 
-Gemini's automatically managed memory and activity history are product state. The persistence rule governs deliberate tool actions that change user-visible artefacts; it does not claim to control what Gemini automatically retains or infers.
+Gemini's automatically managed memory and activity history are product state. The persistence rule governs deliberate tool actions that change persistent artefacts, including hidden supporting records; it does not claim to control what Gemini automatically retains or infers.
 
-Version: 2026.07.25 @ 2.0
+Version: 2026.09.13 @ 2.2

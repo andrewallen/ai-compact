@@ -4,12 +4,15 @@
 
 Product-specific configurations and references that deploy the operating contract to individual AI tools. Platform files are deployments of the constitution files, not independent sources of truth.
 
+The [September alignment review](../../../governance/evidence/2026-09-constitution-alignment.md) records the source rewrite and static review. The later [Claude deployment record](../../../governance/evidence/2026-09-claude-deployment.md) verifies saved chat instructions, the Cowork addendum and the enabled my-voice v2 package. Other product references remain intended configuration guidance unless supported by their own deployment evidence.
+
 ## File Types
 
 - **Preferences / custom instructions** — condensed operating contracts pasted into a tool's always-on settings.
 - **Mode configs** — capability-specific settings for surfaces that need them, such as Cowork.
 - **Templates** — starting points for project instructions.
 - **Configuration references** — guidance for agent and CLI tools that should carry a minimal derived contract or read the constitution files directly when deeper operating context is needed.
+- **Configuration baselines** — adopted product settings and capability choices, with links to dated verification evidence; not runtime instructions.
 
 ## Folder Structure
 
@@ -17,7 +20,14 @@ Product-specific configurations and references that deploy the operating contrac
 kit/implementation/platforms/
 ├── README.md
 ├── deployment-map.md
+├── chat-contract.md
+├── execution-contract.md
+├── contract-maintenance.md
+├── sync_contracts.py
+├── model-guidance.md
 ├── claude/
+│   ├── README.md
+│   ├── configuration-baseline.md
 │   ├── personal-preferences.md
 │   ├── chat/template-chat-project.md
 │   ├── cowork/global-instructions.md
@@ -34,7 +44,11 @@ kit/implementation/platforms/
 │   └── README.md
 ├── copilot-cli/
 │   └── README.md
-└── hermes/
+├── hermes/
+│   └── README.md
+├── grok/
+│   └── README.md
+└── opencode/
     └── README.md
 ```
 
@@ -43,6 +57,13 @@ kit/implementation/platforms/
 | Surface | File | Deploys to | Purpose |
 |---|---|---|---|
 | All products | [deployment map](deployment-map.md) | Reference | Maps kit components to every supported product and mode. |
+| Shared chat | [chat contract](chat-contract.md) | Authored derivation | Canonical body for the three generated chat adapters. |
+| Maintenance | [contract maintenance](contract-maintenance.md) and [distribution script](sync_contracts.py) | Maintenance only | Coverage map, loading combinations and deterministic distribution. |
+| Defined tasks | [execution contract](execution-contract.md) | Source derivation | Shared bounded-execution contract and task handover fields. |
+| Multiple models | [model guidance](model-guidance.md) | Reference | Dated vendor observations, host distinctions and proposed steering. |
+| Grok | [configuration guide](grok/README.md) | Reference | Applying the shared contract through the actual host. |
+| OpenCode and Go | [configuration guide](opencode/README.md) | Reference | Instruction composition, model access and verification boundaries. |
+| Claude | [Configuration baseline](claude/configuration-baseline.md) | Reference | Adopted settings, capability catalogue and deployment-alignment status. |
 | Claude | [Claude index](claude/README.md) | Reference | Routes Chat, Cowork and Code configuration. |
 | Claude Chat | [personal preferences](claude/personal-preferences.md) | Claude settings | Condensed operating contract for every Claude chat. |
 | Claude Chat projects | [project template](claude/chat/template-chat-project.md) | Project instructions | Starting point for scoped chat projects. |
@@ -63,14 +84,14 @@ Configurable chat surfaces should have enough standing instruction to work when 
 
 Agent and CLI surfaces should carry a minimal derived contract and read the source files directly when deeper operating context is needed. At this time, the repo does not recommend creating new `CLAUDE.md` or `AGENTS.md` deployment files for those surfaces. The root files with those names govern this repo only.
 
-Platform files carry only the minimal voice boundary from the constitution files: the assistant uses its own neutral analytical voice when thinking with Andrew, and Andrew's voice is reserved for output produced on his behalf. The platform layer does not instruct tools to load voice material; that material is supplied separately when needed.
+Shared derivations carry the constitutional voice boundary, a compact writing standard and durable vocabulary constraints. Detailed craft remains in the voice skill. Product wrappers add deployment guidance; generated bodies are edited only through their shared sources. [Contract maintenance](contract-maintenance.md) defines coverage, loading combinations and the check/write commands. Cowork is an addendum supplied alongside a base contract, not a third standalone derivation.
 
 ## Adding a New Product
 
 1. Decide whether the product is a configurable chat surface or an agent/CLI reference surface.
 2. Create a folder under `kit/implementation/platforms/`.
-3. For configurable chat surfaces, add a standalone condensed contract plus a README.
-4. For agent/CLI surfaces, add a README that carries the minimal derived contract and points to the constitution files for deeper work.
-5. Update the root README and `kit/implementation/platforms/deployment-map.md`.
+3. Reference the appropriate shared derivation. If a detached copy is needed, add its marked body and metadata regions and register the destination in `sync_contracts.py`; do not author another copy independently.
+4. Put product-specific configuration and genuine additional safeguards in the wrapper or addendum. Document the required base context.
+5. Update this index, the root overview and deployment map, then run the distribution check.
 
-Version: 2026.07.13 @ 1.5
+Version: 2026.09.13 @ 1.9

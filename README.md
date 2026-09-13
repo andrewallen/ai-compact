@@ -8,7 +8,11 @@ The repository contains both a reusable framework and my real personal implement
 
 ## Status
 
-**Active and stable.** The architecture is established and the repository is ready to use. Changes are evidence-led: observed behaviour, product changes and deliberately adopted capabilities.
+The [September constitution alignment](governance/evidence/2026-09-constitution-alignment.md) records the source rewrite and static review; behavioural runs were excluded for that named batch. The later [Claude deployment record](governance/evidence/2026-09-claude-deployment.md) verifies saved chat instructions, the Cowork addendum and all four files in the enabled my-voice v2 package. It does not establish behavioural adherence or deployment to other products or project-specific constitution attachments.
+
+The [implementation consolidation](governance/evidence/2026-09-implementation-consolidation.md) establishes shared chat and execution sources with generated detached copies. See [contract maintenance](kit/implementation/platforms/contract-maintenance.md) for coverage, loading combinations and refresh commands.
+
+The five-layer architecture remains established. Source changes are evidence-led; the alignment review above records the current implementation work and its limits.
 
 ## How it works
 
@@ -23,7 +27,7 @@ In an exploratory conversation, the operating contract asks the model to widen t
 | Deploy the kit to an AI product | [Platform deployment map](kit/implementation/platforms/deployment-map.md) |
 | See how the whole system fits together | [Current architecture](governance/current-architecture.md) |
 | Understand why the structure exists | [Architecture decisions](governance/decisions/README.md) |
-| Review the current evaluation evidence | [Evaluation baseline](governance/evidence/2026-07-baseline.md) |
+| Review evaluation and deployment evidence | [Evidence index](governance/evidence/README.md), including the historical behavioural baseline and later source and deployment checks |
 | Test a behavioural change | [Evaluation harness](kit/evals/README.md) |
 | Maintain this repository | [AGENTS.md](AGENTS.md) and its [CLAUDE.md bridge](CLAUDE.md) |
 | Contribute or report a problem | [Contributing](CONTRIBUTING.md) and [security reporting](SECURITY.md) |
@@ -96,7 +100,8 @@ The [deployment map](kit/implementation/platforms/deployment-map.md) is the sour
 - **Claude Cowork:** [global instructions](kit/implementation/platforms/claude/cowork/global-instructions.md) plus the [Cowork project template](kit/implementation/platforms/claude/cowork/template-cowork-project.md).
 - **ChatGPT:** [configuration guide](kit/implementation/platforms/chatgpt/README.md) and [custom instructions](kit/implementation/platforms/chatgpt/custom-instructions.md).
 - **Gemini:** [configuration guide](kit/implementation/platforms/gemini/README.md) and [Instructions for Gemini](kit/implementation/platforms/gemini/saved-instructions.md).
-- **Agent and CLI surfaces:** [Claude Code](kit/implementation/platforms/claude/code/README.md), [Codex](kit/implementation/platforms/codex/README.md), [Copilot CLI](kit/implementation/platforms/copilot-cli/README.md), and [Hermes](kit/implementation/platforms/hermes/README.md).
+- **Agent and CLI surfaces:** [Claude Code](kit/implementation/platforms/claude/code/README.md), [Codex](kit/implementation/platforms/codex/README.md), [Copilot CLI](kit/implementation/platforms/copilot-cli/README.md), [Hermes](kit/implementation/platforms/hermes/README.md), and [OpenCode and Go](kit/implementation/platforms/opencode/README.md).
+- **Grok:** [Host-specific configuration guide](kit/implementation/platforms/grok/README.md).
 
 For full depth, load the core constitution files from [`kit/constitution/`](kit/constitution/README.md). Load the professional overlay only when its activation conditions apply. Voice material is supplied separately through the [`my-voice` skill](kit/implementation/skills/my-voice/SKILL.md) when producing output on the owner's behalf.
 
@@ -109,7 +114,7 @@ For full depth, load the core constitution files from [`kit/constitution/`](kit/
 - **Keep the repository self-contained.** Current files must explain the system without depending on external working history.
 - **Version only independently deployed files.** Embedded version markers belong in constitution and platform implementation files, where readers may encounter a detached copy. Git provides the history for every other file.
 - **Keep navigation rename-safe.** Use relative links and `Home` as the root breadcrumb label. Do not embed the repository slug or an absolute checkout path.
-- **Require explicit approval for deliberate persistent changes.** Tools and agents never change user-visible instruction surfaces, files, store entries or explicit memory entries autonomously. Product-managed ambient memory is configured and audited through product settings.
+- **Require explicit approval for deliberate persistent changes.** Specified change requests authorise their defined scope; tools and agents need approval for persistent changes, including hidden records. Narrower safeguards still apply. Product-managed ambient memory is configured and audited through product settings.
 
 ## Licence
 

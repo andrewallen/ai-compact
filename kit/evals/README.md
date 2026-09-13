@@ -4,6 +4,8 @@
 
 These fixtures test whether changes to the constitution files, the `my-voice` skill, and the condensed platform prompts derived from them improve behaviour rather than only improving prose. They are not loaded as operating context. Use them as regression tests after edits to `kit/constitution/`, `kit/implementation/skills/my-voice/`, or condensed platform prompts.
 
+The [September source-alignment batch](../../governance/evidence/2026-09-constitution-alignment.md) explicitly excluded behavioural runs at Andrew’s request. Fixtures and historical results are retained; no result certifies the revised source. This is a named-batch exception, not a change to the general evaluation policy.
+
 ## How to Run
 
 1. Start a fresh conversation or agent session.
@@ -29,5 +31,6 @@ Where possible, use a second model to grade responses against the rubric, then s
 | [challenge-threshold-probes.md](challenge-threshold-probes.md) | Material challenge without performative challenge to a sound brief. |
 | [clarification-threshold-probes.md](clarification-threshold-probes.md) | Direct execution on a sufficient brief and questions only for material ambiguity. |
 | [agent-evidence-scope-probes.md](agent-evidence-scope-probes.md) | Tool-grounded completion claims and exact-target authority. |
+| [capability-composition-probes.md](capability-composition-probes.md) | Synthetic artifact, editorial and synthesis cases; positive/negative activation, exploration and persistence under skill/plugin composition. Authored for the first-party pilot; not yet run. |
 
 Aggregate outcomes and claim boundaries are recorded in the [July 2026 evaluation baseline](../../governance/evidence/2026-07-baseline.md).

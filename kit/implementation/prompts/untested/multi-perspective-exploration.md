@@ -12,11 +12,11 @@
 > 3. [PERSPECTIVE_3 — e.g., a practitioner with 20 years of operational experience]
 >
 > For each perspective:
-> - State the core claim this expert would make
+> - Offer a plausible claim through this lens, labelled as your analysis rather than a real expert’s view
 > - Identify the strongest evidence supporting their view
 > - Identify what this perspective tends to overlook
 >
-> Then synthesise: where do these perspectives converge? Where do they genuinely conflict? What does the convergence suggest about what is most likely true?
+> Compare where these lenses converge or conflict, weighting their evidence rather than counting agreement. Keep the sketches unfinished and return the unresolved question to me before developing a position.
 
 ## Notes
 

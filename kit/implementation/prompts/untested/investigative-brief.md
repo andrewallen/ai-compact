@@ -20,4 +20,4 @@
 
 This prompt is designed to replace the "multi-page sprawl" pattern where someone tries to do everything in a single prompt. Each stage does one type of thinking. The fact check list at the end is critical — it makes the model's uncertainty explicit and actionable.
 
-For sensitive subjects, add: "Draw only from verifiable public sources. Flag clearly when something is inferred rather than established."
+Use verifiable, in-scope sources and distinguish inference from established fact for every subject. Where public-only research is required, add that constraint explicitly; the prompt does not authorise new private access.
