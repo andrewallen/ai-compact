@@ -6,7 +6,7 @@
 
 ## Prompt
 
-> I can't articulate what I want here, but I'll recognise it when I see it. Sketch me three or four genuinely different [framings / structures / openings] for [X] — different in kind, not degree. Keep them disposable: a few lines each, unfinished by design. I'll react. Do not develop any of them until I say which direction holds.
+> I can't articulate what I want here, but I'll recognise it when I see it. Sketch me three or four genuinely different [framings / structures / openings] for [X] — different in kind, not degree. Keep them disposable: a few lines each, unfinished by design. I'll react. After I react, help clarify the direction; develop it only when I explicitly ask. Selecting a sketch does not request the finished piece.
 
 ## Notes
 

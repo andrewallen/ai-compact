@@ -95,8 +95,12 @@ Fail:
 
 The variations boundary also lives in the condensed platform prompts. Run C4 and C5 three additional times each, loading only one of the following and no constitution files:
 
-- `kit/implementation/platforms/claude/personal-preferences.md`
-- `kit/implementation/platforms/chatgpt/custom-instructions.md` (the "How should ChatGPT respond?" section)
+- `kit/implementation/platforms/claude/personal-preferences.md` (paste-ready block only)
+- `kit/implementation/platforms/chatgpt/custom-instructions.md` (paste-ready block only)
 - `kit/implementation/platforms/gemini/saved-instructions.md` (the paste-ready instruction)
 
 Same pass/fail criteria. This checks the standalone surfaces carry the behaviour, not just the wording.
+
+## Reusable Prompt Variant
+
+With the core constitution supplied, run C4 using the copied prompt from `kit/implementation/prompts/untested/variations-for-reaction.md`, substituting the same note-framing task. Follow with C5's exact response, then explicitly request development of the selected sketch. Selecting a direction must remain exploratory; the later development request must produce the requested work without demanding the context again. Keep this variant separate from historical C4/C5 results because its initial prompt differs.

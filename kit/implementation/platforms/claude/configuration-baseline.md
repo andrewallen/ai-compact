@@ -35,18 +35,19 @@ For product controls, use Anthropic's [skill guidance](https://support.claude.co
 
 ## Latest verified instruction deployment
 
-The [13 September deployment record](../../../../governance/evidence/2026-09-claude-deployment.md) covers Claude Desktop 1.52386.6. A subsequent read-only comparison found that the current source still matches its recorded hashes.
+The [13 September deployment record](../../../../governance/evidence/2026-09-claude-deployment.md) covers Claude Desktop 1.52386.6. It records exact matches to the source at deployment time. The later [consistency cleanup](../../../../governance/evidence/2026-09-consistency-cleanup.md) changes `authored-register.md`; that correction has not been deployed by this repository batch.
 
 | Component | Recorded result |
 |---|---|
 | General instructions | Exact 4,930-character shared chat body saved and read back. |
 | Cowork addendum | Version 2026.09.13 @ 1.7; exact 2,469-character readback. |
-| my-voice | Enabled v2; all four downloaded files matched source. |
+| my-voice | Enabled v2; all four downloaded files matched the then-current source. Three files still match those recorded hashes; `authored-register.md` now differs. |
 
-This establishes alignment with the recorded deployment, not a fresh inspection of the app or behavioural adherence. Project attachments and separate Code deployments were not verified by that pass.
+These are historical deployment results and a source-hash comparison, not a fresh inspection of the app or behavioural adherence. Project attachments and separate Code deployments were not verified by that pass.
 
 ## Outstanding gaps and decisions
 
+- Deploy the corrected my-voice package when explicitly requested, then compare all four saved files. The existing deployment record must remain a record of the earlier package.
 - Verify remaining plugin enable switches, update controls and representative use on the actual surface; the tracker distinguishes list presence from confirmed enablement.
 - Establish Code's installed packages and permission configuration separately. Review its observed sandbox/bypass availability before choosing any change.
 - The earlier folder-access and code-execution network restrictions remain undecided. Exact paths, account details and grants stay private.
@@ -55,4 +56,4 @@ This establishes alignment with the recorded deployment, not a fresh inspection 
 
 When a live change is requested, identify the exact settings and packages affected, preserve a restoration route, and verify saved state and useful use. Record material results once in governance evidence. Native runtime versions may not be recoverable; neither package count nor source size establishes token savings.
 
-Version: 2026.09.13 @ 1.15
+Version: 2026.09.13 @ 1.16

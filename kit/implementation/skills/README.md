@@ -12,7 +12,7 @@ Deployment observations below are dated **13 September 2026**. Claude observatio
 
 | Skill or package / source | Used for | Platform | Deployment note |
 |---|---|---|---|
-| [my-voice](my-voice/SKILL.md) | Personal output, register selection and factual documentation standards | Claude; Codex | Claude: enabled v2, with all four current source hashes matching the recorded deployment. Codex: available, but all four local files differ from this source. |
+| [my-voice](my-voice/SKILL.md) | Personal output, register selection and factual documentation standards | Claude; Codex | Claude: v2 recorded enabled; the later authored-register correction awaits deployment (see [baseline](../platforms/claude/configuration-baseline.md)). Codex: the last comparison found all four local files divergent from source. |
 | Native [document skills](https://support.claude.com/en/articles/12512180-use-skills-in-claude) | Word, Excel, PowerPoint and PDF work | Claude Chat/Cowork | Code execution and file creation recorded On. Separate document-skill installation is unnecessary where native workflows are supplied. |
 | OpenAI-supplied Documents, Spreadsheets, Presentations and PDF workflows | Create, edit and inspect files | Codex | All four workflows exposed in the review session; execution not tested here. |
 | OpenAI-bundled visualize | Inline visual explanations and interactive tools | Codex | Skill exposed in the review session. |

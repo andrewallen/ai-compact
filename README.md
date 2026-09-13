@@ -8,11 +8,7 @@ The repository contains both a reusable framework and my real personal implement
 
 ## Status
 
-The [September constitution alignment](governance/evidence/2026-09-constitution-alignment.md) records the source rewrite and static review; behavioural runs were excluded for that named batch. The later [Claude deployment record](governance/evidence/2026-09-claude-deployment.md) verifies saved chat instructions, the Cowork addendum and all four files in the enabled my-voice v2 package. It does not establish behavioural adherence or deployment to other products or project-specific constitution attachments.
-
-The [implementation consolidation](governance/evidence/2026-09-implementation-consolidation.md) establishes shared chat and execution sources with generated detached copies. See [contract maintenance](kit/implementation/platforms/contract-maintenance.md) for coverage, loading combinations and refresh commands.
-
-The five-layer architecture remains established. Source changes are evidence-led; the alignment review above records the current implementation work and its limits.
+The five-layer architecture is established. The [evidence index](governance/evidence/README.md) distinguishes historical behavioural results, source reviews and recorded deployments. The [September consistency cleanup](governance/evidence/2026-09-consistency-cleanup.md) records the latest maintenance batch and its limits. Product baselines own outstanding deployment gaps; [contract maintenance](kit/implementation/platforms/contract-maintenance.md) owns source coverage and refresh checks.
 
 ## How it works
 
@@ -56,7 +52,7 @@ The framework and kit use five layers, ordered by authority and inverse rate of 
 
 [Evals](kit/evals/README.md) verify behaviour across the personal layers. [Governance](governance/README.md) records why the system is shaped this way. Neither is a sixth runtime layer.
 
-The constitution remains the behavioural source of truth. Platform-specific instructions are condensed derivations: they must work alone and defer to the full constitution when it is present.
+The constitution remains the behavioural source of truth. Shared contract bodies are condensed derivations: they work alone and defer to the full constitution when present. Product addenda require their declared base.
 
 ## System boundary
 
@@ -94,16 +90,7 @@ See [Current architecture](governance/current-architecture.md) for the canonical
 
 ## Deploying the kit
 
-The [deployment map](kit/implementation/platforms/deployment-map.md) is the source of truth across products and modes. The shortest routes are:
-
-- **Claude Chat:** [personal preferences](kit/implementation/platforms/claude/personal-preferences.md) plus the [chat project template](kit/implementation/platforms/claude/chat/template-chat-project.md).
-- **Claude Cowork:** [global instructions](kit/implementation/platforms/claude/cowork/global-instructions.md) plus the [Cowork project template](kit/implementation/platforms/claude/cowork/template-cowork-project.md).
-- **ChatGPT:** [configuration guide](kit/implementation/platforms/chatgpt/README.md) and [custom instructions](kit/implementation/platforms/chatgpt/custom-instructions.md).
-- **Gemini:** [configuration guide](kit/implementation/platforms/gemini/README.md) and [Instructions for Gemini](kit/implementation/platforms/gemini/saved-instructions.md).
-- **Agent and CLI surfaces:** [Claude Code](kit/implementation/platforms/claude/code/README.md), [Codex](kit/implementation/platforms/codex/README.md), [Copilot CLI](kit/implementation/platforms/copilot-cli/README.md), [Hermes](kit/implementation/platforms/hermes/README.md), and [OpenCode and Go](kit/implementation/platforms/opencode/README.md).
-- **Grok:** [Host-specific configuration guide](kit/implementation/platforms/grok/README.md).
-
-For full depth, load the core constitution files from [`kit/constitution/`](kit/constitution/README.md). Load the professional overlay only when its activation conditions apply. Voice material is supplied separately through the [`my-voice` skill](kit/implementation/skills/my-voice/SKILL.md) when producing output on the owner's behalf.
+Use the [deployment map](kit/implementation/platforms/deployment-map.md) to choose a product route, then follow its linked guide. It distinguishes standalone contracts, full constitution loading and addenda that require a base, including Cowork. Skills and project context are supplied separately when relevant.
 
 ## Maintenance rules
 

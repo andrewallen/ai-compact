@@ -36,7 +36,7 @@ The repository has three content domains: `framework/` is the generic pattern, `
 - `kit/implementation/platforms/deployment-map.md` — how the kit deploys to each product and mode
 - `governance/design-decisions.md` — reasoning behind file-level design choices
 - `governance/decisions/` — numbered ADRs for structural, layer-level decisions
-- `governance/evidence/2026-07-baseline.md` — current dated evaluation evidence and its claim boundaries
+- `governance/evidence/2026-07-baseline.md` — historical July evaluation evidence and its claim boundaries; later checks are indexed in `governance/evidence/README.md`
 - `framework/` — the generic, anonymised pattern the kit instantiates: layer model and adoption guide
 - `kit/philosophy/axioms.md` — the ten axioms from which the constitution derives
 - `kit/roles/` — role charters; the knowledge steward is the first standalone role

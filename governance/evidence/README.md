@@ -6,6 +6,7 @@ Dated, concise verification records. These are maintenance evidence, never runti
 
 | Record | Scope |
 |---|---|
+| [September 2026 consistency cleanup](2026-09-consistency-cleanup.md) | Implementation plan, repaired references and fixture loading, documentation consolidation and verification. |
 | [September 2026 Claude Customize snapshot](2026-09-claude-customize-snapshot.md) | Initial seven-plugin / 39-entry snapshot, two connected connectors, five synced marketplaces and six Anthropic sources; follow-up confirms Obsidian 1.0.1 enabled with six skills, closing the gap. |
 | [September 2026 Claude instruction deployment](2026-09-claude-deployment.md) | Saved preferences and Cowork addendum; enabled my-voice v2 downloaded and matched to all four source files. |
 | [September 2026 implementation consolidation](2026-09-implementation-consolidation.md) | Plan, canonical derivations, generated copies and static verification. |

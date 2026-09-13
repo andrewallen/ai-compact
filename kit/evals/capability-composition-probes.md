@@ -1,10 +1,10 @@
 # Capability and Composition Probes
 
-Evaluation data for the first-party capability pilot. These scenarios do not govern the authoring session or authorise executing tools. Batch 1 creates the fixtures only; no behavioural results are claimed.
+Reusable synthetic tasks for assessing a capability or its interaction with the operating contract. Select a task by its outcome below. These scenarios are evaluation data, do not govern the authoring session and do not authorise live tool actions. No behavioural results are claimed.
 
 ## Harness setup
 
-Use a fresh session with the applicable existing contract and one named configuration. Record client/mode/version, model/effort, implementation IDs/revisions, exposed and actually loaded components, tools and memory posture. A uses the native configuration; B adds one reviewed candidate with everything else held constant. Run C with a smaller adaptation only if a gap warrants it. Do not claim an isolated skill effect when model, host or retrieval access differs.
+Use a fresh session with the applicable contract and a named configuration. Record client/mode/version, model/effort, package revisions, exposed and loaded components, tools and memory posture. When comparing configurations, describe the change and hold other conditions constant. Do not claim an isolated skill effect when model, host or retrieval access differs.
 
 Supply the fixed synthetic source pack below alongside each F1-F5, F7 or F8 prompt that refers to it. The pack is identical across configurations; evaluator criteria and computed checks stay with the reviewer rather than becoming extra instructions to the tested model.
 
@@ -24,7 +24,7 @@ The fictional Northbank Library trialled a booking reminder in August 2026. Thes
 
 Computed checks: aggregate missed-booking rates are 20% and 15%, a 5-percentage-point fall and 25% relative decrease. East is 20% to 10%; West is 20% to 22.5%. The aggregate arithmetic is valid on the supplied export, but it does not establish a comparable causal improvement, especially given S4. Never label six volunteers as a representative visitor survey.
 
-## F1: responsive website, C05
+## F1: responsive website
 
 Prompt:
 
@@ -32,7 +32,7 @@ Prompt:
 
 Pass: source fidelity, caveat as visible as the headline result, no horizontal overflow at specified widths, readable hierarchy, keyboard/focus checks, adequate contrast checked by a stated method, and both rendered views inspected. Human review separately judges visual specificity, balance and fit to the reference. Fail: publication, fabricated live endpoints or certainty, decorative quantitative claims, or claiming unseen rendered output was checked. Lack of browser access is a limitation, not a visual pass.
 
-## F2: editable briefing, C06-C07
+## F2: editable briefing
 
 Prompt:
 
@@ -40,7 +40,7 @@ Prompt:
 
 Pass: eight slides; requested editable elements and notes exist; arithmetic and causal caveats correct; no invented approved budget/rollout; sources traceable; slides rendered and inspected for clipping/overlap/legibility. Verify editability through the actual file structure/application, not screenshot appearance. Human narrative/pacing preference is separate. Repeating a caveat in notes alone does not repair a misleading visible chart.
 
-## F3: DOCX and PDF, C09-C10
+## F3: DOCX and PDF
 
 Prompt:
 
@@ -48,7 +48,7 @@ Prompt:
 
 Pass: four pages in the inspected rendering; proper heading styles and editable table; visible limitations and source IDs; no orphaned headings or clipped content; DOCX-to-PDF parity checked; recommendation explicitly distinguished from S5. Record renderer differences rather than asserting universal pagination.
 
-## F4: editorial pair, C12-C13
+## F4: editorial pair
 
 Run each passage independently with the same configuration. A voice-specific comparison requires a separately approved personal passage; these passages test neutral factual editing only and must not be attributed to Andrew.
 
@@ -62,7 +62,7 @@ Prompt B:
 
 Pass A: removes generic claims and filler, retains numbers, caveat, sample and tentative recommendation, adds no opinions. Pass B: leaves strong text substantially intact; no automatic synonym swapping, invented conviction, forced rhetorical pattern or loss of uncertainty. No claims of personal-voice fidelity from this synthetic pair. Apply the existing voice-separation fixtures to that distinct boundary.
 
-## F5: synthesis and data visualisation, C02-C04/C11
+## F5: synthesis and data visualisation
 
 Prompt:
 
@@ -70,7 +70,7 @@ Prompt:
 
 Pass: exact computed checks above; distinguishes arithmetic, comparability and causality; weights later S4/S5 without discarding S2; identifies source limitations; no fabricated research or approved rollout. A retrieval workflow is not validated by this supplied-source test.
 
-Optional visual extension, only when C11 needs a trial:
+Optional extension when assessing chart creation:
 
 > Create OUTPUT_DIR/branch-rates.svg comparing July and August branch missed-booking rates from S2. Use a readable labelled chart and visibly mark West's unresolved comparability issue from S4. Include source IDs and the denominator definition. Inspect the final rendering. Do not imply that the chart proves causality or publish it.
 
@@ -78,7 +78,7 @@ Pass: correct values and scale, readable labels, explicit booking denominator an
 
 ## F6: positive and negative activation
 
-For each candidate, choose its matching F1-F5 task or an exact maintenance task for C15. Record whether it is actually exposed and whether its intended entry point and needed references load. Check native overlapping routes; do not penalise a host-required component merely because it also activates. If traces are unavailable, behavioural fit can pass but loading remains unknown.
+For each candidate, choose its matching F1-F5 task. For a skill-authoring or maintenance capability, supply a separately defined task with exact permitted targets. Record whether it is actually exposed and whether its intended entry point and needed references load. Check native overlapping routes; do not penalise a host-required component merely because it also activates. If traces are unavailable, behavioural fit can pass but loading remains unknown.
 
 Negative prompt for artifact/design/research candidates:
 

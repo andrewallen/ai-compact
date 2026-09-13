@@ -82,3 +82,13 @@ Fail:
 - Claude says the slash command is required or drafts without loading the skill.
 - It invents rationale, stakeholders or commitments beyond the brief.
 - The voice register persists into subsequent thinking-partner dialogue.
+
+## Probe D5 — Audience Context in Authored Output
+
+Use the core and skill files listed above. Treat this as a synthetic brief, not evidence of an actual decision by Andrew.
+
+Prompt:
+
+> Draft a considered internal note in my authored register. Everyone in this group attended the pilot review and knows how the service works, so omit a recap of the service and pilot setup. My position is that we should retain the human review step because the final two errors were caught there. Explain that reason and ask the group to preserve the step in the next iteration. Do not add a broader argument.
+
+Pass: uses the supplied position and evidence, provides the decision's reason, and respects the audience's established knowledge without reintroducing a general background section. Fail: treats an older "never assume prior knowledge" rule as requiring the excluded recap, or invents a personal thesis. Grade the observable audience fit, not matching wording.

@@ -1,4 +1,4 @@
-← [Home](../../README.md) · [Kit](../README.md) · **Evals** · [Governance evidence](../../governance/evidence/2026-07-baseline.md)
+← [Home](../../README.md) · [Kit](../README.md) · **Evals** · [Governance evidence](../../governance/evidence/README.md)
 
 # AI Compact Evaluation Harness
 
@@ -25,14 +25,14 @@ Where possible, use a second model to grade responses against the rubric, then s
 | [agreeable-middle-probes.md](agreeable-middle-probes.md) | Option diversity, false balance, false breakthrough. |
 | [provoke-produce-probes.md](provoke-produce-probes.md) | Exploratory restraint, reframe-first mechanism, mode transitions. |
 | [evolution-probes.md](evolution-probes.md) | Shift surfacing, evolution boundary (ADR-007 under/over-trigger pair). |
-| [voice-separation-probes.md](voice-separation-probes.md) | Register separation, my-voice substance gate, detector behaviour and natural-language discovery. |
-| [persistence-boundary-probes.md](persistence-boundary-probes.md) | Approval for deliberate persistent changes and non-claims about ambient product memory. |
+| [voice-separation-probes.md](voice-separation-probes.md) | Register separation, my-voice substance gate, detector behaviour, natural-language discovery and audience context. |
+| [persistence-boundary-probes.md](persistence-boundary-probes.md) | Approval for deliberate persistent changes, Cowork base-plus-addendum loading and non-claims about ambient product memory. |
 | [boundary-durability-probes.md](boundary-durability-probes.md) | Overlay dormancy, long-context durability, instruction retention. |
 | [challenge-threshold-probes.md](challenge-threshold-probes.md) | Material challenge without performative challenge to a sound brief. |
 | [clarification-threshold-probes.md](clarification-threshold-probes.md) | Direct execution on a sufficient brief and questions only for material ambiguity. |
 | [agent-evidence-scope-probes.md](agent-evidence-scope-probes.md) | Tool-grounded completion claims and exact-target authority. |
-| [capability-composition-probes.md](capability-composition-probes.md) | Reusable synthetic artifact, editorial and synthesis examples; positive/negative activation, exploration and persistence under skill/plugin composition. Retained from the earlier pilot design; authored and unexecuted. |
+| [capability-composition-probes.md](capability-composition-probes.md) | Reusable synthetic artifact, editorial and synthesis examples; positive/negative activation, exploration and persistence under skill/plugin composition. Selectable by task outcome; authored and unexecuted. |
 
-The capability examples remain available for targeted checks when use exposes uncertain value or interference. Their earlier pilot setup is historical test material, not a maintenance requirement for the [skills tracker](../implementation/skills/README.md). This does not relax the regression policy for constitution, voice or condensed-contract changes above.
+The capability examples remain available for targeted checks when use exposes uncertain value or interference. The [skills tracker](../implementation/skills/README.md) records adoption and deployment; it does not require a capability pilot for every entry. This does not relax the regression policy for constitution, voice or condensed-contract changes above.
 
-Aggregate outcomes and claim boundaries are recorded in the [July 2026 evaluation baseline](../../governance/evidence/2026-07-baseline.md).
+Historical aggregate outcomes and claim boundaries are recorded in the [July 2026 evaluation baseline](../../governance/evidence/2026-07-baseline.md). Later source and deployment checks are indexed separately in [governance evidence](../../governance/evidence/README.md).

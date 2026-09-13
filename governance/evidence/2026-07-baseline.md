@@ -2,6 +2,8 @@
 
 # July 2026 Evaluation Baseline
 
+**Historical scope.** This record concerns the July configuration. References below to "current" describe that configuration at the time of evaluation. The [September rewrite](2026-09-constitution-alignment.md) changed the constitution and moved model guidance out of the execution skill. These July results do not validate that rewrite or later source changes; the original outcomes and limitations below are preserved.
+
 The dated evidence supporting the current behavioural guidance in AI Compact. It records what was evaluated, the outcomes adopted into the maintained files and the limits of the resulting claims.
 
 ## Status

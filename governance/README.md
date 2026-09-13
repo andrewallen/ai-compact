@@ -4,34 +4,20 @@
 
 The current architecture, adopted decisions and evidence that explain and evolve the framework and personal kit. Governance is not a runtime layer and is never loaded as standing operating context.
 
-## Start here
+## Sources
 
-| Need | Source |
+| Source | Responsibility |
 |---|---|
-| Implementation consolidation | [Plan and verification](evidence/2026-09-implementation-consolidation.md) |
-| Constitution source alignment | [Review, corrections and evidence limits](evidence/2026-09-constitution-alignment.md) |
-| Current system topology | [current-architecture.md](current-architecture.md) |
-| Binding structural decisions | [decisions/](decisions/README.md) |
-| File-level design reasoning | [design-decisions.md](design-decisions.md) |
-| Current visual projections | [diagrams/](diagrams/README.md) |
-| Current dated behavioural evaluation evidence | [evidence/2026-07-baseline.md](evidence/2026-07-baseline.md) |
-| Latest recorded Claude instruction deployment | [Saved instructions, Cowork addendum and my-voice v2 verification](evidence/2026-09-claude-deployment.md) |
-| Earlier Claude configuration inspection | [Settings baseline and then-outstanding deployment gaps](evidence/2026-09-claude-configuration.md) |
+| [Current architecture](current-architecture.md) | Current relationship between framework, kit, external memory and products. |
+| [Design decisions](design-decisions.md) | Reasoning behind file-level and behavioural choices, including rejected alternatives. |
+| [Architecture decisions](decisions/README.md) | Numbered ADRs for structural, layer-level, boundary and naming decisions. |
+| [Diagrams](diagrams/README.md) | Visual views of the current architecture and deployment model. |
+| [Evidence index](evidence/README.md) | Dated evaluations and configuration checks, with their claim boundaries. |
 
-The live product deployment source sits with the artefacts it maps at [kit/implementation/platforms/deployment-map.md](../kit/implementation/platforms/deployment-map.md).
-
-## Record types
-
-| Location | Responsibility |
-|---|---|
-| [current-architecture.md](current-architecture.md) | Canonical current relationship between framework, kit, external memory and products. |
-| [design-decisions.md](design-decisions.md) | Narrative reasoning behind file-level and behavioural design choices. |
-| [decisions/](decisions/README.md) | Numbered ADRs for structural, layer-level, boundary and naming decisions. |
-| [diagrams/](diagrams/README.md) | Generated views of the active architecture and deployment model. |
-| [Evidence index](evidence/README.md) | Concise, dated records of material evaluations and configuration verification, with their claim boundaries. |
+Product routing and setup belong with implementation: start with the [deployment map](../kit/implementation/platforms/deployment-map.md).
 
 ## Evidence policy
 
-Current paths and responsibilities are defined by the root README, [current architecture](current-architecture.md), the ADRs and the live deployment map. Those maintained sources must be sufficient to understand the system.
+Current paths and responsibilities are defined by the root README, [current architecture](current-architecture.md), the ADRs and the maintained deployment map. Those maintained sources must be sufficient to understand the system.
 
 Evidence records state what was tested, what the results support and where claims remain limited. Raw conversations, account audits and raw eval transcripts are working material rather than maintained governance.

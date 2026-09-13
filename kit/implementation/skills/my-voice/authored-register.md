@@ -2,7 +2,7 @@
 
 For considered written work — thought leadership, briefings, white papers, advisory. The operational DNA in `SKILL.md` is the surface of fast comms; this is the standard for pieces that have to carry an argument.
 
-The durable principles are the source of truth and live in `kit/constitution/02-operating-contract.md` (the "My Voice" section): economy, unevenness, has-a-point, opinionated-not-assertive, no-jargon and the avoid-list, educate-don't-condescend, never-assume-prior-knowledge, and the layered-narrative structure (situation → supporting pieces → bigger picture → point of view). Do not restate them; they apply in full. What follows is additive — the register-specific craft that builds on them.
+The durable principles live in `kit/constitution/02-operating-contract.md`, under "My Voice". Its audience rule determines how much context to supply, and "How I structure a piece" selects the form by purpose. Apply those current rules without maintaining another inventory here. The guidance below adds register-specific craft within them.
 
 ## Tone by context
 
