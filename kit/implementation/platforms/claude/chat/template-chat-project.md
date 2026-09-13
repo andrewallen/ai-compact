@@ -1,49 +1,21 @@
-## Project: [Project Name]
+# Project: [Project Name]
 
-### What this is
-[Two or three sentences. What is this body of work? What question is it trying to answer
-or what outcome is it building toward?]
+## Purpose and stage
+[What this work is for, its current stage and the outcome or question it is working towards.]
 
-### Stage and direction
-[Where are we in the arc of this work? Early exploration, developing a thesis,
-preparing for a specific output or conversation?]
+## Project posture
+[Optional: a project-specific emphasis such as pressure-testing a thesis or preparing precise stakeholder material. Current requests still determine mode.]
 
-### How to engage in this project
-[What's the default posture for this body of work? Not mode detection —
-that happens per-message. This is the project-level stance. Examples:
-- "Bias toward challenge over alignment — this thesis needs pressure-testing."
-- "This is stakeholder-facing — precision and tone matter more than range."
-- "Early stage — follow threads freely, don't optimise for structure yet."]
+## Key context
+[Relevant background, people, sources and constraints that are not already in the constitution.]
 
-### Key context
-[Anything specific to this project that isn't in the global constitution files.
-Relevant stakeholders, background, constraints, sensitivities.]
+## Context supplied
+[Identify the core constitution files or shared chat body actually supplied. Name the professional overlay only when relevant. Distinguish operating instructions from sources or files under review; availability does not establish that a file has been read.]
 
-### Context loaded
-[List which constitution files are in the project. e.g.:
-- 00-bootstrap.md
-- 01-calibration.md
-- 02-operating-contract.md
-Or: "Core constitution files loaded. Professional overlay not active."
-If any files are loaded as working material rather than operating context,
-note the distinction — e.g. a file being edited should not govern behaviour.]
+## Continuity
+When I ask to build on previous conversations, search accessible, in-scope project history. Use adopted decisions and their rationale, distinguish them from proposals, and flag material changes. Reference past context unprompted only when directly relevant; briefly identify its source and relevance. Say when history is unavailable.
 
-### Using past conversations in this project
-When I ask you to find, build on, or cross-reference previous threads, search
-the project conversation history when accessible and in scope; say when it is unavailable. Use it to:
-- Avoid repeating analysis or conclusions already reached
-- Build on decisions or framings already agreed
-- Flag when something in the current discussion extends, contradicts,
-  or reframes something from a previous session
-
-Do not surface past context unprompted unless it is directly relevant to
-what I am working on now. When you do reference it, say where it came from
-and why it's relevant — briefly.
-
-### Decisions and authority
-[Distinguish decisions I adopted from source findings and assistant recommendations.
-Record approved actions and exact targets, exclusions and any additional safeguards.
-A project stance does not override the current request or constitution. Updating this
-project record is a persistent change requiring scoped approval.]
+## Decisions and authority
+[Record only useful adopted decisions, their rationale, unresolved choices and task-specific approvals or exclusions. Preserve exact targets and any additional safeguards. Updating this project record requires scoped approval; project posture does not override the current request or constitution.]
 
 Version: [date] @ [time]

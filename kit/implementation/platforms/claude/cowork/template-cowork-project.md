@@ -1,60 +1,18 @@
 # Project: [Project Name]
 
-## What this project is
-[Two or three sentences. What is this body of work? What question is it trying to answer
-or what outcome is it building toward?]
+## Purpose and outcome
+[What this work is for, its current stage and what a useful result must achieve. Specify output formats only when the global defaults do not fit.]
 
-## Status
-[Current stage — e.g. Early research / Active development / In delivery / On hold]
+## Working locations and context
+[Name the authorised project or folder locations and relevant source files. Supply the core constitution or shared chat body plus the Cowork global addendum. Identify how that base is supplied; do not assume profile-preference inheritance or claim unread context is loaded.]
 
-## Objectives
-[What does done look like? If there are multiple objectives, list them.
-If the default output formats (docx, pptx, xlsx) don't apply to this project,
-note the expected formats here.]
-
-## Key stakeholders
-[Name, organisation, role/relevance. Note any sensitivities.]
-
-## Constraints and considerations
-[Deadlines, political sensitivities, things to avoid, confidentiality requirements.
-Remove this section if none apply.]
-
-## Connectors in use
-[Which connectors are active for this project? e.g. Gmail, Google Calendar, Slack.
-Record any additional limits. All external actions retain the global preview-and-confirm safeguard; listing a connector does not authorise its use.
-Remove this section if no connectors are relevant.]
-
-## Scheduled tasks
-[Any recurring tasks running within this project? Note the task, cadence, and what
-it produces. Validate manually before enabling automation.
-Remove this section if no scheduled tasks are configured.]
-
-## Context supplied
-[Identify the base actually supplied: core constitution (bootstrap, calibration and
-operating contract), or the shared chat-contract body. Supply the Cowork global
-addendum alongside it. Do not infer that profile preferences are available here.
-List optional professional context only when relevant. Distinguish instructions
-from review material and sources; do not claim unread files or history are loaded.]
-
-## Files in this folder
-[Brief inventory of what exists here and what each file is for.
-Propose updates as the project develops; write them only with scoped approval.]
-
-## Decisions made
-[Log of significant decisions I adopted in previous sessions, with source, date and rationale.
-Keep assistant recommendations and unresolved choices distinct.
-Remove this section until there are decisions to record.]
-
-## Open questions
-[Things that are unresolved and need input or a decision before they can move forward.
-Remove this section until there are open questions.]
+## Constraints
+[Relevant deadlines, stakeholders, sensitivities and task-specific limits. Omit details already supplied in the global instructions.]
 
 ## Scope and authority
-[Record approved actions, exact targets, folder boundaries, exclusions and open decisions.
-The supplied Cowork addendum defines the additional safeguards; record task-specific
-confirmations and any explicit exceptions here without restating its rules.]
+[Record approved actions and exact targets, exclusions, unresolved decisions, confirmations and explicit exceptions. The Cowork addendum's plan, file and connector safeguards remain in force. Propose updates to this record; write only authorised changes.]
 
-## Last updated
-[Date and brief note on what changed.]
+## Optional continuity
+[Add only what this project needs: adopted decisions with source/date/rationale, open questions, essential file references, or relevant connectors and scheduled tasks. Link existing records instead of duplicating inventories. Listing a connector does not authorise its use; scheduled tasks require manual validation before enablement.]
 
 Version: [date] @ [time]

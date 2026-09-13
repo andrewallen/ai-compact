@@ -2,7 +2,7 @@
 
 # Platforms
 
-Product-specific guidance for deploying the operating contract and configuring selected capabilities. Instruction bodies derive from the constitution; capability choices come from the [skills catalogue](../skills/README.md). Platform guides own the supported controls and distinguish adopted targets from verified deployment.
+Product-specific guidance for supplying the operating contract and configuring the [skills working set](../skills/README.md). Instruction bodies derive from the constitution. Platform guides own setup, supported controls and remaining deployment gaps; dated evidence records observations.
 
 The [September alignment review](../../../governance/evidence/2026-09-constitution-alignment.md) records the source rewrite and static review. The later [Claude deployment record](../../../governance/evidence/2026-09-claude-deployment.md) verifies saved chat instructions, the Cowork addendum and the enabled my-voice v2 package. Other product references remain intended configuration guidance unless supported by their own deployment evidence.
 
@@ -12,7 +12,7 @@ The [September alignment review](../../../governance/evidence/2026-09-constituti
 - **Mode configs** — capability-specific settings for surfaces that need them, such as Cowork.
 - **Templates** — starting points for project instructions.
 - **Configuration references** — guidance for agent and CLI tools that should carry a minimal derived contract or read the constitution files directly when deeper operating context is needed.
-- **Configuration baselines** — delivery of adopted capability choices, saved settings and verification limits. [Claude](claude/configuration-baseline.md) retains earlier verified observations; [Codex](codex/configuration-baseline.md) records an unverified live target. These are not runtime instructions.
+- **Configuration baselines** — setup, maintained settings and deployment gaps for [Claude](claude/configuration-baseline.md) and [Codex](codex/configuration-baseline.md). Detailed verification is linked from governance evidence. These are not runtime instructions.
 
 ## Folder Structure
 
@@ -64,7 +64,7 @@ kit/implementation/platforms/
 | Multiple models | [model guidance](model-guidance.md) | Reference | Dated vendor observations, host distinctions and proposed steering. |
 | Grok | [configuration guide](grok/README.md) | Reference | Applying the shared contract through the actual host. |
 | OpenCode and Go | [configuration guide](opencode/README.md) | Reference | Instruction composition, model access and verification boundaries. |
-| Claude | [Configuration baseline](claude/configuration-baseline.md) | Reference | Target capability controls, last verified settings and deployment alignment. |
+| Claude | [Configuration baseline](claude/configuration-baseline.md) | Reference | Instruction destinations, maintained settings and recorded deployment. |
 | Claude | [Claude index](claude/README.md) | Reference | Routes Chat, Cowork and Code configuration. |
 | Claude Chat | [personal preferences](claude/personal-preferences.md) | Claude settings | Condensed operating contract for every Claude chat. |
 | Claude Chat projects | [project template](claude/chat/template-chat-project.md) | Project instructions | Starting point for scoped chat projects. |
@@ -76,7 +76,7 @@ kit/implementation/platforms/
 | Gemini | [Instructions for Gemini](gemini/saved-instructions.md) | Gemini standing instructions | Standalone condensed contract. |
 | Gemini | [configuration guide](gemini/README.md) | Reference | Setup, memory/activity posture, context usage. |
 | Codex | [configuration guide](codex/README.md) | Reference | How to use the constitution files without deploying AGENTS.md. |
-| Codex | [configuration baseline](codex/configuration-baseline.md) | Reference | Target native and optional capability configuration; live state unverified. |
+| Codex | [configuration baseline](codex/configuration-baseline.md) | Reference | Setup, observed availability and remaining deployment gaps. |
 | Copilot CLI | [configuration guide](copilot-cli/README.md) | Reference | GitHub-native agent usage with kit references. |
 | Hermes | [configuration guide](hermes/README.md) | Reference | Persistent-agent usage with kit references and open persona/redaction decisions. |
 
@@ -96,4 +96,4 @@ Shared derivations carry the constitutional voice boundary, a compact writing st
 4. Put product-specific configuration and genuine additional safeguards in the wrapper or addendum. Document the required base context.
 5. Update this index, the root overview and deployment map, then run the distribution check.
 
-Version: 2026.09.13 @ 1.10
+Version: 2026.09.13 @ 1.11

@@ -2,22 +2,14 @@
 
 # Claude
 
-Claude spans three distinct surfaces. Each uses the same constitution but has a different deployment mechanism.
-
-The [configuration baseline](configuration-baseline.md) translates the [selected capability catalogue](../../skills/README.md) into Claude controls and separates the adopted target from the last verified settings. Use native Chat/Cowork file capabilities; public document-skills is a Code delivery option where needed. Selected plugins have an On target for the whole bundle. Disabled plugins are unavailable to select in chat; there is no task-only or per-skill plugin switch. Use provider-managed delivery and record unavailable routes.
-
-The [initial September verification](../../../../governance/evidence/2026-09-claude-configuration.md) records the earlier instruction drift; the later [deployment record](../../../../governance/evidence/2026-09-claude-deployment.md) verifies saved chat instructions, the Cowork addendum and all four files in the enabled my-voice v2 package. The later [Customize snapshot](../../../../governance/evidence/2026-09-claude-customize-snapshot.md) records the lists and sync references plus a follow-up showing Obsidian 1.0.1 enabled with six skills. All eight selected plugins are now evidenced across the supplied views. These are maintenance references, not standing conversation instructions.
+Chat, Cowork and Code use the same constitution through different instruction surfaces. The [configuration baseline](configuration-baseline.md) explains where to supply each file, the maintained settings and the latest deployment evidence.
 
 | Surface | Files | Purpose |
 |---|---|---|
-| Claude Chat | [personal-preferences.md](personal-preferences.md) and [chat/template-chat-project.md](chat/template-chat-project.md) | Standing preferences plus scoped project instructions. |
-| Claude Cowork | [cowork/global-instructions.md](cowork/global-instructions.md) and [cowork/template-cowork-project.md](cowork/template-cowork-project.md) | Cowork safeguards and project setup; requires supplied core or shared chat context. |
-| Claude Code | [code/README.md](code/README.md) | Configuration reference for Code surfaces and CLI. |
+| Chat | [Personal preferences](personal-preferences.md); [project template](chat/template-chat-project.md) | Standing contract and project-specific context. |
+| Cowork | [Global addendum](cowork/global-instructions.md); [project template](cowork/template-cowork-project.md) | Additional delegation safeguards and scoped project context. |
+| Code | [Configuration guide](code/README.md) | Session startup and a generated fallback contract. |
 
-Cowork requires the [core constitution](../../../constitution/README.md) or [shared chat body](../chat-contract.md) alongside its addendum. Confirm actual availability rather than assuming profile-preference inheritance.
+Cowork requires the core constitution or shared chat body alongside its addendum. The [skills tracker](../../skills/README.md) records the working set, including the separately supplied my-voice package. [Contract maintenance](../contract-maintenance.md) defines valid loading combinations; the [deployment map](../deployment-map.md) covers other products.
 
-For deeper work, load the core files from the [constitution](../../../constitution/README.md). Voice material is supplied separately through the [my-voice skill](../../skills/my-voice/SKILL.md) only when producing output on the owner's behalf.
-
-The cross-product relationship is documented in the [deployment map](../deployment-map.md).
-
-Version: 2026.09.13 @ 1.7
+Version: 2026.09.13 @ 1.8
