@@ -6,6 +6,8 @@
 
 **Repository source alignment complete. Static review only; source remains uncommitted and undeployed.** The constitutional corrections and downstream cascade are implemented. This record does not establish runtime adherence, cross-model parity or installed configuration alignment.
 
+**Subsequent status.** The statement above records this batch's endpoint. Following this batch, [implementation consolidation](2026-09-implementation-consolidation.md) established generated contract distribution, and the [Claude instruction deployment](2026-09-claude-deployment.md) verified saved chat instructions, the Cowork addendum and the enabled `my-voice` v2 package. The source work was subsequently included in commit `be2d142`. Those records carry their own scope and limits; they do not establish deployment of full constitution attachments, other-client alignment or behavioural adherence.
+
 Andrew requested repository alignment, excluded behavioural testing, and instructed implementation of the discussed plan and remaining changes. This authorised the named repository batch, including corrections found in review. The exclusion is the explicit exception to behavioural runs for this September batch; the general evaluation policy remains unchanged. Committing, publishing and changing live product settings were outside the batch.
 
 An earlier draft of this record incorrectly attributed unfinished repairs to an approval rejection. The visible tool history did not substantiate that account. The repairs were outstanding implementation work and have now been applied under the existing authorisation.

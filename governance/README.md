@@ -15,7 +15,8 @@ The current architecture, adopted decisions and evidence that explain and evolve
 | File-level design reasoning | [design-decisions.md](design-decisions.md) |
 | Current visual projections | [diagrams/](diagrams/README.md) |
 | Current dated behavioural evaluation evidence | [evidence/2026-07-baseline.md](evidence/2026-07-baseline.md) |
-| Claude configuration verification | [evidence/2026-09-claude-configuration.md](evidence/2026-09-claude-configuration.md) |
+| Latest recorded Claude instruction deployment | [Saved instructions, Cowork addendum and my-voice v2 verification](evidence/2026-09-claude-deployment.md) |
+| Earlier Claude configuration inspection | [Settings baseline and then-outstanding deployment gaps](evidence/2026-09-claude-configuration.md) |
 
 The live product deployment source sits with the artefacts it maps at [kit/implementation/platforms/deployment-map.md](../kit/implementation/platforms/deployment-map.md).
 

@@ -102,9 +102,9 @@ The methodology for building and maintaining the broader personal knowledge syst
 
 The `kit/implementation/skills/` folder holds skills as version-controlled assets within the implementation layer.
 
-Skills encode methodology and working patterns — how to perform specific tasks, what conventions to follow, what workflows to execute. That is closer to the operating contract than to tooling like connectors and plugins. Connectors are infrastructure (how to reach an external system). Skills are methodology (how to do a type of work). Methodology belongs in the same version-controlled system as the operating contract it extends.
+Skills encode methodology and working patterns — how to perform specific tasks, what conventions to follow, what workflows to execute. That methodology belongs in the same version-controlled system as the operating contract it extends. Connectors supply access to external systems; plugins can package skills alongside tools, hooks and other execution components. A package's distribution form does not determine whether its contents provide methodology or infrastructure.
 
-The folder targets Claude Code's SKILL.md format. Each skill is a folder with a required SKILL.md (frontmatter + instructions) and optional supporting files. A `_template/` folder provides scaffolding for creating new skills. Skills deploy from the repo to project-level (`.claude/skills/`) or personal-level (`~/.claude/skills/`) locations.
+Personal skills follow the portable Agent Skills core: a folder with a required SKILL.md (frontmatter + instructions) and optional supporting files. A `_template/` folder provides scaffolding. Authoring and testing have primarily used Claude Code; its project-level (`.claude/skills/`) and personal-level (`~/.claude/skills/`) paths are client-specific deployment routes. Discovery, invocation, supported extensions and permissions must be checked in the consuming client. The [skills index](../kit/implementation/skills/README.md) links current deployment guidance and evidence; a portable instruction file does not reproduce a complete plugin's runtime components.
 
 This does not change the architecture of the constitution files or the file hierarchy. Skills do not declare classifications and do not override the operating contract — they operate within it.
 
@@ -112,7 +112,7 @@ This does not change the architecture of the constitution files or the file hier
 
 The `kit/implementation/prompts/` folder holds reusable prompt texts — individual markdown files with a description and the prompt itself. No frontmatter, no YAML and no slash-command integration. The single `untested/` subdirectory separates experimental candidates from prompts supported by live use. Each file answers three questions: what is this, when would I use it, and what do I say to the model.
 
-Prompts and skills are different components of the same implementation layer. Skills encode methodology — structured instructions with frontmatter, supporting files, and deployment to Claude Code's discovery system. Prompts capture useful interaction patterns before they need that structure. The barrier to adding a prompt is near zero: create a file, paste the text, add a sentence of description and link it from its parent index.
+Prompts and skills are different components of the same implementation layer. Skills encode methodology through structured instructions, discovery metadata and optional supporting files, with delivery governed by the consuming client. Prompts capture useful interaction patterns before they need that structure. The barrier to adding a prompt is near zero: create a file, paste the text, add a sentence of description and link it from its parent index.
 
 The graduation path is explicit. A prompt that starts needing supporting files, step-by-step instructions, or automatic invocation has outgrown the prompts folder and belongs in `kit/implementation/skills/`. This is by design — prompts are the capture point, skills are where patterns mature.
 
@@ -166,9 +166,9 @@ Task size is a poor proxy for whether a question is needed. A substantial brief 
 
 Cowork retains a separate plan-and-wait boundary for file changes. That is a product-specific delegation preference, not a clarification rule. Its exact-target deletion, folder, connector and persistence boundaries remain stronger than the general execution posture.
 
-## Agent completion claims require session evidence
+## Tool-mediated completion claims require session evidence
 
-Agent surfaces must ground completion in tool output from the current session. A successful command alone is not enough where the requested action or exact approved target remains unverified; missing targets and failed checks are reported as outcomes, not rounded up to completion. Plausible substitutes do not inherit authority from named targets. The rule is local to tool-mediated agent work rather than expanding the general conversation contract.
+The [operating contract](../kit/constitution/02-operating-contract.md#memory-and-evidence) requires current-session evidence for progress and completion claims whenever tools are used, on any surface. A successful command alone is not enough where the requested action or exact approved target remains unverified; missing targets and failed checks are reported as outcomes, not rounded up to completion. Plausible substitutes do not inherit authority from named targets. Agent adapters derive this shared rule; its application depends on tool use rather than a product's chat or agent label.
 
 ## Long-conversation checkpoints disposition held threads
 
@@ -200,7 +200,7 @@ The condensed prompts must work when no constitution files are attached. They mu
 
 ## Platform derivations carry boundaries and compact standards
 
-Platform files are minimal derived configurations from `kit/constitution/`, not deployment instructions for every related kit component. They must work alone, and they must work alongside the full constitution files, but they should not depend on `my-voice` being loaded or instruct a platform to load it.
+The shared chat and execution bodies are standalone derivations from `kit/constitution/`. They defer when full constitution files are supplied, within the host hierarchy, and do not depend on `my-voice` being loaded. Cowork's addendum and the project templates require the base context declared in their loading instructions. Product wrappers and maintenance references explain delivery rather than supplying another standalone contract. These distinctions are recorded in [contract maintenance](../kit/implementation/platforms/contract-maintenance.md#loading-combinations).
 
 Shared platform derivations carry voice separation, ownership, a compact writing standard and durable vocabulary constraints from `kit/constitution/02-operating-contract.md`. Execution craft and register routing remain in `kit/implementation/skills/my-voice/`, supplied separately when needed; model guidance is a maintenance reference under platforms. This keeps the execution-only boundary clean and avoids duplicating skill deployment guidance across product documentation.
 
@@ -264,8 +264,24 @@ ADR-011 separates the generic framework, personal kit, and governance. Active ev
 
 ## Package records separate capability selection from client delivery
 
+**Historical decision, superseded by [Provider selections drive harness configuration](#provider-selections-drive-harness-configuration).** The account below preserves the reasoning for the earlier preparation batch.
+
 The approved first-party implementation plan's Batch 1 introduces a [package register](../kit/implementation/skills/package-register.md) beside the existing capability research. It records native baselines and candidate vendor packages without claiming adoption, installation or behavioural quality. A package may contain skills, tools, hooks, agents and other execution components. Source availability, publisher attribution and actual runtime state are separate evidence.
 
 The capability matrix owns acceptance and provider summaries; the package register owns implementation/revision identities and dispositions; source references own provenance; platform guidance owns delivery; deployment evidence owns observed settings and execution. Linking these owners avoids parallel complete catalogues. One primary workflow can coordinate complementary craft and format stages, with constitutional boundaries and host controls preserved.
 
 This is a file-level implementation decision. Existing folders and authority remain intact; no personal marketplace, distribution bundle or runtime router is introduced. Trial fixtures are authored but unexecuted. Model efficiency means accepted-task quality, corrections and observed usage, not installed skill count. Cross-lab imports require a demonstrated gap; model upgrades trigger targeted reassessment of procedural scaffolding. The generic lesson is included in the framework without personal selections.
+
+## Provider selections drive harness configuration
+
+The earlier assessment spread a small selection problem across a capability matrix, source inventory, package register and mandatory pilot programme. Andrew's adopted direction is a consistent set of useful capabilities across Claude and Codex, with their implementation carried into the harness guides. The maintenance structure should be proportional to that job.
+
+The [skills catalogue](../kit/implementation/skills/README.md) now owns selected outcomes, upstream sources and On/Off choices. Platform baselines own supported configuration and distinguish targets from verified state; dated evidence records material live results. The old matrix and registers are retained with historical notices, and the dated inventory is unchanged. Git history preserves the earlier plan. There is no additional registry, marketplace or runtime router.
+
+Prefer Anthropic's own offerings in Claude and OpenAI's in Codex, retaining native output capabilities and avoiding cross-provider imports for symmetry. This is a configuration preference, not a measured claim that provider skills outperform alternatives. Public GitHub sources identify published offerings; package attribution distinguishes provider-authored work from partner entries. Official product documentation establishes native features and controls. Local inventories only establish observed deployment.
+
+The configuration model was corrected after Andrew clarified Claude's controls: an enabled plugin makes every included skill available; a disabled plugin cannot be selected in chat. There is no task-only state or per-skill enablement within a plugin. Selected Data and Design plugins have On targets; assess their complete contents. The later catalogue update removes the optional coauthoring addition and its example bundle, retains Claude PDF Viewer On, and records user-reported Context7 deletion and Frontend Design installation from claude-plugins-official. Provider additions use managed marketplaces or directories, with update controls checked and no manual-upload fallback. Broader optional packages remain Off. Source inspection and useful live checks remain proportionate; matched comparisons address uncertainty rather than gate every selection.
+
+The authored my-voice skill is parked. Independently authored third-party skills remain eligible for a later shared selection across harnesses when they add value; the former first-party-only shortlist is not a permanent restriction on the kit. Harmonisation means consistent output standards and operating boundaries, not identical packages or assumed mode parity.
+
+This is a file-level implementation change within existing folders and authority. The repository batch changes guidance only; it does not deploy settings, install skills, run behavioural trials or establish token savings. Generic lessons are reflected in the framework without personal selections.

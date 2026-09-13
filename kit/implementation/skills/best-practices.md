@@ -137,11 +137,11 @@ Lowercase letters, numbers, and hyphens only. Maximum 64 characters.
 
 ## Package review and maintenance
 
-Use the [package register](package-register.md) for identity and disposition and the [review method](review-method.md) for comparisons. First inspect the complete reachable package: skills, scripts, hooks, agents, commands, apps/MCP, references and templates. Record provenance and licence at component level where relevant, required access, all side effects, exact target surface, invocation and fallback. A marketplace publisher is not evidence that every component is first-party authored.
+The [selected catalogue](README.md) owns current choices and upstream links; platform guides own configuration. Use the [review method](review-method.md) for proportionate fit, source and real-use checks. Check authorship separately from marketplace inclusion, and inspect the selected workflow's relevant scripts, hooks, tools and service dependencies before enabling or executing them.
 
-A primary workflow may use complementary design, format and editorial stages. Test whether their composition duplicates gates, changes stance or claims unauthorised persistence/publication. Use [composition probes](../../evals/capability-composition-probes.md) for positive/negative activation and existing contract fixtures for boundaries. Metadata exposure alone does not prove a body loaded or a task succeeded.
+Account for the whole activation scope when a selected skill is bundled with others. Prefer one primary workflow with useful complementary stages. Verify intended invocation, an unrelated exploratory request and output quality; use a relevant [composition example](../../evals/capability-composition-probes.md) when it addresses a concern. A matched comparison is useful for uncertain value or interference, not a prerequisite for every provider-native selection.
 
-Review changed descriptions, dependencies and effects after a package/host/model update or repeated friction. Compare marginal benefit against the native baseline and a smaller adaptation when justified. Record quality, repairs, actual usage where available and unknowns; retain capable models for substantive judgement. Reject unnecessary additions and propose retirement of obsolete workarounds with exact scope and rollback limits. No automatic update or deletion follows from the register.
+Revisit changed triggers, dependencies and side effects after a meaningful update or repeated friction. Judge accepted-task quality, repairs and actual usage where available. Installed size, package count and metadata exposure do not prove loading, success or token savings. Keep these maintenance references outside runtime skill instructions.
 
 ## Resources
 

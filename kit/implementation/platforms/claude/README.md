@@ -4,7 +4,9 @@
 
 Claude spans three distinct surfaces. Each uses the same constitution but has a different deployment mechanism.
 
-The [configuration baseline](configuration-baseline.md) records adopted client settings, optional capabilities and open decisions. The [initial September verification](../../../../governance/evidence/2026-09-claude-configuration.md) records the earlier instruction drift; the later [deployment record](../../../../governance/evidence/2026-09-claude-deployment.md) verifies saved chat instructions, the Cowork addendum and all four files in the enabled my-voice v2 package. These are maintenance references, not standing conversation instructions.
+The [configuration baseline](configuration-baseline.md) translates the [selected capability catalogue](../../skills/README.md) into Claude controls and separates the adopted target from the last verified settings. Use native Chat/Cowork file capabilities; public document-skills is a Code delivery option where needed. Selected plugins have an On target for the whole bundle. Disabled plugins are unavailable to select in chat; there is no task-only or per-skill plugin switch. Use provider-managed delivery and record unavailable routes.
+
+The [initial September verification](../../../../governance/evidence/2026-09-claude-configuration.md) records the earlier instruction drift; the later [deployment record](../../../../governance/evidence/2026-09-claude-deployment.md) verifies saved chat instructions, the Cowork addendum and all four files in the enabled my-voice v2 package. The later [Customize snapshot](../../../../governance/evidence/2026-09-claude-customize-snapshot.md) records the lists and sync references plus a follow-up showing Obsidian 1.0.1 enabled with six skills. All eight selected plugins are now evidenced across the supplied views. These are maintenance references, not standing conversation instructions.
 
 | Surface | Files | Purpose |
 |---|---|---|
@@ -18,4 +20,4 @@ For deeper work, load the core files from the [constitution](../../../constituti
 
 The cross-product relationship is documented in the [deployment map](../deployment-map.md).
 
-Version: 2026.09.13 @ 1.3
+Version: 2026.09.13 @ 1.7

@@ -6,6 +6,16 @@ This page covers Claude Code across web, desktop, mobile and CLI.
 
 The [Claude configuration baseline](../configuration-baseline.md) records the settings decisions and open Code questions. Its verification covers the inspected Desktop controls only; it does not establish equivalent CLI, web or mobile configuration, or which permission mode any session is using.
 
+## Capability configuration
+
+Apply the [selected catalogue](../../../skills/README.md) through Code's own controls. Prefer Anthropic's published skills and plugins; do not import OpenAI packages for matching coverage. Code is a separate deployment target from Chat/Cowork.
+
+If native file workflows are not supplied in the target Code environment, Anthropic's [document-skills bundle](https://github.com/anthropics/skills/blob/main/.claude-plugin/marketplace.json) supplies docx, xlsx, pptx and pdf. Verify dependencies and the supported installation route before deploying it. Use the selected frontend-design route for design work; avoid duplicate standalone and plugin copies. The Chat/Cowork installation report does not establish a Code installation.
+
+Manage installed plugins through Code's `/plugin` interface where supported, checking the actual installation scope and enabled state. Apply the catalogue's On/Off targets. Verify Code scope separately from Chat/Cowork; do not prescribe a task-only state or per-job enable/disable routine. Use provider-managed marketplace delivery and record unavailable routes. See the [Claude Code plugin guide](https://code.claude.com/docs/en/plugins).
+
+Claude Code's `disable-model-invocation: true` makes a standalone skill manual-only and excludes its description from context until invocation. This is a Code-specific extension, not a Chat/Cowork guarantee or a reason to patch provider-managed skills. Verify the selected package's actual controls and an unrelated exploratory request. See the [Code skill guide](https://code.claude.com/docs/en/skills). No Code skill installation or live configuration change is recorded by this repository batch.
+
 ## Configuration Reference
 
 At this time, do not create new project or global `CLAUDE.md` files as the recommended configuration method for the broader AI-tool estate.
@@ -42,4 +52,4 @@ Ground progress and completion in current-session tool results and exact approve
 
 The root `CLAUDE.md` and `AGENTS.md` in this repo are working instructions for maintaining this repo. They are not the current recommended deployment pattern for configuring other projects.
 
-Version: 2026.09.13 @ 2.3
+Version: 2026.09.13 @ 2.6

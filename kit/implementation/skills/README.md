@@ -1,114 +1,84 @@
 ← [Home](../../../README.md) · [Kit](../../README.md) · [Implementation](../README.md) · **Skills** · [Prompts](../prompts/README.md)
 
-# Skills
+# Skills and Capability Catalogue
 
-Version-controlled personal Agent Skills and maintenance references for first-party vendor packages and native capabilities. A plugin can bundle skills, tools, apps, hooks or other components; an opaque native capability may have no inspectable skill file. The instruction core follows the portable Agent Skills specification; product-specific discovery, invocation and execution controls are adapters and must be checked against the client that consumes them. The current skills are authored and tested primarily for Claude Code.
+The selected capabilities for Andrew's thinking and output work, linked to their upstream sources and harness configuration. This catalogue owns **what to use**; the [Claude baseline](../platforms/claude/configuration-baseline.md) and [Codex baseline](../platforms/codex/configuration-baseline.md) own **how to configure it**. These are maintenance references, not standing instructions or a runtime router.
 
-The current `my-voice` source is part of the [September source-alignment review](../../../governance/evidence/2026-09-constitution-alignment.md). The later [Claude deployment record](../../../governance/evidence/2026-09-claude-deployment.md) verifies the enabled v2 package against all four source files; it does not establish installation in other clients or runtime invocation. The [implementation consolidation](../../../governance/evidence/2026-09-implementation-consolidation.md) removes maintenance history from runtime skill text and aligns the documentation audience rule. Cross-model steering is documented in [model guidance](../platforms/model-guidance.md); detailed output craft remains with the skill.
+**Policy adopted on 13 September 2026; live harmonisation partially recorded in the platform baselines.** Prefer Anthropic's own published capabilities in Claude and OpenAI's in Codex. Retain useful native capabilities before adding packages. Do not cross-deploy the providers' skills to make the installations match. Consistency means comparable output standards and operating boundaries, with delivery appropriate to each harness. Provider authorship is a reason to start there, not evidence of a measured quality advantage.
 
-## What skills are
+## Selection states
 
-Skills are SKILL.md files that give an agent reusable instructions — methodology, conventions, task workflows, or reference knowledge. In Claude Code, they surface as `/slash-commands` and can also be loaded automatically when their description matches the current work.
-
-Skills fall into three types: **reference** (conventions, knowledge — shape ongoing work), **task** (step-by-step workflows — often manually invoked), and **hybrid** (reference material with embedded workflows). See [best-practices.md](best-practices.md) for detailed guidance on designing effective skills.
-
-Each personal skill lives in its own folder with a required `SKILL.md` and optional supporting files. Put detailed references behind focused entry points, then verify actual loading in the target host. Discovery metadata, tools, retrieved files and execution output can each consume context. Supporting-file size is not a token measurement, and on-demand organisation does not make depth free.
-
-## Folder structure
-
-```
-kit/implementation/skills/
-├── README.md              ← This file
-├── best-practices.md      ← Design principles, patterns, anti-patterns
-├── _template/             ← Scaffolding for creating new skills
-│   └── SKILL.md             Portable core plus current Claude Code extensions
-├── my-voice/       ← Renders my output (operational, broadcast/framing, authored, documentation registers)
-│   ├── SKILL.md
-│   ├── authored-register.md
-│   ├── documentation-register.md
-│   └── examples.md
-└── <skill-name>/          ← One folder per skill
-    ├── SKILL.md             Required — frontmatter + instructions
-    └── (supporting files)   Optional — reference, examples, scripts
-```
-
-The `_template/` folder is scaffolding, not a deployable skill. Copy it to create a new skill.
-
-**Current skills.** [my-voice](my-voice/SKILL.md) renders my communications in the operational, broadcast/framing and authored voice registers, applies my documentation standard to substantive write-ups, and checks drafts for flattening. Model invocation is enabled for natural-language execution requests. Its declared scope covers owned personal-voice output and authorised factual documentation, excluding exploration and thinking; actual discovery and loading depend on the client.
-
-## Catalog
-
-| Artefact | Purpose |
+| State | Meaning |
 |---|---|
-| [my-voice/SKILL.md](my-voice/SKILL.md) | Skill entry point, routing and execution policy. |
-| [authored-register.md](my-voice/authored-register.md) | Craft for externally authored long-form output. |
-| [documentation-register.md](my-voice/documentation-register.md) | Standard for substantive write-ups and durable documentation. |
-| [examples.md](my-voice/examples.md) | Worked voice examples and calibration material. |
-| [_template/SKILL.md](_template/SKILL.md) | Scaffold for a new standard-format skill. |
-| [best-practices.md](best-practices.md) | Living skill-design reference and source links. |
+| **On** | Keep the capability or plugin enabled and available. Enabling a Claude plugin makes every included skill available; availability does not mean every skill body is loaded or executed in every conversation. |
+| **Off** | Keep disabled or undeployed. A disabled Claude plugin is unavailable to select in chat. Do not uninstall merely to reduce the package count. |
 
-## Cross-client capability assessment
+These are adopted target choices, not claims about installed state. There is no task-only configuration state in this catalogue. For Claude, enablement is at plugin level: all included skills are available when On; none are available to select when Off. Do not prescribe switching plugins on and off around each job. Assess the complete bundle when choosing whether to keep it enabled; relevance of invocation is a separate concern. Verify other harness controls independently.
 
-The [package register](package-register.md) owns implementation IDs, reviewed-source/runtime identities, selection status and composition requirements. It links source evidence to capability IDs without acting as a runtime router. [Capability composition probes](../../evals/capability-composition-probes.md) provide the pilot fixtures; they have been authored, not run.
+## Core provider capabilities
 
-The [first-party inventory](first-party-inventory.md) validates Anthropic/OpenAI package provenance, contained skills and public-versus-local availability, including plugins. The initial [capability matrix](capability-matrix.md) maps knowledge-work and design requirements across Claude and OpenAI surfaces, distinguishing recorded settings, session exposure and unknown coverage. The [source register](source-register.md) links candidate providers and their evidence limits. The [evaluation and re-review method](review-method.md) covers token efficiency, capable thinking partners, preliminary constitution intersections and model-upgrade reviews. These are maintenance references, not runtime skills or deployment decisions.
+| Job and required outcome | Claude implementation | Codex implementation | Target |
+|---|---|---|---|
+| Documents, spreadsheets, presentations and PDFs: usable files, faithful content, readable rendering; editability where requested | Native file workflows with Code execution and file creation enabled. In Claude Code, use Anthropic's [document-skills](https://github.com/anthropics/skills/blob/main/.claude-plugin/marketplace.json) only where the environment needs them. | Supplied Documents, Spreadsheets, Presentations and PDF workflows where available. Product-managed availability is checked in the harness; these are not all public marketplace entries. | **On** |
+| Research and synthesis: current sources when needed, traceable claims, evidence distinguished from inference | Native web search and source analysis; deliberate Research mode for substantial research. | Native search and source analysis; any specialised research mode selected for the task where available. | **On** for ordinary search/source work |
+| Visual explanation: a useful diagram, artifact or interactive explanation when it helps understanding | Native artifacts and inline visualisations. | Native visual explanation and artifact tools where supplied. Retain OpenAI's [imagegen](https://github.com/openai/skills/tree/main/skills/.system/imagegen) for requested image work. | **On** |
+| Quantitative analysis: sound calculations, inspectable evidence and a decision-useful report or dashboard | Anthropic [Data](https://github.com/anthropics/knowledge-work-plugins/tree/main/data), package `data`. | OpenAI [Data Analytics](https://github.com/openai/plugins/tree/main/plugins/data-analytics), package `data-analytics`. | **On** |
+| Design creation: coherent visual hierarchy and a usable, responsive result | Anthropic [frontend-design](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/frontend-design), shown installed from `claude-plugins-official` in the supplied screenshots. The [Claude baseline](../platforms/claude/configuration-baseline.md) separates installation from enabled-state verification. | OpenAI [Product Design](https://github.com/openai/plugins/tree/main/plugins/product-design), package `product-design`. | **On** |
+| Design critique: evidence-based UX and accessibility findings with actionable fixes | Anthropic [Design](https://github.com/anthropics/knowledge-work-plugins/tree/main/design), package `design`. Critique/accessibility motivate selection, but enabling the plugin makes all its skills available. | Relevant audit/QA workflows in the same Product Design package. | **On** |
+| Interactive PDF viewing | PDF Viewer plugin, retained alongside native PDF file workflows. Shown in the current plugin list and reported enabled; see the [Claude baseline](../platforms/claude/configuration-baseline.md). | Retain native PDF workflows; no additional viewer plugin selected. | **On** |
 
-The [implementation plan](implementation-plan.md) defines the proposed repository preparation, bounded capability trials and subsequent client deployment, including exact initial file scope, constitutional checks, efficiency measures and rollback. Batch 1 repository preparation is implemented. Client trials and deployment remain pending their defined execution scopes.
+Native file support is documented in [Claude's skill guidance](https://support.claude.com/en/articles/12512180-use-skills-in-claude) and [OpenAI's artifact guidance](https://help.openai.com/en/articles/20001278-creating-and-editing-documents-spreadsheets-and-presentations-with-chatgpt-work). Availability varies by surface and account. Public source code establishes a published implementation, not that a particular native runtime uses the same revision. Ordinary file creation and simple charts do not require enabling a broad Data or Design package.
 
-## Creating a new skill
+## Provider additions off for now
 
-1. Copy `_template/` to a new folder named for the skill (lowercase, hyphens, max 64 chars)
-2. Set `name` and `description`, then uncomment only the optional fields the target client supports
-3. Replace the template body with your actual instructions
-4. Add supporting files if the skill needs reference material, examples, or scripts
-5. Keep SKILL.md under 500 lines — move depth to supporting files
-6. Add the skill and its maintained supporting files to this index
+These choices concern the ordinary thinking and output configuration. Engineering packages can be considered within a separately defined engineering task; disabling an optional security workflow does not mean disabling host security controls.
 
-## Best practices
+| Provider | Leave off | Reason to reconsider |
+|---|---|---|
+| Anthropic | `enterprise-search`; `productivity` | A recurring need for connected workplace search, or an explicitly designed task/memory workflow. Neither is required for general synthesis; productivity storage needs to fit the existing knowledge system. |
+| Anthropic | `sales`, `finance`, `legal`, `marketing`, `customer-support`, `human-resources`, `operations`, `product-management`, `small-business`, `bio-research` | A specific recurring specialist job with useful outputs. Topic overlap alone is insufficient. |
+| Anthropic | `brand-guidelines`, `internal-comms`, `theme-factory`, `canvas-design`, `algorithmic-art`, `slack-gif-creator`, `discernment-nudge` | A concrete output need beyond native tools and the existing contract. Anthropic's brand guidelines are not Andrew's brand. |
+| Anthropic | Optional `skill-creator`, `mcp-builder`, `plugin-dev`, `engineering`, `code-review`, `pr-review-toolkit`, `feature-dev` | A defined authoring or engineering task. |
+| OpenAI | `creative-production`; `build-web-data-visualization` | Campaign production or an advanced visualisation job that the selected native/Data/Design routes do not adequately cover. |
+| OpenAI | `public-equity-investing`, `life-science-research`, `ngs-analysis` | A recurring specialist research workflow. |
+| OpenAI | `game-studio`, `build-ios-apps`, `build-macos-apps`, `build-web-apps`, `test-android-apps` | A defined application-development or testing task. |
+| OpenAI | `codex-security`, `openai-developers`, `plugin-eval` and optional extra authoring packages | A security review, API/agent build or skill/plugin maintenance task. Retain supplied system utilities; avoid duplicate installations. |
 
-See [`best-practices.md`](best-practices.md) for the full guide on designing effective skills — covering design principles, skill types, description writing, content structure, testing methodology, and anti-patterns. That file is a living reference, updated as experience accumulates.
+The [Anthropic skills manifest](https://github.com/anthropics/skills/blob/main/.claude-plugin/marketplace.json), [knowledge-work manifest](https://github.com/anthropics/knowledge-work-plugins/blob/main/.claude-plugin/marketplace.json), [Claude plugin manifest](https://github.com/anthropics/claude-plugins-official/blob/main/.claude-plugin/marketplace.json) and [OpenAI plugin manifest](https://github.com/openai/plugins/blob/main/.agents/plugins/marketplace.json) identify these public offerings. Connector access is a separate dependency decision: preserve existing accounts and permissions, and check affected workflows before disabling a package that supplies shared tools.
 
-The essentials: keep SKILL.md under 500 lines, write descriptions that include both what and when in third person, match instruction specificity to task fragility, and test with real usage before relying on a skill.
+## Source and deployment rules
 
-## Deploying skills
+Use the labs' GitHub repositories to identify provider offerings and the original authors' repositories for independent skills and packages. Check authorship in the relevant package, not just marketplace membership: both providers also distribute partner work. Use official product documentation for native capabilities and supported controls. Local installations are evidence of deployment only, never the discovery catalogue or proof of provenance.
 
-The filesystem routes below describe Claude Code. For Claude Chat/Cowork client enablement and verified source alignment, see the [Claude configuration baseline](../platforms/claude/configuration-baseline.md). An enabled skill need not be an exact copy of this source; compare all packaged files when verifying deployment.
+The selection above was checked against upstream sources on 13 September 2026. Use provider-managed native capabilities, marketplaces or directories, retaining their supported update mechanism. Verify update controls rather than assuming every route automatically applies releases. Do not manually upload provider skills, vendor copies into the kit, edit managed caches, create a personal marketplace or introduce an installer solely to maintain this list. If a managed route is unavailable, leave the addition undeployed and record the gap.
 
-Skills in this repo are the source of truth. To deploy:
+Keep review proportional. The [review method](review-method.md) covers fit, source checks, configuration and useful live evidence. The [implementation plan](implementation-plan.md) records the completed repository work and remaining deployment sequence. No comparative output results or token savings have yet been established for this selection.
 
-- **Project-scoped:** Copy the skill folder to `<project>/.claude/skills/<skill-name>/`
-- **Personal (all projects):** Copy to `~/.claude/skills/<skill-name>/`
+## Authored and independent skills
 
-Claude Code discovers skills from `.claude/skills/` directories, including nested ones in monorepos.
+**Authored — parked in this batch.** [my-voice](my-voice/SKILL.md) remains the single maintained personal skill. Its [authored register](my-voice/authored-register.md), [documentation register](my-voice/documentation-register.md) and [examples](my-voice/examples.md) remain unchanged. The [Claude deployment record](../../../governance/evidence/2026-09-claude-deployment.md) verifies all four files in the enabled v2 package; it does not establish other harness deployments or runtime invocation.
 
-## Frontmatter reference
+**Independent third-party selection has begun.** Independently authored skills may be deployed across both harnesses where they add recurring value and each host supports their dependencies and controls. Prioritise demonstrated use, maintained examples/tests and credible user results; popularity is a discovery signal, not proof. Existing third-party installations are not removal targets in this work.
 
-Portable Agent Skills fields:
+| Plugin / skill | Marketplace and source | Purpose and scope | Recorded deployment |
+|---|---|---|---|
+| Impeccable (`impeccable`) | Marketplace `impeccable`, from [pbakaus/impeccable](https://github.com/pbakaus/impeccable) | Frontend design, critique and refinement. The published plugin includes the impeccable skill, commands, agents and hooks; the installed components and their execution have not been inspected. | Claude: plugin and `impeccable` entry shown in the 13 September screenshots; source marketplace is synced. **On target**; enable switch, hooks and automatic updates are not shown. Codex deployment is not established. See the [Claude baseline](../platforms/claude/configuration-baseline.md). |
+| i-have-adhd (`i-have-adhd`) | Published marketplace and plugin `i-have-adhd`, from [ayghri/i-have-adhd](https://github.com/ayghri/i-have-adhd) | One skill, `i-have-adhd`, for concise, action-first responses, numbered steps and fewer tangents. This is interaction formatting; the constitution and authored voice retain their authority. | Claude: plugin and skill shown in the 13 September screenshots; source marketplace is synced. **On target**; enable switch, hooks and automatic updates are not shown. Codex deployment is not established. |
+| Taste Skill (`taste-skill`) | Published marketplace and plugin `taste-skill`, from [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill) | A collection of frontend implementation, redesign, aesthetic and image-generation skills, including `design-taste-frontend`, `redesign-existing-projects` and `image-to-code`. Enabling the plugin exposes the included collection; it is not just one taste instruction. | Claude: plugin and 13 displayed skill entries shown in the 13 September screenshots; source marketplace is synced. **On target**; UI names differ from some upstream install names. Exact labels are in the [snapshot](../../../governance/evidence/2026-09-claude-customize-snapshot.md). Enable switch and automatic updates are not shown. Codex deployment is not established. |
+| Obsidian (`obsidian`) | Marketplace `obsidian-skills`, from [kepano/obsidian-skills](https://github.com/kepano/obsidian-skills) | Six upstream skills: `obsidian-markdown`, `obsidian-bases`, `json-canvas`, `obsidian-cli`, `defuddle` and `knap`. Supports vault formats, local vault operations, web-content extraction and template generation; local-tool workflows depend on host access. | Claude: follow-up screenshot on 13 September confirms plugin **1.0.1 enabled**, from `obsidian-skills`, with all six skills displayed. This closes the initial marketplace-only gap. Automatic updates and local-tool execution remain untested. Codex deployment is not established by this update. |
 
-| Field | Purpose |
+The provider design selections remain in place. Impeccable and Taste Skill overlap with those capabilities and each other; incremental value is to be judged through use. Their installations do not establish a measured quality improvement. Other researched third-party candidates have not been adopted.
+
+For authoring, use [best practices](best-practices.md) and the [_template](_template/SKILL.md). The template is scaffolding, not a deployable skill. Keep the portable `SKILL.md` core separate from client-specific invocation extensions; index each new maintained skill and supporting file. Skills supplement the constitution and never override it.
+
+## Historical research
+
+These documents are retained for traceability and are no longer required registers to maintain when making a selection.
+
+| Record | Boundary |
 |---|---|
-| `name` | Required portable identifier; must match the parent directory name. Claude Code uses the directory, not this field, for the slash command except at a plugin root. |
-| `description` | Required statement of what the skill does and when to use it. |
-| `license` | Optional licence name or bundled licence-file reference. |
-| `compatibility` | Optional environment or product requirements. |
-| `metadata` | Optional client- or organisation-specific key/value metadata. |
-| `allowed-tools` | Experimental portable declaration of pre-approved tools; client support varies. |
-
-Current Claude Code extensions:
-
-| Field | Purpose |
-|---|---|
-| `when_to_use` | Additional discovery context appended to the description. |
-| `argument-hint` · `arguments` | Autocomplete hint and named positional arguments. |
-| `disable-model-invocation` | `true` makes the skill manual-only. |
-| `user-invocable` | `false` hides the skill from the `/` menu. |
-| `disallowed-tools` | Removes tools while the skill is active. |
-| `context` · `agent` | Runs the skill in a forked subagent and selects its type. |
-| `model` · `effort` | Per-turn model and effort overrides; current effort values include `xhigh`. |
-| `hooks` · `paths` · `shell` | Skill-scoped hooks, activation globs and dynamic-command shell. |
-
-See the [_template/SKILL.md](_template/SKILL.md) for detailed comments. Verify extension fields against the target client's current documentation rather than assuming another client interprets them the same way.
-
-## Relationship to the kit
-
-Skills encode methodology and working patterns that are part of the broader operating contract. They are version-controlled here alongside constitution files and platform configs, and deployed to projects as needed. They supplement the constitution and never override it.
+| [First-party inventory](first-party-inventory.md) | Unchanged dated research, including local runtime observations. Its local observations are not the source of truth for this catalogue. |
+| [Capability matrix](capability-matrix.md) | Superseded assessment structure and historical provider summaries. |
+| [Package register](package-register.md) | Superseded implementation IDs, candidates and former pilot composition records. |
+| [Source register](source-register.md) | Superseded candidate/source register; follow current upstream links above for selections. |
+| [Capability composition probes](../../evals/capability-composition-probes.md) | Authored, unexecuted examples available for targeted checks; no compulsory full pilot. |

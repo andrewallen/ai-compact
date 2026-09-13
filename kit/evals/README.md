@@ -31,6 +31,8 @@ Where possible, use a second model to grade responses against the rubric, then s
 | [challenge-threshold-probes.md](challenge-threshold-probes.md) | Material challenge without performative challenge to a sound brief. |
 | [clarification-threshold-probes.md](clarification-threshold-probes.md) | Direct execution on a sufficient brief and questions only for material ambiguity. |
 | [agent-evidence-scope-probes.md](agent-evidence-scope-probes.md) | Tool-grounded completion claims and exact-target authority. |
-| [capability-composition-probes.md](capability-composition-probes.md) | Synthetic artifact, editorial and synthesis cases; positive/negative activation, exploration and persistence under skill/plugin composition. Authored for the first-party pilot; not yet run. |
+| [capability-composition-probes.md](capability-composition-probes.md) | Reusable synthetic artifact, editorial and synthesis examples; positive/negative activation, exploration and persistence under skill/plugin composition. Retained from the earlier pilot design; authored and unexecuted. |
+
+The capability examples can support targeted checks under the [current review method](../implementation/skills/review-method.md). The former full capability pilot is no longer a prerequisite for every provider selection. Its fixture text remains unchanged historical test material; this does not relax the regression policy for constitution, voice or condensed-contract changes above.
 
 Aggregate outcomes and claim boundaries are recorded in the [July 2026 evaluation baseline](../../governance/evidence/2026-07-baseline.md).

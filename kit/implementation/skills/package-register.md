@@ -2,6 +2,8 @@
 
 # Capability Package Register
 
+> **Historical — superseded on 13 September 2026.** The [selected catalogue](README.md) now owns current choices; the [Claude](../platforms/claude/configuration-baseline.md) and [Codex](../platforms/codex/configuration-baseline.md) baselines own configuration. The original record below is retained as research history, including its former ownership, shortlist and trial assumptions. It is no longer an active register or a deployment instruction.
+
 Maintenance reference established in Batch 1 on 13 September 2026. It records baseline and candidate implementations for the [capability matrix](capability-matrix.md). It is not a runtime router, installer manifest or adoption decision. The dated [first-party inventory](first-party-inventory.md) supplies provenance and revision evidence; observations below inherit that date and its limitations. No package trial or fresh account inspection was performed when creating this register.
 
 ## Record conventions

@@ -36,7 +36,7 @@
   <text x="170" y="389" text-anchor="middle" font-size="8.5" fill="#993C1D">deployment adapters</text>
   <rect x="273" y="360" width="164" height="36" rx="5" fill="#fff" stroke="#1F6B66" stroke-width="0.5"/>
   <text x="355" y="375" text-anchor="middle" font-size="10" font-weight="500" fill="#14524E">skills/</text>
-  <text x="355" y="389" text-anchor="middle" font-size="8.5" fill="#1F6B66">summoned capabilities</text>
+  <text x="355" y="389" text-anchor="middle" font-size="8.5" fill="#1F6B66">skills + plugin/native records</text>
   <rect x="458" y="360" width="164" height="36" rx="5" fill="#fff" stroke="#5F5E5A" stroke-width="0.5"/>
   <text x="540" y="375" text-anchor="middle" font-size="10" font-weight="500" fill="#444441">prompts/</text>
   <text x="540" y="389" text-anchor="middle" font-size="8.5" fill="#6F6E68">reusable entry points</text>

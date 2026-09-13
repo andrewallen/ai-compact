@@ -2,6 +2,8 @@
 
 # Skill Source Register
 
+> **Historical — superseded on 13 September 2026.** The [selected catalogue](README.md) now owns current choices; the [Claude](../platforms/claude/configuration-baseline.md) and [Codex](../platforms/codex/configuration-baseline.md) baselines own configuration. The original record below is retained as research history, including its former ownership, shortlist and trial assumptions. It is no longer an active register or a deployment instruction.
+
 Research snapshot prepared on 13 September 2026. Maintenance reference, not an installed-skill inventory or runtime instruction. See the [capability matrix](capability-matrix.md) for coverage and the [review method](review-method.md) for admission and re-review.
 
 The current shortlist is restricted to Anthropic/OpenAI first-party offerings. The [first-party inventory](first-party-inventory.md) supplies pinned source revisions, complete package lists and attribution exclusions. Earlier external candidates below are retained as research history and are outside this validation.

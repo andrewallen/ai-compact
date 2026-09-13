@@ -2,6 +2,8 @@
 
 # Cross-client Capability Matrix
 
+> **Historical — superseded on 13 September 2026.** The [selected catalogue](README.md) now owns current choices; the [Claude](../platforms/claude/configuration-baseline.md) and [Codex](../platforms/codex/configuration-baseline.md) baselines own configuration. The original record below is retained as research history, including its former ownership, shortlist and trial assumptions. It is no longer an active register or a deployment instruction.
+
 Initial assessment prepared on 13 September 2026. Maintenance reference, not runtime instructions. Andrew requested consistent capabilities and standards across Claude and OpenAI, allowing different implementations where justified, with token efficiency and continued use of capable thinking-partner models. The assessment proposes candidates; it does not approve installation, enablement, routing changes or constitutional amendments.
 
 Companion documents: [source register](source-register.md) and [evaluation and re-review method](review-method.md). The [deployment map](../platforms/deployment-map.md) owns surface configuration; [model guidance](../platforms/model-guidance.md) owns dated model observations. This matrix owns capability acceptance and provider summaries. The [package register](package-register.md) owns implementation identities, selection dispositions and composition records; dated platform evidence owns observed deployment. Batch 1 makes these records consistent, without fresh client inspection or behavioural results.

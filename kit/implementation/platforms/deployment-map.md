@@ -16,7 +16,7 @@ The kit is a versioned source of truth for identity, calibration, operating beha
 | Platform prompts | Generated shared chat body with product-specific deployment wrappers. | Claude preferences, ChatGPT custom instructions, Instructions for Gemini. |
 | Mode configs | Safety and workflow rules for capability-specific modes. | Claude Cowork global instructions. |
 | Skills | Standard SKILL.md methodology and output craft. | Installed or supplied separately; enabled availability and on-demand loading depend on the client. Detailed craft is not embedded in standing platform prompts. |
-| Plugins and native capabilities | Vendor distribution packages can include skills, tools/apps, hooks, agents and supporting resources; native internals may be opaque. | Client-specific delivery. The package register links identity and selection to observed state; a listed source is not an installed capability. |
+| Plugins and native capabilities | Vendor distribution packages can include skills, tools/apps, hooks, agents and supporting resources; native internals may be opaque. | The skills catalogue owns selections and upstream links; platform baselines own delivery and observed state. A listed source is not an installed capability. |
 | Configuration references | Guidance for tools that should receive a shared derivation or read the kit directly. | Claude Code, Codex, Copilot CLI, Hermes, Grok, OpenCode/Go. |
 
 ## Shared contract and model references
@@ -36,17 +36,21 @@ These additions stay in implementation. They create no new authority layer or in
 
 ## Configuration records
 
-The [Claude configuration baseline](claude/configuration-baseline.md) records adopted settings and optional capability choices. The [initial configuration verification](../../../governance/evidence/2026-09-claude-configuration.md) records the earlier deployment gaps; the later [instruction deployment](../../../governance/evidence/2026-09-claude-deployment.md) verifies saved chat instructions, the Cowork addendum and the enabled my-voice v2 package against source. Source files define intended content; enabled switches describe availability; neither alone proves exact deployed content or runtime loading. Recommendations remain proposed until adopted and implemented.
+The [Claude configuration baseline](claude/configuration-baseline.md) and [Codex configuration baseline](codex/configuration-baseline.md) translate the adopted capability target into product controls. Claude retains earlier verified settings; Codex live configuration is unverified. Adoption of the target is separate from applying or verifying it.
+
+The [initial Claude configuration verification](../../../governance/evidence/2026-09-claude-configuration.md) records the earlier deployment gaps; the later [instruction deployment](../../../governance/evidence/2026-09-claude-deployment.md) verifies saved chat instructions, the Cowork addendum and the enabled my-voice v2 package against source. Source files define intended content; enabled switches describe availability; neither alone proves runtime loading or successful use. The provider catalogue simplification made no live changes.
 
 ## Skills, plugins and native capabilities
 
-The [capability matrix](../skills/capability-matrix.md) owns acceptance requirements and provider summaries. The [package register](../skills/package-register.md) owns implementation IDs, revision/provenance, selection and composition records; dated platform baselines and governance evidence own observed deployment. These maintenance references are not loaded as standing skill instructions.
+The [skills catalogue](../skills/README.md) owns useful outcomes, provider selections and upstream links. Platform guides own supported configuration; baselines and dated governance evidence own observed settings and results. Earlier capability and package registers remain historical research. None of these references is loaded as standing skill instructions.
 
-For a selected capability, identify the exact client/mode and verify the supported distribution mechanism before installing or enabling anything. Record the native baseline and all plugin components, then distinguish cache, installation, enablement, exposure, loading and successful exercise. Use unknown for inaccessible native revisions or settings. Keep public and installed variants separate. Do not infer mode parity from one account setting or claim a portable SKILL.md reproduces hooks and tool integrations.
+Retain the host provider's useful native capabilities and select its own published additions. Use Anthropic offerings in Claude and OpenAI offerings in Codex; do not cross-import provider packages to match installations. Independently authored third-party skills can be considered for both later. The authored voice skill is unchanged by this selection batch.
 
-Use one primary task workflow with necessary complementary stages. Existing contract loading combinations remain canonical; no additional always-on router is introduced. A material conflict is resolved in the lower implementation where possible and otherwise recorded as a host limitation. Package inclusion does not authorise memory, publication or connector writes.
+On means enabled and available; Off means disabled or undeployed. In Claude, the whole plugin is the control unit: enabling it makes all its skills available, while disabling it removes it from chat selection. There is no task-only state or per-skill switch inside a plugin. Assess the full bundle and keep the selected set enabled. Verify other harness controls independently. Use managed provider distribution; do not manually upload provider copies to work around an unavailable route.
 
-At deployment, name the exact revision, target scope, dependencies, permitted effects and rollback route. Verify saved state, source parity where accessible, fresh-session discovery, positive and negative invocation and a representative output. Retain prior settings/revisions through an approved private mechanism; state when a vendor-managed runtime cannot be restored. No installation commands are prescribed until the actual target and mechanism are verified. The [implementation plan](../skills/implementation-plan.md) defines trial and deployment boundaries.
+Prepare the exact live delta against the target: client/mode, package revision where inspectable, supported route, dependencies, affected controls and restoration. Check shared tool dependencies before disabling anything. Verify saved state, fresh-session availability, a relevant output and unwanted activation; distinguish exposure, loading and successful use. Native runtime internals may be unknown. Use a matched comparison only when value or interference is uncertain, following the [review method](../skills/review-method.md).
+
+Existing contract loading combinations remain canonical. Package selection does not authorise connector writes, memory changes or publication. The [implementation plan](../skills/implementation-plan.md) separates completed repository guidance from the pending live deployment; vendor-managed runtime rollback limits remain explicit.
 
 ## Surface Tiers
 
@@ -110,11 +114,12 @@ Configuration:
 
 ## Codex
 
-Codex is the local engineering, repo, browser and audit harness.
+Codex is a primary thinking and output harness alongside Claude, with engineering, repo, browser and audit capabilities.
 
 Configuration reference:
 
 - Point Codex at this repo.
+- Apply the [capability baseline](codex/configuration-baseline.md) through actual host controls; the target is adopted and live harmonisation remains pending.
 - Use the minimal derived contract in the platform README, or have it read the constitution files for deeper working context.
 - Do not populate a global `AGENTS.md` as part of this deployment pattern; the root `AGENTS.md` governs this repository only.
 
@@ -167,4 +172,4 @@ Configuration reference:
 - **Root maintenance files are not deployment files.** `CLAUDE.md` and `AGENTS.md` govern this repository only; platform guidance does not treat them as the general configuration pattern.
 - **Security settings are tool-side.** Credentials, exact trusted roots and account-specific security state belong in the products that hold them and must never be copied into this repository. Platform baselines may record portable settings policy and verification limits without importing those private values.
 
-Version: 2026.09.13 @ 3.6
+Version: 2026.09.13 @ 3.7
