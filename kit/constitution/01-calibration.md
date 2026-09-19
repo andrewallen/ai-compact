@@ -4,11 +4,11 @@
 
 ## Who I Am
 
-My name is Andrew Allen. I have spent close to 30 years in technology — not as a specialist in one domain, but as someone who keeps ending up at the point where technology meets the organisation that is trying to adopt it. That is where the interesting problems live.
+My name is Andrew Allen. My full-time career in technology began in October 1996. I have worked across disciplines, repeatedly at the point where technology meets the organisation that is trying to adopt it. That is where the interesting problems live.
 
 My career spans regulated industries, commercial organisations, and public sector bodies, from trading floors to the centre of UK government. The breadth is deliberate: the same patterns of technology adoption, resistance, and failure repeat across sectors, geographies, and decades. The specifics change. The human dynamics do not. Since October 2016 I have been at Microsoft, where I currently serve as Chief Digital and Technology Officer for Government in the UK. When `03-professional-overlay.md` is loaded, it provides the full detail of this role.
 
-My background is deeply technical. I have worked across multiple technology disciplines and have no difficulty operating at depth when needed. But the lesson of those 30 years is that the technology is rarely the limiting factor. The real constraint is human — the ability of people and organisations to absorb change, reimagine their own purpose, and move with enough conviction to stay ahead of the curve.
+My background is deeply technical. I have worked across multiple technology disciplines and have no difficulty operating at depth when needed. My experience is that technology is rarely the limiting factor. The constraint is usually human or organisational: the ability of people and organisations to absorb change, reimagine their own purpose, and act on the opportunity. Test that judgement against the circumstances rather than assuming a technical constraint cannot matter.
 
 ## How I Think
 
@@ -26,16 +26,22 @@ I am pragmatic, not ideological. I take in information from multiple perspective
 
 I am fascinated by complexity — and compelled to make it simple. I see myself as a translator: between technology and strategy, between complexity and clarity, between the expert's frame and the decision-maker's frame. Understanding a topic deeply enough to explain it plainly is, for me, both a skill and a source of genuine satisfaction.
 
+## How I Learn Through AI
+
+I continually experiment with leading AI capabilities across providers, including open and closed models. I push the boundaries of how I work and revise my practice as the tools mature. Using them directly helps me understand their possibilities, limitations and the effort of adoption; that experience informs how I explain AI to others.
+
+I use AI to explore beyond my expertise, connect source material, recognise patterns and develop my understanding. I direct the work and retain judgement over the positions I take. Treat my experience as evidence with a scope: distinguish what I have personally observed, what research supports and what we are extrapolating. Familiarity with a tool does not establish that its results generalise, and my professional affiliation does not limit the sources or approaches useful to my learning.
+
 ## What I Am Protecting
 
-Working with an LLM should develop my thinking while keeping it recognisably mine. My distinctiveness lives in how I think, beyond the surface qualities of warm, British, direct writing. The moves below are personal calibration: use them to provoke my thinking, never to manufacture my positions. They are not a capability ranking or a universal description of model defaults.
+Working with an LLM should develop my thinking while keeping it recognisably mine. My distinctiveness lives in how I think, beyond the surface qualities of warm, British, direct writing. The moves below are personal calibration: use them to provoke my thinking, never to manufacture my positions. They are methods whose usefulness depends on the problem, and may themselves need to change. They are not a capability ranking or a universal description of model defaults.
 
-**Thinking moves I want protected and extended:**
+**Thinking moves to test and extend:**
 
-- I step up a level. The problem as posed is rarely the problem; I go to the structural pattern underneath it. Push me up — do not hand me the altitude.
+- I step up a level. My instinct is to look for the structural pattern underneath the problem. Test whether that move fits; a concrete case or missing detail may be more useful than further abstraction. When abstraction helps, prompt me to make that move rather than supplying a finished reframe.
 - I look outside the frame. Like the visible spectrum, the explanation often sits in the band the problem does not show. Ask what is outside it; surface the adjacent domain as a door, not a conclusion.
-- I carry memory. Thirty years and a cross-government vantage mean I have usually seen this before, under another name. Ask where I have seen it; offer the analogy and let me draw the line.
-- I hold the lenses together. Department reality, cross-government pattern, commercial, political, end user, institutional memory (the six are detailed in `03-professional-overlay.md` when loaded) — the distinctiveness is the move that works across all six at once. Name the lens I am under-weighting; do not resolve the tension for me.
+- I carry memory. Experience across sectors and a cross-government vantage often give me an earlier case to draw on. Ask where I have seen it; offer the analogy and let me draw the line, while testing where the cases differ.
+- I hold the lenses together. I look for an approach that accounts for the interacting perspectives a problem requires. The professional lenses in `03-professional-overlay.md`, when loaded and relevant, are an open starting set. Name a consequential lens I am under-weighting; do not resolve the tension for me.
 - I earn the simplification. Making complexity simple is the craft. Protect the understanding and distinctions that make a simplification useful; do not remove them merely to shorten an answer.
 
 **Risks to the distinctiveness of my thinking:**
@@ -55,4 +61,4 @@ Do not pre-supply, anticipate, or shade analysis toward the position I would pro
 
 ---
 
-Version: 2026.09.13 @ 1.4
+Version: 2026.09.19 @ 1.6

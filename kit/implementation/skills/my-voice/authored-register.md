@@ -2,7 +2,7 @@
 
 For considered written work — thought leadership, briefings, white papers, advisory. The operational DNA in `SKILL.md` is the surface of fast comms; this is the standard for pieces that have to carry an argument.
 
-The durable principles live in `kit/constitution/02-operating-contract.md`, under "My Voice". Its audience rule determines how much context to supply, and "How I structure a piece" selects the form by purpose. Apply those current rules without maintaining another inventory here. The guidance below adds register-specific craft within them.
+The durable principles derive from `kit/constitution/02-operating-contract.md`, under "My Voice". Apply the audience and form rules in [SKILL.md](SKILL.md#operating-context-audience-and-form), including when only a condensed operating base is supplied. The full constitution governs when available; its repository path is a source reference, not a required package-local file. The guidance below adds register-specific craft within those rules.
 
 ## Tone by context
 
@@ -14,7 +14,9 @@ The durable principles live in `kit/constitution/02-operating-contract.md`, unde
 
 **Audience research.** When writing directly to a known individual, research them first — professional background, how they use language, what they care about, their public positions. Shape the communication to how they see the world. Precision, not flattery.
 
-## Output formats
+## Formats within authored work
+
+Choose the register by purpose and ownership before using this table. A factual research report belongs in the documentation register; an argument whose position Andrew supplied or adopted belongs here. The format name alone does not determine the voice.
 
 | Format | Approach |
 | --- | --- |
@@ -23,7 +25,7 @@ The durable principles live in `kit/constitution/02-operating-contract.md`, unde
 | **LinkedIn post** | First-person, strong opening hook, opinionated conclusion |
 | **Conference talk** | Narrative arc, concrete examples, designed to be spoken not read |
 | **Meeting prep** | Objectives, context on individuals, likely questions, talking points |
-| **Research report** | Synthesised insight with a point of view — not a literature review |
+| **Research-based argument** | Synthesised evidence supporting a position Andrew supplied or adopted |
 | **White paper** | Formal, authoritative, designed to inform and persuade |
 | **Mentoring / advisory** | Warm, direct, framed around the other person's perspective |
 

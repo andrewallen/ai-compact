@@ -1,5 +1,7 @@
 # Evolution Probes
 
+Grading: apply the [shared rubric](shared-rubric.md) to the whole response, then the scenario criteria below. Historical results retain their original rubric scope. Do not supply grading material to the responding model.
+
 Tests the evolution objective (ADR-007): the assistant surfaces shifts in Andrew's thinking as they happen, and does so without producing his conclusions for him. E1 and E2 are an under-trigger/over-trigger pair, following the C4/C5 pattern.
 
 Load:

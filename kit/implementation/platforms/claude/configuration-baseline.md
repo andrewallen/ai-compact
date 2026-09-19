@@ -35,19 +35,19 @@ For product controls, use Anthropic's [skill guidance](https://support.claude.co
 
 ## Latest verified instruction deployment
 
-The [13 September deployment record](../../../../governance/evidence/2026-09-claude-deployment.md) covers Claude Desktop 1.52386.6. It records exact matches to the source at deployment time. The later [consistency cleanup](../../../../governance/evidence/2026-09-consistency-cleanup.md) changes `authored-register.md`; that correction has not been deployed by this repository batch.
+The [13 September deployment record](../../../../governance/evidence/2026-09-claude-deployment.md) covers the saved General instructions and Cowork addendum. The [19 September voice maintenance record](../../../../governance/evidence/2026-09-voice-maintenance.md) verifies the deployed condensed-base loading repair. The subsequent [repository consolidation](../../../../governance/evidence/2026-09-repository-consolidation.md) revises two source files without another live deployment.
 
 | Component | Recorded result |
 |---|---|
 | General instructions | Exact 4,930-character shared chat body saved and read back. |
 | Cowork addendum | Version 2026.09.13 @ 1.7; exact 2,469-character readback. |
-| my-voice | Enabled v2; all four downloaded files matched the then-current source. Three files still match those recorded hashes; `authored-register.md` now differs. |
+| my-voice | 19 September: enabled v3; all four downloaded files matched the loading-repair source. Later consolidation changes `authored-register.md` and `examples.md`; those two source revisions are not deployed. `SKILL.md` and `documentation-register.md` retain their verified hashes. |
 
-These are historical deployment results and a source-hash comparison, not a fresh inspection of the app or behavioural adherence. Project attachments and separate Code deployments were not verified by that pass.
+The my-voice result comes from a fresh app inspection, replacement and downloaded readback. General instructions and Cowork remain the earlier recorded observations. Package identity does not establish invocation or behavioural adherence. Project attachments and separate Code deployments remain unverified.
 
 ## Outstanding gaps and decisions
 
-- Deploy the corrected my-voice package when explicitly requested, then compare all four saved files. The existing deployment record must remain a record of the earlier package.
+- A future authorised my-voice refresh should deploy the consolidated authored register and examples, then compare all four saved files. Invocation and behaviour remain unverified; no eval run is pending from the consolidation batch.
 - Verify remaining plugin enable switches, update controls and representative use on the actual surface; the tracker distinguishes list presence from confirmed enablement.
 - Establish Code's installed packages and permission configuration separately. Review its observed sandbox/bypass availability before choosing any change.
 - The earlier folder-access and code-execution network restrictions remain undecided. Exact paths, account details and grants stay private.
@@ -56,4 +56,4 @@ These are historical deployment results and a source-hash comparison, not a fres
 
 When a live change is requested, identify the exact settings and packages affected, preserve a restoration route, and verify saved state and useful use. Record material results once in governance evidence. Native runtime versions may not be recoverable; neither package count nor source size establishes token savings.
 
-Version: 2026.09.13 @ 1.16
+Version: 2026.09.19 @ 1.18

@@ -6,13 +6,13 @@ Configuration guidance and known deployment gaps for Codex desktop. The [skills 
 
 ## Current evidence
 
-**Read-only review, 13 September 2026.** The review inspected the supplied skill catalogue and compared the local my-voice package with the repository. It did not inspect account settings, install packages or exercise the workflows.
+**Catalogue review, 13 September 2026; my-voice replacement, 19 September 2026.** The earlier review inspected the supplied skill catalogue. The [voice maintenance record](../../../../governance/evidence/2026-09-voice-maintenance.md) documents the later replacement and exact comparison of the four local personal-skill files. Subsequent [repository consolidation](../../../../governance/evidence/2026-09-repository-consolidation.md) changes two source files without another installation. Other account settings and workflows were not changed or exercised.
 
 | Component | Observation |
 |---|---|
 | Native file and visual workflows | Documents, Spreadsheets, Presentations, PDF, visualize and imagegen exposed in the review session. |
 | Data Analytics and Product Design | Selected workflows exposed; exact public/local source parity unverified. |
-| my-voice | Available, but all four local files differ from the maintained source. The installed copy retains older ownership wording and model-specific guidance. |
+| my-voice | 19 September: all four local files matched the loading-repair source, with restoration copies preserved. Later source revisions to `authored-register.md` and `examples.md` are not installed; the other two hashes remain aligned. Fresh-session invocation remains unverified. |
 | Obsidian mechanics | Markdown, Bases, Canvas, CLI and Defuddle exposed; knap not exposed in this session. |
 | Desktop settings and runtime behaviour | Enabled-state controls, intended invocation, output quality and usage not tested. |
 
@@ -28,11 +28,11 @@ The [OpenAI skill guidance](https://learn.chatgpt.com/docs/build-skills) covers 
 
 ## Outstanding deployment work
 
-- Replace the local my-voice package from the maintained source in an explicitly requested deployment, then compare all four files and check invocation in a fresh session.
+- A future authorised my-voice refresh should replace the consolidated source files and compare all four files. Existing sessions may retain previously loaded material; file identity alone does not establish runtime loading. Invocation and behaviour remain unverified, with no eval run pending from this batch.
 - Verify saved desktop settings and supported controls for the adopted packages. Confirm independent-skill deployments individually; presence on Claude does not establish presence on Codex.
 - Exercise relevant workflows where useful, including an unrelated exploratory request when unwanted activation is a concern. Compare alternatives only when value or interference remains uncertain.
 - Record material deployment results once in [governance evidence](../../../../governance/evidence/README.md), linking them here and updating the tracker.
 
 A live change needs exact targets and a restoration route. Vendor-managed runtime versions may not be recoverable. Keep private paths, credentials and raw account material outside this guide; package count and file size do not establish token savings.
 
-Version: 2026.09.13 @ 1.2
+Version: 2026.09.19 @ 1.4

@@ -6,9 +6,9 @@
 
 1. **AI is here to extend my thinking** — to surface the perspectives I was not reaching on my own — so that my judgement is better informed over time, never outsourced. It has failed when I am lazily accepting a default position. The working test is comparative: are the responses significantly better with this system in place than without it? That is learned through experiment, not asserted — and a better response that came from the system thinking for me fails, not passes. Where this test and axiom 2 pull apart, axiom 2 wins.
 
-2. **What the system protects is my capacity for independent judgement.** The erosion symptom is the moment extending my thinking has become outsourcing it. My current beliefs carry no such protection — presented with evidence, I make my own choice, and beliefs change.
+2. **What the system protects is my capacity for independent judgement.** The erosion symptom is the moment extending my thinking has become outsourcing it. My current beliefs and habitual ways of thinking carry no such protection — presented with evidence, I make my own choice, and both can change.
 
-3. **Do not normalise me.** If an answer is probable, I want the next answers that may be equally interesting — the other lenses on the same story. But I operate from information evidenced, not from feeling: when the evidence says the standard position is the right angle, say so plainly, and still tell me the other options existed — developed with their trade-offs only where they genuinely shift something.
+3. **Do not normalise me.** If an answer is probable, I want the next answers that may be equally interesting — the other lenses on the same story. Claims need evidence; a feeling or intuition can signal something worth examining without establishing its explanation. Evidence can inform a choice between values without deciding what matters to me. When the evidence says the standard position is the right angle, say so plainly, and still tell me the other options existed — developed with their trade-offs only where they genuinely shift something.
 
 4. **Ideas earn their place in what I keep and apply through proven application** — my own repeated use over time, or someone else's, evidenced. Not everything must be proven by me: something net new enters as an experiment, and choosing to run that experiment is my informed decision.
 

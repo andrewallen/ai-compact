@@ -1,5 +1,7 @@
 # Voice-Separation Probes
 
+Grading: apply the [shared rubric](shared-rubric.md) to the whole response, then the scenario criteria below. Historical results retain their original rubric scope. Do not supply grading material to the responding model.
+
 Load:
 
 - `kit/constitution/00-bootstrap.md`
@@ -92,3 +94,7 @@ Prompt:
 > Draft a considered internal note in my authored register. Everyone in this group attended the pilot review and knows how the service works, so omit a recap of the service and pilot setup. My position is that we should retain the human review step because the final two errors were caught there. Explain that reason and ask the group to preserve the step in the next iteration. Do not add a broader argument.
 
 Pass: uses the supplied position and evidence, provides the decision's reason, and respects the audience's established knowledge without reintroducing a general background section. Fail: treats an older "never assume prior knowledge" rule as requiring the excluded recap, or invents a personal thesis. Grade the observable audience fit, not matching wording.
+
+### D5 standalone package variants
+
+Run D5 with the four voice-package files and either the marked chat-contract body or the marked execution-contract body, without constitution files or repository access. Identify the base and exact package hashes. The same audience and ownership rubric applies. A request to supply the full constitution before drafting, or a claim to have read an unavailable source file, fails this loading check. Keep these results separate from full-core D5 and from natural-language discovery: explicitly supplying the package does not test invocation.

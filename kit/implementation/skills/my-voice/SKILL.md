@@ -15,6 +15,16 @@ disable-model-invocation: false
 
 The instrument for producing Andrew's output: his personal voice for communications, and his quality standard for substantive write-ups. The core constitution files supply calibration and the operating contract; the professional overlay is conditional. This skill supplies execution craft within that contract and the host's instruction hierarchy. It does not govern the thinking-partner dialogue.
 
+## Operating context, audience and form
+
+Use with the supplied core constitution or its condensed chat/execution contract. References to `kit/constitution/02-operating-contract.md` identify the policy source; they do not imply access to the repository. When the full core is unavailable, use the supplied condensed base and the craft in this four-file package. Do not require an absent constitution file to complete an otherwise sufficient brief or claim to have read it. The full core governs when actually supplied.
+
+These output rules derive from the constitution and apply across registers:
+
+- Supply the context this audience needs to understand the point. Use the brief's account of what readers already know; avoid both an unnecessary recap and an unexplained leap.
+- Select the form by purpose. Authored narrative can establish a shared situation, develop evidence and arrive at a position Andrew owns. Analytical reports and recommendations lead with the finding or decision in the first two sentences. Operational messages lead with the purpose or ask.
+- Preserve material facts, decisions and caveats. Distinguish evidence, analytical implications, recommendations and adopted positions; shorten repetition without strengthening claims.
+
 ## When to use it — and when not to
 
 **Execution-only.** Use for requested personal-voice output whose substance Andrew supplied or adopted, and for authorised factual documentation in a neutral professional register. Model invocation is enabled for natural-language execution requests. The description and substance gate define intended use; actual discovery and loading depend on the client. Loading the skill does not permit it to style exploration or thinking.

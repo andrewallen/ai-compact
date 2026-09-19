@@ -6,6 +6,11 @@ Dated, concise verification records. These are maintenance evidence, never runti
 
 | Record | Scope |
 |---|---|
+| [September 2026 professional-context refresh](2026-09-professional-context-refresh.md) | Interview-led calibration and professional overlay, dated context, open lenses, cascade review and focused verification. |
+| [September 2026 evaluation redesign](2026-09-evaluation-redesign.md) | Shared gates, value comparisons, conversation and transfer cases, Codex runner, token accounting and verification limits. |
+| [September 2026 judgement adaptation](2026-09-judgement-adaptation.md) | Plan and implementation of method fit, sufficiency, and experience/value distinctions across philosophy, constitution and condensed contracts; verification and evaluation limits. |
+| [September 2026 repository consolidation](2026-09-repository-consolidation.md) | Plan and implementation of prompt retirement, decision-register consolidation, example and fixture reconciliation; static verification only. |
+| [September 2026 voice maintenance](2026-09-voice-maintenance.md) | Condensed-base package repair; Claude v3 and local Codex exact-file deployment verification. Proposed behavioural comparison declined by Andrew; no behavioural result claimed. |
 | [September 2026 consistency cleanup](2026-09-consistency-cleanup.md) | Implementation plan, repaired references and fixture loading, documentation consolidation and verification. |
 | [September 2026 Claude Customize snapshot](2026-09-claude-customize-snapshot.md) | Initial seven-plugin / 39-entry snapshot, two connected connectors, five synced marketplaces and six Anthropic sources; follow-up confirms Obsidian 1.0.1 enabled with six skills, closing the gap. |
 | [September 2026 Claude instruction deployment](2026-09-claude-deployment.md) | Saved preferences and Cowork addendum; enabled my-voice v2 downloaded and matched to all four source files. |

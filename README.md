@@ -8,7 +8,7 @@ The repository contains both a reusable framework and my real personal implement
 
 ## Status
 
-The five-layer architecture is established. The [evidence index](governance/evidence/README.md) distinguishes historical behavioural results, source reviews and recorded deployments. The [September consistency cleanup](governance/evidence/2026-09-consistency-cleanup.md) records the latest maintenance batch and its limits. Product baselines own outstanding deployment gaps; [contract maintenance](kit/implementation/platforms/contract-maintenance.md) owns source coverage and refresh checks.
+The five-layer architecture is established. The [evidence index](governance/evidence/README.md) separates historical behavioural results, source reviews and recorded deployments. The latest [repository consolidation](governance/evidence/2026-09-repository-consolidation.md) preserves the governing decisions while reducing repeated guidance. Product baselines own current deployment gaps; [contract maintenance](kit/implementation/platforms/contract-maintenance.md) owns source coverage and refresh checks.
 
 ## How it works
 
@@ -62,46 +62,13 @@ The kit is the portable part of a larger personal AI system. The external knowle
 
 See [Current architecture](governance/current-architecture.md) for the canonical description and [Framework: layer model](framework/layer-model.md) for the generic pattern.
 
-## Repository structure
-
-```text
-<repository-root>/
-├── README.md
-├── AGENTS.md · CLAUDE.md               repository-maintenance instructions
-├── framework/                          generic, anonymised specification
-│   ├── layer-model.md
-│   └── adoption-guide.md
-├── kit/                                personal implementation
-│   ├── philosophy/                     layer 1 — axioms
-│   ├── constitution/                   layer 2 — operating source of truth
-│   ├── roles/                          layer 3 — conditional role charters
-│   ├── implementation/                 layer 4 — deployment and execution
-│   │   ├── platforms/
-│   │   ├── skills/
-│   │   └── prompts/
-│   └── evals/                          active behavioural regression probes
-└── governance/                         architecture, decisions and evidence
-    ├── current-architecture.md
-    ├── design-decisions.md
-    ├── decisions/
-    ├── diagrams/
-    └── evidence/
-```
-
 ## Deploying the kit
 
 Use the [deployment map](kit/implementation/platforms/deployment-map.md) to choose a product route, then follow its linked guide. It distinguishes standalone contracts, full constitution loading and addenda that require a base, including Cowork. Skills and project context are supplied separately when relevant.
 
-## Maintenance rules
+## Maintenance
 
-- **Change the source first.** Amend the constitution before any derived platform prompt, then run the cascade check.
-- **Gate high-authority changes.** Use the eval harness and a cold critique pass for changes above the implementation layer.
-- **Keep personal material out of the framework.** Every framework change receives an anonymisation check.
-- **Preserve the memory boundary.** The repository governs deliberate actions at persistent stores but does not contain the knowledge store or control ambient product memory.
-- **Keep the repository self-contained.** Current files must explain the system without depending on external working history.
-- **Version only independently deployed files.** Embedded version markers belong in constitution and platform implementation files, where readers may encounter a detached copy. Git provides the history for every other file.
-- **Keep navigation rename-safe.** Use relative links and `Home` as the root breadcrumb label. Do not embed the repository slug or an absolute checkout path.
-- **Require explicit approval for deliberate persistent changes.** Specified change requests authorise their defined scope; tools and agents need approval for persistent changes, including hidden records. Narrower safeguards still apply. Product-managed ambient memory is configured and audited through product settings.
+[AGENTS.md](AGENTS.md) defines repository working rules; [Contributing](CONTRIBUTING.md) defines contribution checks. Maintain the governing source before its derivations, preserve decisions and their rationale, and keep personal content out of the framework. Current architecture, ADRs and concise evidence must make the repository understandable without private working history. Framework changes receive an anonymisation check; high-authority changes follow the critique and evaluation policy.
 
 ## Licence
 

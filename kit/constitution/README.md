@@ -4,7 +4,7 @@
 
 Model-agnostic source-of-truth files that define identity, calibration, the operating contract, and a conditional professional overlay. These are the files everything else in the kit derives from.
 
-The [September source-alignment review](../../governance/evidence/2026-09-constitution-alignment.md) records the rewrite, static checks and evidence limits. Source revision does not establish deployment or behavioural parity.
+The [September source-alignment review](../../governance/evidence/2026-09-constitution-alignment.md) records the general rewrite. The later [professional-context refresh](../../governance/evidence/2026-09-professional-context-refresh.md) records the interview-led calibration and overlay changes, checks and evidence limits. Source revision does not establish deployment or behavioural parity.
 
 ## What constitution files are
 

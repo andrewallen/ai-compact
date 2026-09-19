@@ -6,17 +6,9 @@
 
 Andrew requested a plan and implementation following the repository-wide consistency review. The starting tree was clean at `85ea79f`. This batch repairs implementation references and eval definitions, consolidates maintenance documentation and redraws the existing mode diagram. The constitution, role charter, shared contract bodies, Cowork safeguards and formal-document review requirements remain unchanged. Live deployment and commit/publication are separate actions.
 
-| Work | Acceptance |
-|---|---|
-| ChatGPT guidance | Distinguish Temporary Chat personalisation choices and make project-level constitution loading explicit, with official sources. |
-| Eval and prompt repairs | Use valid Cowork base-plus-addendum configurations, current ChatGPT body markers and an explicit request to develop a selected sketch. |
-| Voice reference | Refer to current constitutional audience and structure rules; retain register craft and invocation policy. |
-| Capability fixtures and historical evidence | Remove abandoned catalogue identifiers while preserving synthetic inputs; qualify the July record without rewriting its results. |
-| Maintenance consolidation | Keep rationale in design decisions, setup in product guides, cross-product routes in the deployment map and detailed results in evidence. |
-| Mode diagram | Show exploration, execution and refinement independently of product categories; inspect the rendered SVG. |
-| Verification and deployment status | Check links, generated copies, preservation boundaries and source hashes; report the voice-source change separately from installed state. |
+The plan covered ChatGPT instruction composition, valid eval loading, the authored-register reference, the reusable variations prompt, removal of abandoned catalogue identifiers, consolidation of maintenance responsibilities and a clearer mode diagram. Verification covered navigation, generated copies, source preservation, framework anonymity and a rendered diagram; the results below record the outcomes.
 
-Removal of six generic experimental prompts remains pending explicit approval: `advisory-synthesis`, `analytical-decomposition`, `investigative-brief`, `multi-perspective-exploration`, `structured-critique` and `task-decomposition`, all under the [untested prompt index](../../kit/implementation/prompts/untested/README.md). They remain in the tree. Changes to Cowork confirmation or document-review safeguards were not selected for this cleanup.
+At this batch's close, removal of six generic experimental prompts remained pending: `advisory-synthesis`, `analytical-decomposition`, `investigative-brief`, `multi-perspective-exploration`, `structured-critique` and `task-decomposition`. The later [repository consolidation](2026-09-repository-consolidation.md) authorises and completes those removals. Cowork confirmation and formal-document review safeguards remain unchanged.
 
 ## Result and verification
 

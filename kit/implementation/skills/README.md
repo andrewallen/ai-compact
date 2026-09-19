@@ -8,11 +8,11 @@ Prefer Anthropic's own capabilities in Claude and OpenAI's in Codex, retaining u
 
 ## Working set
 
-Deployment observations below are dated **13 September 2026**. Claude observations come from the [deployment record](../../../governance/evidence/2026-09-claude-deployment.md) and [Customize snapshot](../../../governance/evidence/2026-09-claude-customize-snapshot.md). Codex observations are limited to this review's exposed skill catalogue and local voice-file comparison. Availability alone does not establish actual use or output quality.
+Deployment observations below are dated **13 September 2026**, except my-voice, refreshed on **19 September 2026**. Earlier Claude observations come from the [deployment record](../../../governance/evidence/2026-09-claude-deployment.md) and [Customize snapshot](../../../governance/evidence/2026-09-claude-customize-snapshot.md). The [voice maintenance record](../../../governance/evidence/2026-09-voice-maintenance.md) verifies the later Claude and local Codex package replacements. Other Codex observations remain limited to the earlier exposed skill catalogue. Availability alone does not establish actual use or output quality.
 
 | Skill or package / source | Used for | Platform | Deployment note |
 |---|---|---|---|
-| [my-voice](my-voice/SKILL.md) | Personal output, register selection and factual documentation standards | Claude; Codex | Claude: v2 recorded enabled; the later authored-register correction awaits deployment (see [baseline](../platforms/claude/configuration-baseline.md)). Codex: the last comparison found all four local files divergent from source. |
+| [my-voice](my-voice/SKILL.md) | Personal output, register selection and factual documentation standards | Claude; Codex | Loading-repair package verified on 19 September. Later source revisions await deployment; the [Claude](../platforms/claude/configuration-baseline.md) and [Codex](../platforms/codex/configuration-baseline.md) baselines identify the exact gaps. Invocation and behaviour untested. |
 | Native [document skills](https://support.claude.com/en/articles/12512180-use-skills-in-claude) | Word, Excel, PowerPoint and PDF work | Claude Chat/Cowork | Code execution and file creation recorded On. Separate document-skill installation is unnecessary where native workflows are supplied. |
 | OpenAI-supplied Documents, Spreadsheets, Presentations and PDF workflows | Create, edit and inspect files | Codex | All four workflows exposed in the review session; execution not tested here. |
 | OpenAI-bundled visualize | Inline visual explanations and interactive tools | Codex | Skill exposed in the review session. |

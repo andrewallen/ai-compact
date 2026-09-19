@@ -12,7 +12,7 @@ Neutral and professional, explanatory rather than persuasive. The reader should 
 
 ## Standards
 
-The durable principles in `kit/constitution/02-operating-contract.md` apply in full; read them there. Two matter most for a write-up, and are worth naming for how they bite:
+Apply the supplied operating base and the shared audience and form rules in [SKILL.md](SKILL.md#operating-context-audience-and-form). These derive from `kit/constitution/02-operating-contract.md`; the full file governs when available, but this register does not require access to the repository. Two rules matter most for a write-up:
 
 - **Supply the context the audience needs.** Apply the operating contract’s audience rule: explain what an absent reader needs to understand the activity and findings without repeating what this audience already knows.
 - **Layered narrative, adapted for documentation.** Open with what was done and the headline of what it produced. Layer in the substance: the activities, what emerged, the evidence. Draw out what it means. Close with implications or next steps. Lead with understanding, not chronology for its own sake.

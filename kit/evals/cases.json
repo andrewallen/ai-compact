@@ -1,0 +1,174 @@
+{
+  "schema": 1,
+  "description": "Selected text-only cases. Markdown is canonical; no tool-effect or live-deployment claims.",
+  "cases": [
+    {
+      "id": "G1",
+      "source": "boundary-durability-probes.md",
+      "split": "development",
+      "turns": 1
+    },
+    {
+      "id": "G2",
+      "source": "boundary-durability-probes.md",
+      "split": "development",
+      "turns": 1
+    },
+    {
+      "id": "G4",
+      "source": "boundary-durability-probes.md",
+      "split": "development",
+      "turns": 1
+    },
+    {
+      "id": "G5",
+      "source": "boundary-durability-probes.md",
+      "split": "development",
+      "turns": 1
+    },
+    {
+      "id": "G6",
+      "source": "boundary-durability-probes.md",
+      "split": "development",
+      "turns": 1
+    },
+    {
+      "id": "C2",
+      "source": "provoke-produce-probes.md",
+      "split": "development",
+      "turns": 1
+    },
+    {
+      "id": "C2a",
+      "source": "provoke-produce-probes.md",
+      "split": "development",
+      "turns": 1
+    },
+    {
+      "id": "C2b",
+      "source": "provoke-produce-probes.md",
+      "split": "development",
+      "turns": 1
+    },
+    {
+      "id": "C2c",
+      "source": "provoke-produce-probes.md",
+      "split": "development",
+      "turns": 1
+    },
+    {
+      "id": "C2d",
+      "source": "provoke-produce-probes.md",
+      "split": "development",
+      "turns": 1
+    },
+    {
+      "id": "H1",
+      "source": "challenge-threshold-probes.md",
+      "split": "development",
+      "turns": 1
+    },
+    {
+      "id": "H2",
+      "source": "challenge-threshold-probes.md",
+      "split": "development",
+      "turns": 1
+    },
+    {
+      "id": "I1",
+      "source": "clarification-threshold-probes.md",
+      "split": "development",
+      "turns": 1
+    },
+    {
+      "id": "I2",
+      "source": "clarification-threshold-probes.md",
+      "split": "development",
+      "turns": 1
+    },
+    {
+      "id": "L1",
+      "source": "judgement-adaptation-probes.md",
+      "split": "development",
+      "turns": 1
+    },
+    {
+      "id": "L2",
+      "source": "judgement-adaptation-probes.md",
+      "split": "development",
+      "turns": 1
+    },
+    {
+      "id": "L3",
+      "source": "judgement-adaptation-probes.md",
+      "split": "development",
+      "turns": 1
+    },
+    {
+      "id": "L4",
+      "source": "judgement-adaptation-probes.md",
+      "split": "development",
+      "turns": 1
+    },
+    {
+      "id": "L5",
+      "source": "judgement-adaptation-probes.md",
+      "split": "development",
+      "turns": 1
+    },
+    {
+      "id": "L6",
+      "source": "judgement-adaptation-probes.md",
+      "split": "development",
+      "turns": 1
+    },
+    {
+      "id": "L7",
+      "source": "judgement-adaptation-probes.md",
+      "split": "development",
+      "turns": 1
+    },
+    {
+      "id": "L8",
+      "source": "judgement-adaptation-probes.md",
+      "split": "development",
+      "turns": 1
+    },
+    {
+      "id": "M1",
+      "source": "conversation-probes.md",
+      "split": "development",
+      "turns": 3
+    },
+    {
+      "id": "M2",
+      "source": "conversation-probes.md",
+      "split": "development",
+      "turns": 3
+    },
+    {
+      "id": "M3",
+      "source": "conversation-probes.md",
+      "split": "development",
+      "turns": 4
+    },
+    {
+      "id": "T1",
+      "source": "transfer-probes.md",
+      "split": "transfer",
+      "turns": 1
+    },
+    {
+      "id": "T2",
+      "source": "transfer-probes.md",
+      "split": "transfer",
+      "turns": 1
+    },
+    {
+      "id": "T3",
+      "source": "transfer-probes.md",
+      "split": "transfer",
+      "turns": 1
+    }
+  ]
+}

@@ -6,19 +6,7 @@
 
 Andrew requested a plan followed by implementation of the duplication and alignment findings. This batch covers implementation sources, their distribution mechanism and the documentation that describes them. It preserves the constitution, role charter, authored voice examples, historical evidence and live product configuration. No files are deleted, renamed or moved. Behavioural testing remains excluded from this workstream; static source and generator checks are included.
 
-1. **Canonical derivations.** Add a shared chat-contract source alongside the execution contract. Keep constitution-to-derivation work a reviewed editorial process. Add a coverage map distinguishing preserved, compressed and deliberately omitted material. Restore the identified execution omissions and the data/instruction boundary in both derivations.
-2. **Deterministic distribution.** Add a dependency-free maintenance script with explicit write and read-only check modes. Update only marked blocks in the three chat files and four agent guides; preserve product wrappers. Detect malformed markers before writing, report drift, track source version and chat length, and enforce the repository's historical 5,000-character chat budget without claiming a current product limit.
-3. **Implementation additions.** Make Cowork a declared addendum requiring supplied shared operating context. Preserve plan confirmation, no overwrites, exact deletion approval, folder scope, connector previews and output defaults. Remove duplicate general policy and identify the base context in its project template. Remove obsolete source attribution and maintenance history from the voice skill without changing invocation or registers.
-4. **Documentation and verification.** Update navigation, deployment instructions, framework lessons and architecture accounts. Record the intended loading combinations and distinguish authored sources from generated copies. Check generation, idempotence, drift detection, malformed-input handling, wrapper preservation, relative links and source preservation. Review the source coverage and Cowork safeguards statically; do not claim behavioural or deployed parity.
-
-## Acceptance criteria
-
-- Exactly two maintained condensed policy sources; all seven detached policy copies generated from them.
-- A read-only command detects edited or stale output blocks, including metadata; the write command makes only in-scope marked changes and reports them.
-- The execution derivation explicitly retains anti-validation, semantic-change signalling, data/instruction separation and the analytical quality bar.
-- Cowork's shared-context dependency is explicit in runtime instructions, setup guidance and its project template; its additional safeguards remain intact.
-- Maintenance history is outside runtime skill text; coverage omissions and composition rules are documented.
-- Constitution files, role charter, existing behavioural fixtures and earlier evidence are unchanged by this consolidation.
+The approved plan established two reviewed condensed sources, a coverage map and deterministic distribution to seven detached copies. Acceptance required read-only drift detection, preflight validation, wrapper preservation and repeatable writes. The execution derivation had to restore the identified policy omissions; Cowork had to declare its base while preserving its additional safeguards. Voice maintenance history moved out of runtime text. Navigation, source preservation and static generator checks completed the batch; the results and verification below record their outcomes.
 
 ## Result
 

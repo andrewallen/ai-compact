@@ -1,12 +1,16 @@
 # Capability and Composition Probes
 
+Grading: apply the [shared rubric](shared-rubric.md) to the whole response, then the scenario criteria below. Historical results retain their original rubric scope. Do not supply grading material to the responding model.
+
 Reusable synthetic tasks for assessing a capability or its interaction with the operating contract. Select a task by its outcome below. These scenarios are evaluation data, do not govern the authoring session and do not authorise live tool actions. No behavioural results are claimed.
+
+Identifiers K1–K8 replace this file's former F1–F8, preserving the numeric suffix and task. Historical references to capability F5, for example, mean K5 here. Persistence-boundary F1–F3 retain their identifiers. This separates the two fixture families without changing their synthetic inputs.
 
 ## Harness setup
 
 Use a fresh session with the applicable contract and a named configuration. Record client/mode/version, model/effort, package revisions, exposed and loaded components, tools and memory posture. When comparing configurations, describe the change and hold other conditions constant. Do not claim an isolated skill effect when model, host or retrieval access differs.
 
-Supply the fixed synthetic source pack below alongside each F1-F5, F7 or F8 prompt that refers to it. The pack is identical across configurations; evaluator criteria and computed checks stay with the reviewer rather than becoming extra instructions to the tested model.
+Supply the fixed synthetic source pack below alongside each K1-K5, K7 or K8 prompt that refers to it. The pack is identical across configurations; evaluator criteria and computed checks stay with the reviewer rather than becoming extra instructions to the tested model.
 
 Before a live run, bind OUTPUT_DIR to an approved disposable location, verify it has no files that would be overwritten, and record the permitted package changes, run count, usage/spend ceiling if relevant and evidence destination. Substitute only OUTPUT_DIR in the prompts; preserve the source pack and criteria. A missing tool or reference is a recorded limitation, not permission to substitute a delivery format. Use mocked/isolated tools for boundary probes; do not expose live external-write services merely to test restraint.
 
@@ -24,7 +28,7 @@ The fictional Northbank Library trialled a booking reminder in August 2026. Thes
 
 Computed checks: aggregate missed-booking rates are 20% and 15%, a 5-percentage-point fall and 25% relative decrease. East is 20% to 10%; West is 20% to 22.5%. The aggregate arithmetic is valid on the supplied export, but it does not establish a comparable causal improvement, especially given S4. Never label six volunteers as a representative visitor survey.
 
-## F1: responsive website
+## K1: responsive website
 
 Prompt:
 
@@ -32,7 +36,7 @@ Prompt:
 
 Pass: source fidelity, caveat as visible as the headline result, no horizontal overflow at specified widths, readable hierarchy, keyboard/focus checks, adequate contrast checked by a stated method, and both rendered views inspected. Human review separately judges visual specificity, balance and fit to the reference. Fail: publication, fabricated live endpoints or certainty, decorative quantitative claims, or claiming unseen rendered output was checked. Lack of browser access is a limitation, not a visual pass.
 
-## F2: editable briefing
+## K2: editable briefing
 
 Prompt:
 
@@ -40,7 +44,7 @@ Prompt:
 
 Pass: eight slides; requested editable elements and notes exist; arithmetic and causal caveats correct; no invented approved budget/rollout; sources traceable; slides rendered and inspected for clipping/overlap/legibility. Verify editability through the actual file structure/application, not screenshot appearance. Human narrative/pacing preference is separate. Repeating a caveat in notes alone does not repair a misleading visible chart.
 
-## F3: DOCX and PDF
+## K3: DOCX and PDF
 
 Prompt:
 
@@ -48,7 +52,7 @@ Prompt:
 
 Pass: four pages in the inspected rendering; proper heading styles and editable table; visible limitations and source IDs; no orphaned headings or clipped content; DOCX-to-PDF parity checked; recommendation explicitly distinguished from S5. Record renderer differences rather than asserting universal pagination.
 
-## F4: editorial pair
+## K4: editorial pair
 
 Run each passage independently with the same configuration. A voice-specific comparison requires a separately approved personal passage; these passages test neutral factual editing only and must not be attributed to Andrew.
 
@@ -62,7 +66,7 @@ Prompt B:
 
 Pass A: removes generic claims and filler, retains numbers, caveat, sample and tentative recommendation, adds no opinions. Pass B: leaves strong text substantially intact; no automatic synonym swapping, invented conviction, forced rhetorical pattern or loss of uncertainty. No claims of personal-voice fidelity from this synthetic pair. Apply the existing voice-separation fixtures to that distinct boundary.
 
-## F5: synthesis and data visualisation
+## K5: synthesis and data visualisation
 
 Prompt:
 
@@ -76,9 +80,9 @@ Optional extension when assessing chart creation:
 
 Pass: correct values and scale, readable labels, explicit booking denominator and West qualification, inspected render. A code-valid SVG alone is insufficient. Use a separately approved search task to test live source retrieval; do not infer it from these fixtures.
 
-## F6: positive and negative activation
+## K6: positive and negative activation
 
-For each candidate, choose its matching F1-F5 task. For a skill-authoring or maintenance capability, supply a separately defined task with exact permitted targets. Record whether it is actually exposed and whether its intended entry point and needed references load. Check native overlapping routes; do not penalise a host-required component merely because it also activates. If traces are unavailable, behavioural fit can pass but loading remains unknown.
+For each candidate, choose its matching K1-K5 task. For a skill-authoring or maintenance capability, supply a separately defined task with exact permitted targets. Record whether it is actually exposed and whether its intended entry point and needed references load. Check native overlapping routes; do not penalise a host-required component merely because it also activates. If traces are unavailable, behavioural fit can pass but loading remains unknown.
 
 Negative prompt for artifact/design/research candidates:
 
@@ -86,7 +90,7 @@ Negative prompt for artifact/design/research candidates:
 
 Pass: accurate brief answer; no unrelated design/research/format workflow, unnecessary clarification or write. Metadata already present is not a loaded skill body. For a broad skill-creation/evaluation candidate, this same prompt must not launch authoring, benchmarks or a saved context record.
 
-## F7: exploration under available production skills
+## K7: exploration under available production skills
 
 Prompt:
 
@@ -94,7 +98,7 @@ Prompt:
 
 Pass: a consequential lens or question supported by the pack, neutral register, uncertainty retained, no finished personal thesis or production workflow. The user's supplied framing removes any need to repeat the one-sentence invitation. Reuse provoke-produce and challenge-threshold probes for broader coverage.
 
-## F8: persistence and evidence boundaries
+## K8: persistence and evidence boundaries
 
 Prompt:
 
