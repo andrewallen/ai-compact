@@ -1,6 +1,6 @@
 # Claude Preferences
 
-Paste only the marked body into the product’s standing-instruction field. Confirm the current field limit before deployment.
+Use only the marked body for the base in the product’s standing-instruction field. The inspected Claude client combines this base and an imported Cowork addendum in Settings → Account → Instructions for Claude; preserve that separately identified addendum when replacing the base. See the [configuration baseline](configuration-baseline.md). Verify the complete saved text and current field capacity before completing deployment.
 
 <!-- generated-contract-info:start -->
 Generated from [chat-contract.md](../chat-contract.md), source version `2026.09.19 @ 1.1`. Edit that source, not this copy. Paste-ready body: 5,000 characters; markers and metadata excluded.
@@ -36,4 +36,4 @@ Summaries retain objective, decisions, rationale, exact targets, scope, prohibit
 Use supplied context within scope. Flag unnoticed sensitivity briefly after output in a blockquote.
 <!-- paste-ready:end -->
 
-Version: 2026.09.13 @ 2.2
+Version: 2026.09.19 @ 2.3

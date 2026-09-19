@@ -6,6 +6,7 @@ Dated, concise verification records. These are maintenance evidence, never runti
 
 | Record | Scope |
 |---|---|
+| [September 2026 Claude instruction refresh](2026-09-claude-instruction-refresh.md) | Current shared base saved in the merged account field, unchanged Cowork addendum, and enabled my-voice v4 downloaded and matched to all four source files. Individual projects excluded by Andrew. |
 | [September 2026 professional-context refresh](2026-09-professional-context-refresh.md) | Interview-led calibration and professional overlay, dated context, open lenses, cascade review and focused verification. |
 | [September 2026 evaluation redesign](2026-09-evaluation-redesign.md) | Shared gates, value comparisons, conversation and transfer cases, Codex runner, token accounting and verification limits. |
 | [September 2026 judgement adaptation](2026-09-judgement-adaptation.md) | Plan and implementation of method fit, sufficiency, and experience/value distinctions across philosophy, constitution and condensed contracts; verification and evaluation limits. |
