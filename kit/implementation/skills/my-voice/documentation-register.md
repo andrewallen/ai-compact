@@ -23,13 +23,13 @@ Structure serves the reader's understanding. Unlike comms, a write-up may use pr
 
 Apply the anti-AI-tell tactics in the SKILL.md Output craft section. This register is the most prone to reading as machine-written, so be deliberate: keep em-dash density low, vary connectors and sentence length, and cut any phrase that could have come from a generic report.
 
-**Punctuation floor for formal customer, government and client-facing deliverables.** Zero em-dashes and en-dashes. The "density, not use" allowance is the authored register's personal-voice latitude and does not transfer here: in a formal documentation-register record any em-dash reads as machine-set and undermines a hand-crafted artefact. Replace with a comma, colon, full stop, parentheses or a spaced hyphen as the sense requires. The ban is character-level and applies to every file in the deliverable pack, customer-facing and internal alike, not only the document being actively edited.
+**Punctuation for formal customer, government and client-facing deliverables.** Use no em-dashes or en-dashes as prose connectors in newly composed text. Replace them with a comma, colon, full stop or parentheses as the sense requires. Apply this editorial preference consistently to the authorised deliverable pack, including internal companion documents. Preserve verbatim quotations, exact titles, identifiers and evidential source material under the entry point's evidence-integrity rule; legitimate notation and ranges are not prose connectors.
 
 ## Verifying the shipped artefact
 
-A clean source is not a clean deliverable. Verify the file that ships:
+A clean source is not a clean deliverable. Verify the file that ships, within authorised access. Change only approved targets; report defects in other pack files as findings. A text draft does not establish that a rendered artefact has been checked.
 
-- **Scan the whole document, not the body alone.** Checks that read only the main text miss headers, footers, text boxes, footnotes and table cells, and usually probe only one dash codepoint. Iterate every story range and shape, and test the dash-like variants (em U+2014, en U+2013, figure, hyphen, minus).
+- **Scan the whole document, not the body alone.** Inspect headers, footers, text boxes, footnotes, tables and shapes as well as the body, using methods supported by the format. Review em/en dashes and visually similar characters in context; preserve exact source text and legitimate hyphens, ranges and minus signs instead of replacing them indiscriminately.
 - **Reconcile, do not re-assert.** When my check says clean but the reader still sees the defect, change method: open the delivered file, check every document in the pack, or have a second model look. The reader's observation outranks my scan.
 - **Independent render-to-ship review.** For formal deliverables, have a second model or fresh-context reviewer inspect the rendered output against the requirement. Choose from the models and tools actually available. A reviewer does not substitute for a visual check of the file that ships.
 - **Protected files.** If an authorised reader exposes only a protection placeholder, it has not inspected the underlying document. Use an approved accessible source or supported application, or report the limitation. Do not bypass protection or assume all labelled files behave identically.

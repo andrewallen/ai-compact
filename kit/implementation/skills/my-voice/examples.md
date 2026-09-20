@@ -2,7 +2,7 @@
 
 Current targets, counter-examples and retained source samples have different uses. Match the current targets in feel, not as templates. Retained samples illustrate the qualities identified in their notes; current register, ownership and craft rules govern new output.
 
-## One scenario across every register
+## Workshop communications across audiences
 
 Illustrative scenario: after a public-sector workshop, Andrew wants to lock in a zero-legacy deep-dive and bring two colleagues in to lead it. The communications below illustrate supplied briefs, not records of actual commitments or decisions. The documentation example further down shows the contrasting deliverable.
 
@@ -36,6 +36,34 @@ This is a small-group coordination message with concrete asks. A channel-wide po
 **Exec note to senior MS leadership:**
 > Hi [Name] - short update and one ask from the department engagement. **Headline.** Thursday's workshop landed well; the department leaned in hardest on legacy and skills, and the tone was genuinely two-way - an opening to convert goodwill into a structured forward programme. **For your awareness.** We're setting up deep-dives, starting with zero-legacy, with the workshop leads carrying the detail - worth recognising on limited prep. I'm conscious of the line on what we can disclose on forward planning. **To be agreed.** Where the department goes next touches sovereignty and multi-region, so I'd value 20 minutes before the next roundtable. My steer is ambition led, honest on constraints. Can I grab a slot early next week? Andrew
 
+## Constructed broadcast and authored examples
+
+These worked examples were constructed during skill maintenance to demonstrate the current rules. They are not Andrew-authored samples or evidence that he endorsed the wording. Each uses a hypothetical supplied brief; neither establishes a personal position for another task. Contemporary finished pieces explicitly endorsed by Andrew remain a calibration gap.
+
+### Broadcast: a reason, a decision and a request
+
+Hypothetical supplied brief: the team attended a pilot review; human reviewers caught two errors missed by automated checks; the speaker wants to retain human review for the next iteration while investigating the errors. Thank the reviewers once and ask the team to retain the step. No cause or broader performance finding is established.
+
+> Everyone - the review gave us a concrete reason to keep human review in the next pilot iteration: our reviewers caught two errors that the automated checks missed. Thank you to those who identified them.
+>
+> We still need to understand why those errors passed through. Until that work is done, removing the review step would mean giving up the part of the process that caught them. Please retain it while we investigate, so the next decision can draw on what we learn.
+
+The reason develops into the request. Short complete sentences sit alongside longer ones; neither the thanks nor the request is repeated to fill space. The account does not claim the investigation has already established a cause.
+
+### Authored: experience developed into an owned position
+
+Hypothetical supplied brief: the speaker uses several AI tools to bring together meeting notes and source material. Their position is that fluency can help reveal a pattern while making an explanation feel settled too early; they want to extend their understanding and retain responsibility for the conclusion. No particular customer event or research finding is supplied.
+
+> Bringing meeting notes and source material together with AI can make a pattern easier to see. Observations that sat in separate documents begin to relate to one another, and I have an account I can examine. That helps me understand material I might otherwise struggle to hold together.
+>
+> The difficult moment comes when the explanation reads well enough that I stop questioning it. A smooth transition between two observations can make the connection feel stronger than the underlying material supports. I need to notice when the quality of the writing is doing some of the persuading.
+>
+> That is when I return to the sources. I want to know which observations support the explanation, where a connection has been inferred, and what remains unresolved. Working across several tools gives me different ways into the material, but I still have to assess what any proposed account can support.
+>
+> I want to keep the benefit of that process: the wider view, the connections I can examine and the opportunity to develop my understanding. The position I eventually take needs to be one I can explain from the evidence. That responsibility stays with me.
+
+Each paragraph has a job: establish the experience, identify the difficulty, explain the response and arrive at the supplied position. The example demonstrates progression and evidence limits; it is not a reusable account of Andrew's experience or a required four-paragraph template.
+
 ## Retained source samples — selected qualities
 
 The passages in this section are retained verbatim. Their purpose is to show rhythm, argument development and candour; they are not current copy-ready targets. Use the accompanying notes to distinguish the useful quality from wording that current craft rules supersede.
@@ -50,9 +78,9 @@ The passages in this section are retained verbatim. Their purpose is to show rhy
 
 A provocative opening followed by a developed case and a reframe. Each paragraph earns the next. Carry forward that progression where the brief calls for an owned argument; do not reproduce its negative contrast mechanically or treat its thesis as Andrew's supplied position in another task.
 
-**Argument register — building a case**
+**Argument shape in the preceding passage**
 
-This sample tests a conventional explanation before offering a different mechanism and its implications. That is one possible argument shape, not a requirement to find a counterintuitive answer. Use it only where the evidence supports the distinction and Andrew owns the position. The conclusion should follow from the substance.
+The preceding passage tests a conventional explanation before offering a different mechanism. That is one possible argument shape, not a requirement to find a counterintuitive answer. Use it only where the evidence supports the distinction and Andrew owns the position. The conclusion should follow from the substance.
 
 **Practical register — direct, human, no ceremony**
 

@@ -35,19 +35,19 @@ For product controls, use Anthropic's [skill guidance](https://support.claude.co
 
 ## Latest verified instruction deployment
 
-The [19 September instruction refresh](../../../../governance/evidence/2026-09-claude-instruction-refresh.md) verifies the current account instructions and my-voice package. It supersedes the saved-state observations in the [13 September deployment record](../../../../governance/evidence/2026-09-claude-deployment.md) and earlier [voice maintenance record](../../../../governance/evidence/2026-09-voice-maintenance.md), including the two source revisions from [repository consolidation](../../../../governance/evidence/2026-09-repository-consolidation.md).
+The [19 September instruction refresh](../../../../governance/evidence/2026-09-claude-instruction-refresh.md) verifies the account instructions and my-voice package at that revision. It supersedes the saved-state observations in the [13 September deployment record](../../../../governance/evidence/2026-09-claude-deployment.md) and earlier [voice maintenance record](../../../../governance/evidence/2026-09-voice-maintenance.md), including the two source revisions from [repository consolidation](../../../../governance/evidence/2026-09-repository-consolidation.md). The later [voice plugin repair](../../../../governance/evidence/2026-09-voice-plugin-validation.md) changes all four source files; that revision has not been deployed to Claude.
 
 | Component | Recorded result |
 |---|---|
 | Account instructions | Shared chat source 2026.09.19 @ 1.1: exact 5,000-character base saved. The complete field, including the imported Cowork section, is 7,495 characters and matched after navigating away and reopening settings. |
 | Cowork addendum | Version 2026.09.13 @ 1.7; exact 2,469-character match to source, preserved unchanged within the combined account field. |
-| my-voice | 19 September: enabled v4; all four downloaded files exactly matched current repository source, including the consolidated authored register and examples. |
+| my-voice | 19 September: enabled v4; all four downloaded files exactly matched the instruction-refresh source. The later plugin-repair source is not deployed. |
 
 These results come from fresh inspection in Claude Desktop 2.2553.1, a saved account-field readback and a downloaded skill comparison. Package identity does not establish invocation or behavioural adherence. Andrew explicitly excluded individual projects from this refresh; their attachments and separate Code deployments remain unverified.
 
 ## Outstanding gaps and decisions
 
-- Account instructions and the Claude my-voice package match the refreshed sources. Invocation and behaviour remain unverified; no behavioural eval was run during this deployment.
+- Account instructions match the refreshed sources. Claude my-voice v4 retains the earlier skill revision; the later four-file repair needs a separately authorised deployment. Invocation and behaviour in Claude remain unverified; local Codex text probes do not establish Claude behaviour.
 - Verify remaining plugin enable switches, update controls and representative use on the actual surface; the tracker distinguishes list presence from confirmed enablement.
 - Establish Code's installed packages and permission configuration separately. Review its observed sandbox/bypass availability before choosing any change.
 - The earlier folder-access and code-execution network restrictions remain undecided. Exact paths, account details and grants stay private.
@@ -56,4 +56,4 @@ These results come from fresh inspection in Claude Desktop 2.2553.1, a saved acc
 
 When a live change is requested, identify the exact settings and packages affected, preserve a restoration route, and verify saved state and useful use. Record material results once in governance evidence. Native runtime versions may not be recoverable; neither package count nor source size establishes token savings.
 
-Version: 2026.09.19 @ 1.19
+Version: 2026.09.19 @ 1.20

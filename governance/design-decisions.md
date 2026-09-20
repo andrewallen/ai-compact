@@ -48,11 +48,13 @@ The assistant reasons in a neutral partner register. Andrew's personal voice bel
 
 The constitution owns voice separation, ownership, audience, purpose-sensitive structure and durable writing principles. `my-voice` names the capability plainly and adds routing, craft and examples. Moving all voice policy into the skill was rejected because the boundaries must remain available on surfaces that cannot load it. Model and host advice stays outside the skill.
 
-The four-file package carries a bounded derivation of audience and form guidance for a condensed operating base. Its register references resolve locally; constitution paths identify provenance rather than requiring an unavailable repository. The full core governs when supplied. Per-client skill conversions were rejected because they would create competing owners for the same craft.
+The four-file package carries a bounded derivation of audience and form guidance for a condensed operating base. Its register references resolve locally; constitution paths identify provenance rather than requiring an unavailable repository. The full core governs when supplied. Per-client craft forks were rejected because they would create competing owners. The [Agent Plugins wrapper](../kit/implementation/plugins/my-voice/README.md) derives a distribution copy, omitting one client-specific metadata field while preserving the body and references.
 
 Operational, broadcast and authored registers produce personal communications; documentation applies Andrew's quality standard in a neutral professional voice. Purpose and ownership decide the route, so a factual research report and an owned argument use different registers even when both are called reports. Factual synthesis can organise verified material and label implications without a prewritten personal thesis. Recommendations remain distinct from adopted decisions, and a covering email can have a different register from its attachment.
 
 Natural-language invocation remains enabled for relevant execution requests. The description excludes exploration and the substance gate prevents invented positions. Source metadata does not prove actual client discovery or invocation. Current target examples illustrate the operative rules; retained source samples preserve useful evidence of voice without making every historical construction a current instruction.
+
+The [plugin validation and repair](evidence/2026-09-voice-plugin-validation.md) makes representative capacity explicit and treats medium guidance as subordinate to purpose. Craft constraints apply to new prose while exact evidence is preserved; pack-wide checks do not grant authority over additional files. Constructed examples demonstrate the rules without becoming evidence of Andrew's authorship or endorsement. Contemporary endorsed finished pieces remain a calibration gap.
 
 ## Knowledge and continuity remain at the external boundary
 

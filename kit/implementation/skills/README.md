@@ -12,7 +12,7 @@ Deployment observations below are dated **13 September 2026**, except my-voice, 
 
 | Skill or package / source | Used for | Platform | Deployment note |
 |---|---|---|---|
-| [my-voice](my-voice/SKILL.md) | Personal output, register selection and factual documentation standards | Claude; Codex | Claude v4 enabled and all four files matched current source on 19 September; see the [Claude baseline](../platforms/claude/configuration-baseline.md). The [Codex baseline](../platforms/codex/configuration-baseline.md) retains its separate deployment gaps. Invocation and behaviour untested. |
+| [my-voice](my-voice/SKILL.md) | Personal output, register selection and factual documentation standards | Claude; portable plugin source | Claude v4 remains on the earlier source; the [plugin repair](../../../governance/evidence/2026-09-voice-plugin-validation.md) is not deployed there. Standalone Codex installation removed at Andrew's request on 19 September. Explicit-package text probes are separate from host discovery and invocation. See [Claude](../platforms/claude/configuration-baseline.md) and [Codex](../platforms/codex/configuration-baseline.md) baselines. |
 | Native [document skills](https://support.claude.com/en/articles/12512180-use-skills-in-claude) | Word, Excel, PowerPoint and PDF work | Claude Chat/Cowork | Code execution and file creation recorded On. Separate document-skill installation is unnecessary where native workflows are supplied. |
 | OpenAI-supplied Documents, Spreadsheets, Presentations and PDF workflows | Create, edit and inspect files | Codex | All four workflows exposed in the review session; execution not tested here. |
 | OpenAI-bundled visualize | Inline visual explanations and interactive tools | Codex | Skill exposed in the review session. |
@@ -33,6 +33,8 @@ Impeccable, Taste Skill and the provider design workflows overlap. Their separat
 ## Maintained personal source
 
 The four files in [my-voice](my-voice/SKILL.md) are maintained here: the skill entry point, [authored register](my-voice/authored-register.md), [documentation register](my-voice/documentation-register.md) and [examples](my-voice/examples.md). External packages remain with their maintainers.
+
+The [my-voice plugin wrapper](../plugins/my-voice/README.md) builds these files into an Agent Plugins 1.0.0 package. It preserves one canonical skill source and omits only the client-specific invocation field from the portable copy. Package conformance and source alignment do not establish deployment or successful use in a host.
 
 ## Keeping this useful
 
