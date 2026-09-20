@@ -27,7 +27,7 @@ Implemented the shared catalogue, deterministic directory/ZIP builder, Claude co
 
 Local validation before publication:
 
-- Package-preservation and Git release tests run entirely in temporary directories and local bare repositories. They cover first publication, changed-content updates, unchanged reruns and documentation-only commits, stale source revisions, immutable tags, version progression, tampered output, unexpected files and symlinks, manifest types and invocation-metadata drift.
+- All 13 package-preservation and Git release tests pass in temporary directories and local bare repositories. They cover first publication, changed-content updates, unchanged reruns and documentation-only commits, stale source revisions, immutable tags, version progression, tampered output, unexpected files and symlinks, manifest types and invocation-metadata drift.
 - Both source and generated portable manifests pass the official Agent Plugins 1.0.0 JSON Schema using jsonschema 4.25.1.
 - Claude Code 2.1.278 validates the shared marketplace without warnings and the generated compatibility manifest in strict mode without warnings.
 - actionlint 1.7.12 validates the workflow. Its downloaded binary was checked against the publisher's release checksum. Workflow action references are pinned to verified upstream commit SHAs.
@@ -35,4 +35,17 @@ Local validation before publication:
 
 The earlier assessment's uncertainty about personal Copilot CLI auto-update is resolved by its [detailed reference](https://docs.github.com/en/copilot/reference/copilot-cli-reference/cli-plugin-reference): a user-level `extraKnownMarketplaces` entry can set `autoUpdate: true`. This setting is documented, not applied to Andrew's account. Personal Codex automatic refresh and personal Claude Desktop refresh cadence remain unverified; their guides state this boundary.
 
-Live publication verification is pending the implementation push. No account plugin is installed or enabled by this work. The standalone Codex skill remains absent. No new behavioural score is claimed: the four canonical skill files are unchanged, and packaging checks establish exact preservation rather than model adherence.
+## Published release and host retrieval
+
+The implementation was committed and pushed as `cfdad605d1a3f80be9234773dbbefac81fb79675`. The first [GitHub Actions run](https://github.com/andrewallen/ai-compact/actions/runs/35532050481) passed both validation and publication. Release `0.1.1` was published at `92734a97690b8ff5888529ccbe7692a7b0e743aa`; the distribution branch and immutable `my-voice-v0.1.1` tag resolve to that same commit. Retrieved provenance identifies the exact implementation source commit above.
+
+| Check | Result and boundary |
+|---|---|
+| GitHub publication | Both jobs passed; branch, tag and release provenance retrieved from GitHub. |
+| Claude Code 2.1.278 | Added `andrewallen/ai-compact` and installed `my-voice@ai-compact` in an isolated temporary configuration. Plugin list reports enabled version 0.1.1; every installed file, ZIP and provenance record matches the generated release. |
+| GitHub Copilot CLI 1.0.86 | Added the same repository and installed the plugin in isolated temporary configuration/cache directories. Reports one installed skill and enabled version 0.1.1; every installed file matches the generated release. |
+| Explicit host refresh | Claude's `plugin update my-voice@ai-compact` and Copilot's `plugin update my-voice` both succeeded and reported 0.1.1 already current in the temporary installations. This checks command resolution, not a timed background update or a host upgrade between different versions. |
+| Codex | Portable manifest and catalogue route checked against current official documentation; no account installation performed. The standalone skill remains absent from both discovery roots. |
+| Voice preservation | No diff to the four canonical skill files. Published copies match the documented portable conversion exactly. |
+
+Temporary host tests are not deployments to Andrew's normal account configuration. No new behavioural score is claimed: packaging checks establish exact preservation rather than model adherence. Background auto-update timing, personal Claude Desktop/Cowork refresh, VS Code invocation and Codex installed invocation remain untested. Host settings are documented for later setup; publication does not apply them.
