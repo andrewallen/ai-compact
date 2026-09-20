@@ -42,6 +42,8 @@ The [deployment map](../kit/implementation/platforms/deployment-map.md) owns pro
 
 ## Capability implementation records
 
+The [plugin packaging layer](../kit/implementation/plugins/README.md) derives the my-voice marketplace from canonical skill files. A root catalogue exposes the generated package on `codex/plugin-marketplace`; the release workflow and package versions identify distributed content without creating another authoring source. [ADR-013](decisions/adr-013-generated-plugin-marketplace.md) defines this boundary. Host installation and refresh remain separate from publication.
+
 The [skills tracker](../kit/implementation/skills/README.md) records the adopted working set, purpose, upstream sources and brief deployment notes. The [Claude](../kit/implementation/platforms/claude/configuration-baseline.md) and [Codex](../kit/implementation/platforms/codex/configuration-baseline.md) baselines own setup, settings and unresolved deployment work. Dated governance evidence holds detailed observations. Availability, source alignment and successful use remain distinct.
 
 Personal skill source stays in the kit; provider and independent packages stay with their maintainers. The tracker and platform references are maintenance material, not runtime routing instructions. Superseded research registers and the implementation plan are preserved in Git history. The [working-set decision](design-decisions.md#skills-track-the-working-set) records this simplification. Existing capability fixtures remain available for targeted checks.

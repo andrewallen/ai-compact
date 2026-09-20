@@ -22,3 +22,4 @@ Statuses in this set: **Accepted** (the decision governs the current system) and
 | [010](adr-010-physical-layer-alignment.md) | Use semantic paths for the five-layer model | Accepted; top-level placement superseded by ADR-011 |
 | [011](adr-011-three-domain-containment.md) | Use three reader-facing repository domains | Accepted |
 | [012](adr-012-clean-public-baseline.md) | Keep the public repository self-contained | Accepted |
+| [013](adr-013-generated-plugin-marketplace.md) | Publish generated plugins through a shared marketplace | Accepted |

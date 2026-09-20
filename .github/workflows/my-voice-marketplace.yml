@@ -1,0 +1,53 @@
+name: Publish my-voice marketplace
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - name: Check packaging and publication transitions
+        run: python3 -m unittest discover -s kit/implementation/plugins -p 'test_*.py' -v
+      - name: Check local archive freshness
+        run: |
+          python3 kit/implementation/plugins/build_my_voice.py
+          python3 kit/implementation/plugins/build_my_voice.py --check
+          git diff --check
+
+  publish:
+    needs: validate
+    if: github.repository == 'andrewallen/ai-compact' && github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+    concurrency:
+      group: my-voice-marketplace-publication
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - name: Build and verify release
+        env:
+          RELEASE_VERSION: 0.1.${{ github.run_number }}
+        run: |
+          python3 kit/implementation/plugins/build_my_voice.py \
+            --release-dir "$RUNNER_TEMP/my-voice-release" \
+            --version "$RELEASE_VERSION" --source-revision "$GITHUB_SHA"
+          python3 kit/implementation/plugins/build_my_voice.py --check \
+            --release-dir "$RUNNER_TEMP/my-voice-release" \
+            --version "$RELEASE_VERSION" --source-revision "$GITHUB_SHA"
+      - name: Publish branch and immutable version tag
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          python3 kit/implementation/plugins/publish_my_voice.py \
+            --source-repo "$GITHUB_WORKSPACE" --release-dir "$RUNNER_TEMP/my-voice-release"

@@ -40,6 +40,8 @@ Supply detailed output craft separately when execution needs it. Shared contract
 
 The [skills tracker](../skills/README.md) records the adopted working set and brief deployment notes. Retain useful native capabilities and prefer each provider's own additions in its harness; independent skills may be shared where useful and supported. Maintain personal source in the kit and use managed provider distribution for external packages.
 
+The [my-voice marketplace guide](../plugins/my-voice/README.md) owns installation and update commands for Claude, GitHub Copilot and Codex. GitHub publishes generated releases from canonical source; each host controls refresh and activation. Publication does not install the plugin or supply standing constitutional instructions.
+
 Platform baselines own setup and outstanding gaps; [dated evidence](../../../governance/evidence/README.md) records observations. Adoption, availability, source alignment and successful use are distinct. For an authorised live change, identify exact targets and dependencies, preserve a restoration route and verify saved state and relevant use. Compare alternatives when value or interference is uncertain. Ordinary use does not require another formal record.
 
 ## Persistent state and account boundaries
@@ -50,4 +52,4 @@ Ambient memory and conversation history belong to product settings. Each product
 
 Credentials, exact trusted roots and account-specific security state stay in the products that hold them. Baselines may record portable settings policy and verification limits, without importing private values into this public repository.
 
-Version: 2026.09.13 @ 3.9
+Version: 2026.09.20 @ 3.10

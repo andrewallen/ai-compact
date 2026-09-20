@@ -1,0 +1,21 @@
+{
+  "name": "ai-compact",
+  "owner": {
+    "name": "Andrew Allen"
+  },
+  "metadata": {
+    "description": "Personal capabilities maintained in AI Compact."
+  },
+  "plugins": [
+    {
+      "name": "my-voice",
+      "description": "Andrew Allen's writing craft for owned personal output and authorised factual documentation.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/andrewallen/ai-compact.git",
+        "ref": "codex/plugin-marketplace"
+      },
+      "category": "productivity"
+    }
+  ]
+}

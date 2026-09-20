@@ -66,6 +66,8 @@ A capability defines an outcome and acceptance standard. A package distributes a
 
 A portable package must carry the guidance needed to complete its job with its declared base. References to a policy's source location establish provenance; they do not imply that a deployed host can read the source repository. Supply a bounded derivation where a condensed base omits required detail, keep the full policy authoritative when present, and test the package without repository access.
 
+Generate distribution copies and host compatibility metadata from one maintained source. Release versions identify packaged content for host update detection; they need not become version markers in instruction documents. A marketplace publishes a capability, while each host controls installation, refresh and activation. Verify these transitions separately, preserve release provenance and retain a route to a previous known package.
+
 Maintain one concise tracker of the adopted working set: purpose, upstream source, platform and a brief deployment note. Distinguish actual use from selection or installation. Keep unselected offerings and superseded research out of the active tracker; preserve useful history through version control or dated evidence.
 
 Prefer the host provider's useful native or own published implementation, checking authorship separately from marketplace membership. Independent skills can be shared where useful and supported. Platform guides own setup and supported controls; evidence records detailed observations. Assess the whole bundle when enablement is package-wide. Use managed delivery and compare alternatives when value or interference is uncertain. More installed packages or fewer source bytes establish neither better results nor token savings.

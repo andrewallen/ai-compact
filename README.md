@@ -21,6 +21,7 @@ In an exploratory conversation, the operating contract asks the model to widen t
 | Understand the reusable pattern | [Framework](framework/README.md) and its [five-layer model](framework/layer-model.md) |
 | Understand this personal implementation | [Personal kit](kit/README.md) |
 | Deploy the kit to an AI product | [Platform deployment map](kit/implementation/platforms/deployment-map.md) |
+| Install the my-voice plugin or configure updates | [Marketplace setup](kit/implementation/plugins/my-voice/README.md) |
 | See how the whole system fits together | [Current architecture](governance/current-architecture.md) |
 | Understand why the structure exists | [Architecture decisions](governance/decisions/README.md) |
 | Review evaluation and deployment evidence | [Evidence index](governance/evidence/README.md), including the historical behavioural baseline and later source and deployment checks |

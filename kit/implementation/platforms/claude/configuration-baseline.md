@@ -31,7 +31,7 @@ The core is bootstrap, calibration and operating contract from the [constitution
 
 The [initial settings inspection](../../../../governance/evidence/2026-09-claude-configuration.md) supports the retained native settings. The [Customize snapshot](../../../../governance/evidence/2026-09-claude-customize-snapshot.md) records later package and connector observations. Earlier disabled inventories remain in evidence and Git history.
 
-For product controls, use Anthropic's [skill guidance](https://support.claude.com/en/articles/12512180-use-skills-in-claude), [directory guidance](https://support.claude.com/en/articles/14328846-browse-skills-connectors-and-plugins-in-one-directory) and [Cowork instructions guide](https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork). Managed provider delivery is the default; the personal my-voice package has a separate upload/replacement route. These choices do not change account connections or permissions automatically.
+For product controls, use Anthropic's [skill guidance](https://support.claude.com/en/articles/12512180-use-skills-in-claude), [directory guidance](https://support.claude.com/en/articles/14328846-browse-skills-connectors-and-plugins-in-one-directory) and [Cowork instructions guide](https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork). Managed provider delivery is the default. The [my-voice marketplace guide](../../plugins/my-voice/README.md) now defines repository installation and refresh alongside manual ZIP replacement. This packaging change does not migrate the recorded Claude v4 installation or alter account connections and permissions.
 
 ## Latest verified instruction deployment
 
@@ -56,4 +56,4 @@ These results come from fresh inspection in Claude Desktop 2.2553.1, a saved acc
 
 When a live change is requested, identify the exact settings and packages affected, preserve a restoration route, and verify saved state and useful use. Record material results once in governance evidence. Native runtime versions may not be recoverable; neither package count nor source size establishes token savings.
 
-Version: 2026.09.19 @ 1.20
+Version: 2026.09.20 @ 1.21

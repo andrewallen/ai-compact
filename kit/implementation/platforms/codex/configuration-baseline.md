@@ -28,11 +28,11 @@ The [OpenAI skill guidance](https://learn.chatgpt.com/docs/build-skills) covers 
 
 ## Outstanding deployment work
 
-- Leave the standalone my-voice installation absent unless Andrew requests a new deployment. The [portable plugin](../../plugins/my-voice/README.md) is available as a build artifact; host compatibility, installation and discovery require separate verification. Existing sessions may retain material loaded before removal. The recorded text probes supplied the package explicitly and do not establish installed invocation.
+- Leave the standalone my-voice installation absent unless Andrew requests a new deployment. The [marketplace guide](../../plugins/my-voice/README.md) now defines the generated plugin's install and refresh route; this does not record an account installation. The [marketplace evidence](../../../../governance/evidence/2026-09-voice-marketplace.md) distinguishes packaging and release checks from host discovery and use. Existing sessions may retain material loaded before removal. The recorded text probes supplied the package explicitly and do not establish installed invocation.
 - Verify saved desktop settings and supported controls for the adopted packages. Confirm independent-skill deployments individually; presence on Claude does not establish presence on Codex.
 - Exercise relevant workflows where useful, including an unrelated exploratory request when unwanted activation is a concern. Compare alternatives only when value or interference remains uncertain.
 - Record material deployment results once in [governance evidence](../../../../governance/evidence/README.md), linking them here and updating the tracker.
 
 A live change needs exact targets and a restoration route. Vendor-managed runtime versions may not be recoverable. Keep private paths, credentials and raw account material outside this guide; package count and file size do not establish token savings.
 
-Version: 2026.09.19 @ 1.5
+Version: 2026.09.20 @ 1.6

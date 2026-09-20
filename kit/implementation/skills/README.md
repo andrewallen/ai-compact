@@ -34,7 +34,7 @@ Impeccable, Taste Skill and the provider design workflows overlap. Their separat
 
 The four files in [my-voice](my-voice/SKILL.md) are maintained here: the skill entry point, [authored register](my-voice/authored-register.md), [documentation register](my-voice/documentation-register.md) and [examples](my-voice/examples.md). External packages remain with their maintainers.
 
-The [my-voice plugin wrapper](../plugins/my-voice/README.md) builds these files into an Agent Plugins 1.0.0 package. It preserves one canonical skill source and omits only the client-specific invocation field from the portable copy. Package conformance and source alignment do not establish deployment or successful use in a host.
+The [my-voice marketplace](../plugins/my-voice/README.md) builds these files into an Agent Plugins 1.0.0 package with a generated Claude compatibility manifest. GitHub publishes changed payloads to a distribution branch; each host controls updates. It preserves one canonical skill source and omits only the client-specific invocation field from the portable copy. Package conformance, publication and source alignment do not establish account deployment or successful use in a host.
 
 ## Keeping this useful
 
