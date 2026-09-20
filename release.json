@@ -1,0 +1,17 @@
+{
+  "name": "my-voice",
+  "version": "0.1.1",
+  "source_repository": "https://github.com/andrewallen/ai-compact",
+  "source_revision": "cfdad605d1a3f80be9234773dbbefac81fb79675",
+  "payload_sha256": "841bb4da6d244a79218ab67533f5646aa7990107dd5505ee816e13ca846887e8",
+  "files": {
+    ".claude-plugin/plugin.json": "f3b239587b66f6d8cc6309317b20f978c25860b30bd51249ee832e15074918e5",
+    "LICENSE": "f5b745ef98087f531e719ee8ca6a96809444573ecc7173c6fa68eaad39b3cc3f",
+    "README.md": "0f7ab3b3ab4f07384bc79837c1d7e876da8b4b06e9d8870131b66bb08fba84b7",
+    "plugin.json": "f5be1c61ee200109f1299d24bfeb7a058b57594063cfd512f65e8a8b10b585d4",
+    "skills/my-voice/SKILL.md": "b74c02eeccd332bfc188f03749b74c067f09dbf53f9a64d84254466cb66da51f",
+    "skills/my-voice/authored-register.md": "88b681eb1b9169bba54d73b297c7568828cc6e769a3f9cf9dcd4073be311c6ba",
+    "skills/my-voice/documentation-register.md": "129e5244e8b06ebbe0166777d4c232419a258d06414570adf6bd9acf6797e55e",
+    "skills/my-voice/examples.md": "ce9dea5d1c988e0f754898849be7438481accb159b5d9699b23921d011b34591"
+  }
+}

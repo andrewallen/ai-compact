@@ -1,0 +1,17 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "my-voice",
+  "description": "Andrew Allen's writing craft for owned personal output and authorised factual documentation, with register selection and draft checks.",
+  "author": {
+    "name": "Andrew Allen"
+  },
+  "repository": "https://github.com/andrewallen/ai-compact",
+  "homepage": "https://github.com/andrewallen/ai-compact/blob/main/kit/implementation/plugins/my-voice/README.md",
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "writing",
+    "voice",
+    "documentation"
+  ],
+  "version": "0.1.1"
+}
