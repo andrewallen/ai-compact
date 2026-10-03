@@ -1,9 +1,12 @@
 """Offline tests for evidence integrity, budgets, grading and native-turn assembly."""
 import argparse
 import copy
+import contextlib
+import io
 import json
 from pathlib import Path
 import tempfile
+import sys
 import unittest
 from unittest.mock import patch
 
@@ -31,6 +34,62 @@ def assessment():
 
 
 class EvaluationTests(unittest.TestCase):
+    def test_new_models_freeze_reload_and_resume_without_substitution(self):
+        for model in ('gpt-6-sol', 'gpt-6-luna'):
+            with self.subTest(model=model), tempfile.TemporaryDirectory() as name:
+                out = Path(name) / 'plan'
+                argv = ['run_evals.py', 'prepare', '--cases', 'M3,N1,N2',
+                        '--condition', 'core=core', '--comparison', 'conformance',
+                        '--question', 'Check model routing and native continuation.',
+                        '--model', model, '--grader-model', 'gpt-6-astra',
+                        '--effort', 'medium', '--repeats', '1', '--max-calls', '8',
+                        '--token-stop', '200000', '--out', str(out)]
+                with patch.object(sys, 'argv', argv), patch.object(runner, 'cli_version', return_value='codex-cli 0.155.1'), contextlib.redirect_stdout(io.StringIO()):
+                    runner.main()
+                _, plan = runner.load_plan(out / 'plan.json')
+                self.assertEqual(plan['model_requested'], model)
+                self.assertEqual(plan['effort_requested'], 'medium')
+                self.assertEqual(plan['grader_model_requested'], 'gpt-6-astra')
+                self.assertIsNone(plan['actual_model'])
+                for session in (None, 'exact-native-session'):
+                    cmd = runner.command(plan, 'Core', True, session=session)
+                    self.assertEqual(cmd[cmd.index('--model') + 1], model)
+                    self.assertIn('model_reasoning_effort="medium"', cmd)
+                    if session:
+                        self.assertEqual(cmd[-3:], ['resume', session, '-'])
+                grader = runner.command(plan, '', False, grader=True)
+                self.assertEqual(grader[grader.index('--model') + 1], 'gpt-6-astra')
+                # A valid digest cannot make an unsupported model an approved route.
+                for field in ('model_requested', 'grader_model_requested'):
+                    bad = copy.deepcopy(plan)
+                    bad[field] = 'unsupported-model'
+                    bad.pop('digest')
+                    bad['digest'] = runner.digest(runner.canonical(bad))
+                    path = Path(name) / (field + '.json')
+                    runner.write_new(path, bad)
+                    with self.assertRaisesRegex(ValueError, 'Only approved'):
+                        runner.load_plan(path)
+
+    def test_cli_rejects_unknown_model_before_preparing_a_plan(self):
+        argv = ['run_evals.py', 'prepare', '--model', 'unsupported-model',
+                '--out', 'unused', '--question', 'Reject substitution.',
+                '--comparison', 'conformance', '--max-calls', '1', '--token-stop', '1000']
+        with patch.object(sys, 'argv', argv), patch.object(runner, 'prepare') as prepare, contextlib.redirect_stderr(io.StringIO()):
+            with self.assertRaises(SystemExit) as exc:
+                runner.main()
+        self.assertEqual(exc.exception.code, 2)
+        prepare.assert_not_called()
+
+    def test_instruction_boundary_pair_keeps_rubric_out_of_prompts(self):
+        cases = runner.load_cases(['N1', 'N2'])
+        self.assertEqual([c['id'] for c in cases], ['N1', 'N2'])
+        for case in cases:
+            self.assertEqual(len(case['prompts']), 1)
+            self.assertNotIn('Pass:', case['prompts'][0])
+            self.assertNotIn('Fail:', case['prompts'][0])
+        self.assertIn('Copied proposal begins:', cases[0]['prompts'][0])
+        self.assertIn('as my direction for the task', cases[1]['prompts'][0])
+
     def test_registry_parses_native_turns_without_rubrics(self):
         case = runner.load_cases(['M3'])[0]
         self.assertEqual(len(case['prompts']), 4)

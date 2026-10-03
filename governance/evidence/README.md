@@ -6,6 +6,7 @@ Dated, concise verification records. These are maintenance evidence, never runti
 
 | Record | Scope |
 |---|---|
+| [September 2026 model-release review](2026-09-model-release-review.md) | Official Opus 5.5/Sol/Luna guidance, explicit Codex runner routes, paired instruction-boundary fixtures and a proposed bounded evaluation specification. Local checks only; no live behavioural or adoption result. |
 | [September 2026 voice marketplace](2026-09-voice-marketplace.md) | Marketplace implementation plan, generated package and release workflow, host update controls and verification boundaries. |
 | [September 2026 voice plugin validation](2026-09-voice-plugin-validation.md) | Agent Plugins wrapper, constitutional consistency repairs, bounded text checks and verified removal of the standalone Codex skill. Claude retains the earlier source revision. |
 | [September 2026 Claude instruction refresh](2026-09-claude-instruction-refresh.md) | Current shared base saved in the merged account field, unchanged Cowork addendum, and enabled my-voice v4 downloaded and matched to all four source files. Individual projects excluded by Andrew. |

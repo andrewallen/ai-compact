@@ -50,7 +50,9 @@ python3 -B kit/evals/run_evals.py grade --plan /tmp/compact-smoke/plan.json
 python3 -B kit/evals/run_evals.py summarise --plan /tmp/compact-smoke/plan.json
 ```
 
-For a change comparison, supply two immutable checkouts or snapshots, for example `--condition before=core:/path/to/before --condition after=core:/path/to/after --comparison change`. For detached routes use `chat` or `execution`. Use the same case scripts, model and effort, ordinarily three to five repetitions, and set the call/token limits to cover the selected work. GPT-5.6 Sol is available as the explicit `gpt-5.6-sol` option; no silent fallback occurs. Repeat with another model only to answer a model-specific question.
+For a change comparison, supply two immutable checkouts or snapshots, for example `--condition before=core:/path/to/before --condition after=core:/path/to/after --comparison change`. For detached routes use `chat` or `execution`. Use the same case scripts, model and effort, ordinarily three to five repetitions, and set the call/token limits to cover the selected work. Explicit model choices are `gpt-6-astra` (unchanged default), `gpt-6-sol`, `gpt-6-luna`, `gpt-5.6-sol`, `gpt-5.6-terra` and `gpt-5.6-luna`; no silent fallback occurs. Sol/Luna routing has offline coverage, not a verified live invocation. Repeat with another model only to answer a model-specific question.
+
+The [September model-release specification](../../governance/evidence/2026-09-model-release-review.md#bounded-evaluation-specification) defines staged smoke and value comparisons for Sol and Luna, with explicit proposed limits. It is a reviewed design for later freezing, not an executed batch. The CLI version matched the existing usage adapter on 23 September; backend availability remains unverified. Claude requires separate native-product checks.
 
 Use `core-overlay` to supply all four constitution files for G1/G2 and the professional-context cases G4–G6. Plain `core` intentionally omits the overlay and only tests the absent-overlay control for G1. The runner freezes the overlay's text and hash with the core; supply the same route for both conditions in an overlay change comparison. G4's future date is a synthetic scenario, and its uncertainty handling does not establish live retrieval quality.
 
@@ -72,6 +74,7 @@ The text runner is not a live tool, skill-discovery, retrieval, memory or compac
 | [evolution-probes.md](evolution-probes.md) | Shift surfacing, evolution boundary (ADR-007 under/over-trigger pair). |
 | [judgement-adaptation-probes.md](judgement-adaptation-probes.md) | L1–L8: method fit, sufficiency, emotional or intuitive signals, values and deliberate exploration, with controls against over-intervention. |
 | [conversation-probes.md](conversation-probes.md) | M1–M3: development, values, pushback, evidence changes and execution across native turns. |
+| [instruction-boundary-probes.md](instruction-boundary-probes.md) | N1/N2: pasted instructions for assessment versus an explicitly adopted compatible task instruction. Text-only, authored and unexecuted. |
 | [transfer-probes.md](transfer-probes.md) | T1–T3: natural personal/community variants reserved from tuning within a frozen comparison. |
 | [voice-separation-probes.md](voice-separation-probes.md) | Register separation, my-voice substance gate, detector behaviour, natural-language discovery and audience context. |
 | [persistence-boundary-probes.md](persistence-boundary-probes.md) | Approval for deliberate persistent changes, Cowork base-plus-addendum loading and non-claims about ambient product memory. |

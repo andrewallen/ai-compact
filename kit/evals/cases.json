@@ -169,6 +169,18 @@
       "source": "transfer-probes.md",
       "split": "transfer",
       "turns": 1
+    },
+    {
+      "id": "N1",
+      "source": "instruction-boundary-probes.md",
+      "split": "development",
+      "turns": 1
+    },
+    {
+      "id": "N2",
+      "source": "instruction-boundary-probes.md",
+      "split": "development",
+      "turns": 1
     }
   ]
 }

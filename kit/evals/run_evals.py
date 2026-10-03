@@ -16,7 +16,7 @@ import time
 sys.dont_write_bytecode = True
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent.parent
-MODELS = ('gpt-6-astra', 'gpt-5.6-sol', 'gpt-5.6-terra', 'gpt-5.6-luna')
+MODELS = ('gpt-6-astra', 'gpt-6-sol', 'gpt-6-luna', 'gpt-5.6-sol', 'gpt-5.6-terra', 'gpt-5.6-luna')
 EFFORTS = ('low', 'medium', 'high', 'xhigh', 'max')
 GATES = ('grounding', 'ownership', 'authority', 'instruction_boundary')
 DIMENSIONS = ('contribution', 'challenge', 'independence', 'execution', 'friction')
